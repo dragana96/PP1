@@ -1,0 +1,1800 @@
+INFO  03:38:50,827 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  03:38:50,926 - #2 program
+INFO  03:38:50,926 - #5 test302
+INFO  03:38:50,927 - #5 int
+INFO  03:38:50,928 - #5 i
+INFO  03:38:50,929 - #8 ;
+INFO  03:38:50,930 - #5 bool
+INFO  03:38:50,931 - #5 ibool
+INFO  03:38:50,931 - #8 ;
+INFO  03:38:50,931 - #5 int
+INFO  03:38:50,931 - #5 niz
+INFO  03:38:50,931 - #9 [
+INFO  03:38:50,931 - #10 ]
+INFO  03:38:50,931 - #8 ;
+INFO  03:38:50,932 - #3 {
+INFO  03:38:50,932 - #5 int
+INFO  03:38:50,933 - #5 sum
+INFO  03:38:50,933 - #18 (
+INFO  03:38:50,934 - #5 int
+INFO  03:38:50,934 - #5 z
+INFO  03:38:50,934 - #11 ,
+INFO  03:38:50,934 - #5 int
+INFO  03:38:50,934 - #5 d
+INFO  03:38:50,935 - #19 )
+INFO  03:38:50,935 - #3 {
+INFO  03:38:50,936 - #45 return
+INFO  03:38:50,937 - #5 z
+INFO  03:38:50,938 - #33 +
+INFO  03:38:50,941 - #5 d
+INFO  03:38:50,942 - #8 ;
+INFO  03:38:50,943 - #4 }
+INFO  03:38:50,943 - #5 int
+INFO  03:38:50,943 - #5 inkrement
+INFO  03:38:50,943 - #18 (
+INFO  03:38:50,944 - #5 int
+INFO  03:38:50,944 - #5 a
+INFO  03:38:50,944 - #19 )
+INFO  03:38:50,944 - #5 int
+INFO  03:38:50,944 - #5 pom
+INFO  03:38:50,944 - #8 ;
+INFO  03:38:50,945 - #3 {
+INFO  03:38:50,946 - #5 pom
+INFO  03:38:50,946 - #7 =
+INFO  03:38:50,946 - #20 1
+INFO  03:38:50,947 - #8 ;
+INFO  03:38:50,949 - #45 return
+INFO  03:38:50,949 - #5 sum
+INFO  03:38:50,949 - #18 (
+INFO  03:38:50,949 - #5 a
+INFO  03:38:50,949 - #11 ,
+INFO  03:38:50,950 - #5 pom
+INFO  03:38:50,951 - #19 )
+INFO  03:38:50,953 - #8 ;
+INFO  03:38:50,954 - #4 }
+INFO  03:38:50,954 - #17 void
+INFO  03:38:50,954 - #5 main
+INFO  03:38:50,954 - #18 (
+INFO  03:38:50,955 - #19 )
+INFO  03:38:50,956 - #3 {
+INFO  03:38:50,957 - #40 if
+INFO  03:38:50,957 - #18 (
+INFO  03:38:50,957 - #20 1
+INFO  03:38:50,957 - #34 !=
+INFO  03:38:50,957 - #20 1
+INFO  03:38:50,959 - #19 )
+INFO  03:38:50,963 - #47 print
+INFO  03:38:50,963 - #18 (
+INFO  03:38:50,963 - #31 -
+INFO  03:38:50,963 - #20 6
+INFO  03:38:50,963 - #19 )
+INFO  03:38:50,964 - #8 ;
+INFO  03:38:50,971 - #41 else
+INFO  03:38:50,971 - #47 print
+INFO  03:38:50,971 - #18 (
+INFO  03:38:50,971 - #20 0
+INFO  03:38:50,971 - #19 )
+INFO  03:38:50,971 - #8 ;
+INFO  03:38:50,971 - #5 ibool
+INFO  03:38:50,972 - #7 =
+INFO  03:38:50,972 - #22 false
+INFO  03:38:50,972 - #8 ;
+INFO  03:38:50,972 - #5 i
+INFO  03:38:50,972 - #7 =
+INFO  03:38:50,972 - #20 0
+INFO  03:38:50,972 - #8 ;
+INFO  03:38:50,972 - #40 if
+INFO  03:38:50,973 - #18 (
+INFO  03:38:50,973 - #5 ibool
+INFO  03:38:50,973 - #33 +
+INFO  03:38:50,973 - #19 )
+ERROR 03:38:50,973 - Sintaksna greska na liniji 33
+INFO  03:38:50,973 - #40 if
+INFO  03:38:50,973 - #18 (
+INFO  03:38:50,973 - #5 i
+ERROR 03:38:50,974 - Izvrsen oporavak do ; u liniji 33
+INFO  03:38:50,975 - #39 ==
+INFO  03:38:50,975 - #20 5
+INFO  03:38:50,976 - #19 )
+INFO  03:38:50,976 - #47 print
+INFO  03:38:50,977 - #18 (
+INFO  03:38:50,977 - #20 1
+INFO  03:38:50,977 - #19 )
+INFO  03:38:50,977 - #8 ;
+INFO  03:38:50,977 - #41 else
+INFO  03:38:50,977 - #47 print
+INFO  03:38:50,977 - #18 (
+INFO  03:38:50,977 - #31 -
+INFO  03:38:50,977 - #20 1
+INFO  03:38:50,977 - #19 )
+INFO  03:38:50,978 - #8 ;
+INFO  03:38:50,978 - #5 niz
+INFO  03:38:50,978 - #7 =
+INFO  03:38:50,978 - #25 new
+INFO  03:38:50,979 - #5 int
+INFO  03:38:50,980 - #9 [
+INFO  03:38:50,980 - #20 3
+INFO  03:38:50,980 - #10 ]
+INFO  03:38:50,980 - #8 ;
+INFO  03:38:50,981 - #5 niz
+INFO  03:38:50,981 - #9 [
+INFO  03:38:50,981 - #20 0
+INFO  03:38:50,982 - #10 ]
+INFO  03:38:50,982 - #7 =
+INFO  03:38:50,982 - #20 1
+INFO  03:38:50,982 - #8 ;
+INFO  03:38:50,982 - #5 niz
+INFO  03:38:50,982 - #9 [
+INFO  03:38:50,983 - #20 1
+INFO  03:38:50,983 - #10 ]
+INFO  03:38:50,983 - #7 =
+INFO  03:38:50,983 - #20 2
+INFO  03:38:50,983 - #8 ;
+INFO  03:38:50,983 - #5 niz
+INFO  03:38:50,983 - #9 [
+INFO  03:38:50,984 - #20 2
+INFO  03:38:50,984 - #10 ]
+INFO  03:38:50,984 - #7 =
+INFO  03:38:50,984 - #5 sum
+INFO  03:38:50,984 - #18 (
+INFO  03:38:50,984 - #5 niz
+INFO  03:38:50,984 - #9 [
+INFO  03:38:50,984 - #20 1
+INFO  03:38:50,984 - #10 ]
+INFO  03:38:50,984 - #11 ,
+INFO  03:38:50,985 - #5 niz
+INFO  03:38:50,985 - #9 [
+INFO  03:38:50,985 - #20 0
+INFO  03:38:50,985 - #10 ]
+INFO  03:38:50,985 - #19 )
+INFO  03:38:50,985 - #33 +
+INFO  03:38:50,985 - #20 1
+INFO  03:38:50,985 - #8 ;
+INFO  03:38:50,985 - #40 if
+INFO  03:38:50,985 - #18 (
+INFO  03:38:50,985 - #5 niz
+INFO  03:38:50,985 - #9 [
+INFO  03:38:50,986 - #20 2
+INFO  03:38:50,986 - #10 ]
+INFO  03:38:50,986 - #39 ==
+INFO  03:38:50,986 - #20 4
+INFO  03:38:50,986 - #19 )
+INFO  03:38:50,986 - #47 print
+INFO  03:38:50,986 - #18 (
+INFO  03:38:50,986 - #5 ord
+INFO  03:38:50,986 - #18 (
+INFO  03:38:50,986 - #21 A
+INFO  03:38:50,986 - #19 )
+INFO  03:38:50,987 - #19 )
+INFO  03:38:50,987 - #8 ;
+INFO  03:38:50,987 - #41 else
+INFO  03:38:50,987 - #47 print
+INFO  03:38:50,987 - #18 (
+INFO  03:38:50,987 - #5 ord
+INFO  03:38:50,988 - #18 (
+INFO  03:38:50,988 - #21 a
+INFO  03:38:50,988 - #19 )
+INFO  03:38:50,988 - #19 )
+INFO  03:38:50,988 - #8 ;
+INFO  03:38:50,988 - #47 print
+INFO  03:38:50,988 - #18 (
+INFO  03:38:50,988 - #5 eol
+INFO  03:38:50,988 - #19 )
+INFO  03:38:50,988 - #8 ;
+INFO  03:38:50,988 - #5 i
+INFO  03:38:50,988 - #7 =
+INFO  03:38:50,989 - #20 0
+INFO  03:38:50,989 - #8 ;
+INFO  03:38:50,989 - #40 if
+INFO  03:38:50,989 - #18 (
+INFO  03:38:50,989 - #5 i
+INFO  03:38:50,989 - #39 ==
+INFO  03:38:50,989 - #20 3
+INFO  03:38:50,989 - #19 )
+INFO  03:38:50,989 - #3 {
+INFO  03:38:50,989 - #5 i
+INFO  03:38:50,989 - #23 ++
+INFO  03:38:50,989 - #8 ;
+INFO  03:38:50,990 - #44 continue
+INFO  03:38:50,990 - #8 ;
+INFO  03:38:50,990 - #4 }
+INFO  03:38:50,991 - #40 if
+INFO  03:38:50,992 - #18 (
+INFO  03:38:50,992 - #5 i
+INFO  03:38:50,992 - #39 ==
+INFO  03:38:50,992 - #20 4
+INFO  03:38:50,992 - #19 )
+INFO  03:38:50,992 - #43 break
+INFO  03:38:50,993 - #8 ;
+INFO  03:38:50,993 - #5 i
+INFO  03:38:50,994 - #7 =
+INFO  03:38:50,994 - #5 inkrement
+INFO  03:38:50,994 - #18 (
+INFO  03:38:50,994 - #5 i
+INFO  03:38:50,995 - #19 )
+INFO  03:38:50,995 - #8 ;
+INFO  03:38:50,995 - #40 if
+INFO  03:38:50,995 - #18 (
+INFO  03:38:50,995 - #5 i
+INFO  03:38:50,995 - #39 ==
+INFO  03:38:50,995 - #20 3
+INFO  03:38:50,995 - #19 )
+INFO  03:38:50,995 - #47 print
+INFO  03:38:50,995 - #18 (
+INFO  03:38:50,995 - #20 4
+INFO  03:38:50,995 - #19 )
+INFO  03:38:50,995 - #8 ;
+INFO  03:38:50,995 - #41 else
+INFO  03:38:50,995 - #47 print
+INFO  03:38:50,995 - #18 (
+INFO  03:38:50,995 - #31 -
+INFO  03:38:50,995 - #20 4
+INFO  03:38:50,996 - #19 )
+INFO  03:38:50,996 - #8 ;
+INFO  03:38:50,996 - #46 read
+INFO  03:38:50,996 - #18 (
+INFO  03:38:50,996 - #5 niz
+INFO  03:38:50,996 - #9 [
+INFO  03:38:50,996 - #20 0
+INFO  03:38:50,996 - #10 ]
+INFO  03:38:50,996 - #19 )
+INFO  03:38:50,996 - #8 ;
+INFO  03:38:50,996 - #46 read
+INFO  03:38:50,996 - #18 (
+INFO  03:38:50,996 - #5 niz
+INFO  03:38:50,996 - #9 [
+INFO  03:38:50,996 - #20 1
+INFO  03:38:50,996 - #10 ]
+INFO  03:38:50,996 - #19 )
+INFO  03:38:50,996 - #8 ;
+INFO  03:38:50,996 - #46 read
+INFO  03:38:50,996 - #18 (
+INFO  03:38:50,996 - #5 niz
+INFO  03:38:50,997 - #9 [
+INFO  03:38:50,997 - #20 2
+INFO  03:38:50,997 - #10 ]
+INFO  03:38:50,997 - #19 )
+INFO  03:38:50,997 - #8 ;
+INFO  03:38:50,997 - #47 print
+INFO  03:38:50,997 - #18 (
+INFO  03:38:50,997 - #5 eol
+INFO  03:38:50,997 - #19 )
+INFO  03:38:50,997 - #8 ;
+INFO  03:38:50,997 - #47 print
+INFO  03:38:50,997 - #18 (
+INFO  03:38:50,998 - #5 sum
+INFO  03:38:50,998 - #18 (
+INFO  03:38:50,998 - #5 sum
+INFO  03:38:50,998 - #18 (
+INFO  03:38:50,998 - #5 niz
+INFO  03:38:50,998 - #9 [
+INFO  03:38:50,998 - #20 0
+INFO  03:38:50,998 - #10 ]
+INFO  03:38:50,998 - #11 ,
+INFO  03:38:50,998 - #5 niz
+INFO  03:38:50,998 - #9 [
+INFO  03:38:50,998 - #20 1
+INFO  03:38:50,998 - #10 ]
+INFO  03:38:50,999 - #19 )
+INFO  03:38:50,999 - #11 ,
+INFO  03:38:50,999 - #5 niz
+INFO  03:38:50,999 - #9 [
+INFO  03:38:50,999 - #20 2
+INFO  03:38:50,999 - #10 ]
+INFO  03:38:50,999 - #19 )
+INFO  03:38:50,999 - #19 )
+INFO  03:38:50,999 - #8 ;
+INFO  03:38:50,999 - #4 }
+INFO  03:38:50,999 - #4 }
+INFO  03:38:51,012 - Program1(
+  DeclarationLst(
+    DeclarationLst(
+      DeclarationLst(
+        NoDeclarationLst(
+        ) [NoDeclarationLst]
+        GlobalVarDeclartion(
+          GVarDecl(
+            Type(
+            ) [Type]
+            GSingleVarDeclaration(
+              GVarDclrtion(
+              ) [GVarDclrtion]
+            ) [GSingleVarDeclaration]
+          ) [GVarDecl]
+        ) [GlobalVarDeclartion]
+      ) [DeclarationLst]
+      GlobalVarDeclartion(
+        GVarDecl(
+          Type(
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDclrtion(
+            ) [GVarDclrtion]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclartion]
+    ) [DeclarationLst]
+    GlobalVarDeclartion(
+      GVarDecl(
+        Type(
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarArray(
+            Brackets(
+            ) [Brackets]
+          ) [GVarArray]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclartion]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      MethodDeclarationList(
+        NoMethodDeclarationList(
+        ) [NoMethodDeclarationList]
+        MethodDeclaration(
+          NonVoidMethodType(
+            Type(
+            ) [Type]
+          ) [NonVoidMethodType]
+          FormalParamsYes(
+            MoreFormPars(
+              FormParDeclaration(
+                Type(
+                ) [Type]
+              ) [FormParDeclaration]
+              OneFormPars(
+                FormParDeclaration(
+                  Type(
+                  ) [Type]
+                ) [FormParDeclaration]
+              ) [OneFormPars]
+            ) [MoreFormPars]
+          ) [FormalParamsYes]
+          LocalVarDeclarationListDerived1(
+          ) [LocalVarDeclarationListDerived1]
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              ReturnStatement(
+                YesExpr(
+                  Expression(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermDeclaration(
+                      FactorDesignator(
+                        DesignatorDerived1(
+                        ) [DesignatorDerived1]
+                        NoActualParsWithParen(
+                        ) [NoActualParsWithParen]
+                      ) [FactorDesignator]
+                      NoMulopFactorLst(
+                      ) [NoMulopFactorLst]
+                    ) [TermDeclaration]
+                    AddopTermLst(
+                      NoAddopTermLst(
+                      ) [NoAddopTermLst]
+                      OpPlus(
+                      ) [OpPlus]
+                      TermDeclaration(
+                        FactorDesignator(
+                          DesignatorDerived1(
+                          ) [DesignatorDerived1]
+                          NoActualParsWithParen(
+                          ) [NoActualParsWithParen]
+                        ) [FactorDesignator]
+                        NoMulopFactorLst(
+                        ) [NoMulopFactorLst]
+                      ) [TermDeclaration]
+                    ) [AddopTermLst]
+                  ) [Expression]
+                ) [YesExpr]
+              ) [ReturnStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+        ) [MethodDeclaration]
+      ) [MethodDeclarationList]
+      MethodDeclaration(
+        NonVoidMethodType(
+          Type(
+          ) [Type]
+        ) [NonVoidMethodType]
+        FormalParamsYes(
+          OneFormPars(
+            FormParDeclaration(
+              Type(
+              ) [Type]
+            ) [FormParDeclaration]
+          ) [OneFormPars]
+        ) [FormalParamsYes]
+        LVDLst(
+          LocalVarDeclarationListDerived1(
+          ) [LocalVarDeclarationListDerived1]
+          VarDecl1(
+            Type(
+            ) [Type]
+            SingleVarDeclaration(
+              VarDclrtion(
+              ) [VarDclrtion]
+            ) [SingleVarDeclaration]
+          ) [VarDecl1]
+        ) [LVDLst]
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              DesignatorStStatement(
+                DesignatorStatement(
+                  DesignatorDerived1(
+                  ) [DesignatorDerived1]
+                  DesignatorStatementFill1(
+                    OpEq(
+                    ) [OpEq]
+                    Expression(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermDeclaration(
+                        FactorConst(
+                          ConstNumber(
+                           1
+                          ) [ConstNumber]
+                        ) [FactorConst]
+                        NoMulopFactorLst(
+                        ) [NoMulopFactorLst]
+                      ) [TermDeclaration]
+                      NoAddopTermLst(
+                      ) [NoAddopTermLst]
+                    ) [Expression]
+                  ) [DesignatorStatementFill1]
+                ) [DesignatorStatement]
+              ) [DesignatorStStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            ReturnStatement(
+              YesExpr(
+                Expression(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermDeclaration(
+                    FactorDesignator(
+                      DesignatorDerived1(
+                      ) [DesignatorDerived1]
+                      ActualParsWithParen(
+                        YesActualPars(
+                          ActPars(
+                            Expression(
+                              NoMinus(
+                              ) [NoMinus]
+                              TermDeclaration(
+                                FactorDesignator(
+                                  DesignatorDerived1(
+                                  ) [DesignatorDerived1]
+                                  NoActualParsWithParen(
+                                  ) [NoActualParsWithParen]
+                                ) [FactorDesignator]
+                                NoMulopFactorLst(
+                                ) [NoMulopFactorLst]
+                              ) [TermDeclaration]
+                              NoAddopTermLst(
+                              ) [NoAddopTermLst]
+                            ) [Expression]
+                            ExprLst(
+                              NoExprLst(
+                              ) [NoExprLst]
+                              Expression(
+                                NoMinus(
+                                ) [NoMinus]
+                                TermDeclaration(
+                                  FactorDesignator(
+                                    DesignatorDerived1(
+                                    ) [DesignatorDerived1]
+                                    NoActualParsWithParen(
+                                    ) [NoActualParsWithParen]
+                                  ) [FactorDesignator]
+                                  NoMulopFactorLst(
+                                  ) [NoMulopFactorLst]
+                                ) [TermDeclaration]
+                                NoAddopTermLst(
+                                ) [NoAddopTermLst]
+                              ) [Expression]
+                            ) [ExprLst]
+                          ) [ActPars]
+                        ) [YesActualPars]
+                      ) [ActualParsWithParen]
+                    ) [FactorDesignator]
+                    NoMulopFactorLst(
+                    ) [NoMulopFactorLst]
+                  ) [TermDeclaration]
+                  NoAddopTermLst(
+                  ) [NoAddopTermLst]
+                ) [Expression]
+              ) [YesExpr]
+            ) [ReturnStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDeclaration]
+    ) [MethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclarationListDerived1(
+      ) [LocalVarDeclarationListDerived1]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    StmtList(
+                      StmtList(
+                        StmtList(
+                          StmtList(
+                            StmtList(
+                              StmtList(
+                                StmtList(
+                                  StmtList(
+                                    StmtList(
+                                      StmtList(
+                                        StmtList(
+                                          StmtList(
+                                            StmtList(
+                                              NoStmtList(
+                                              ) [NoStmtList]
+                                              MatchedStmt(
+                                                MatchedIf(
+                                                  Condition(
+                                                    ConditionTerm(
+                                                      ConditionFact(
+                                                        Expression(
+                                                          NoMinus(
+                                                          ) [NoMinus]
+                                                          TermDeclaration(
+                                                            FactorConst(
+                                                              ConstNumber(
+                                                               1
+                                                              ) [ConstNumber]
+                                                            ) [FactorConst]
+                                                            NoMulopFactorLst(
+                                                            ) [NoMulopFactorLst]
+                                                          ) [TermDeclaration]
+                                                          NoAddopTermLst(
+                                                          ) [NoAddopTermLst]
+                                                        ) [Expression]
+                                                        RelopExpr(
+                                                          OpDiff(
+                                                          ) [OpDiff]
+                                                          Expression(
+                                                            NoMinus(
+                                                            ) [NoMinus]
+                                                            TermDeclaration(
+                                                              FactorConst(
+                                                                ConstNumber(
+                                                                 1
+                                                                ) [ConstNumber]
+                                                              ) [FactorConst]
+                                                              NoMulopFactorLst(
+                                                              ) [NoMulopFactorLst]
+                                                            ) [TermDeclaration]
+                                                            NoAddopTermLst(
+                                                            ) [NoAddopTermLst]
+                                                          ) [Expression]
+                                                        ) [RelopExpr]
+                                                      ) [ConditionFact]
+                                                      NoConditionFactList(
+                                                      ) [NoConditionFactList]
+                                                    ) [ConditionTerm]
+                                                    NoConditionTermList(
+                                                    ) [NoConditionTermList]
+                                                  ) [Condition]
+                                                  PrintStatement(
+                                                    Expression(
+                                                      Minus(
+                                                      ) [Minus]
+                                                      TermDeclaration(
+                                                        FactorConst(
+                                                          ConstNumber(
+                                                           6
+                                                          ) [ConstNumber]
+                                                        ) [FactorConst]
+                                                        NoMulopFactorLst(
+                                                        ) [NoMulopFactorLst]
+                                                      ) [TermDeclaration]
+                                                      NoAddopTermLst(
+                                                      ) [NoAddopTermLst]
+                                                    ) [Expression]
+                                                    NoNumConsts(
+                                                    ) [NoNumConsts]
+                                                  ) [PrintStatement]
+                                                  PrintStatement(
+                                                    Expression(
+                                                      NoMinus(
+                                                      ) [NoMinus]
+                                                      TermDeclaration(
+                                                        FactorConst(
+                                                          ConstNumber(
+                                                           0
+                                                          ) [ConstNumber]
+                                                        ) [FactorConst]
+                                                        NoMulopFactorLst(
+                                                        ) [NoMulopFactorLst]
+                                                      ) [TermDeclaration]
+                                                      NoAddopTermLst(
+                                                      ) [NoAddopTermLst]
+                                                    ) [Expression]
+                                                    NoNumConsts(
+                                                    ) [NoNumConsts]
+                                                  ) [PrintStatement]
+                                                ) [MatchedIf]
+                                              ) [MatchedStmt]
+                                            ) [StmtList]
+                                            MatchedStmt(
+                                              DesignatorStStatement(
+                                                DesignatorStatement(
+                                                  DesignatorDerived1(
+                                                  ) [DesignatorDerived1]
+                                                  DesignatorStatementFill1(
+                                                    OpEq(
+                                                    ) [OpEq]
+                                                    Expression(
+                                                      NoMinus(
+                                                      ) [NoMinus]
+                                                      TermDeclaration(
+                                                        FactorConst(
+                                                          ConstBool(
+                                                           false
+                                                          ) [ConstBool]
+                                                        ) [FactorConst]
+                                                        NoMulopFactorLst(
+                                                        ) [NoMulopFactorLst]
+                                                      ) [TermDeclaration]
+                                                      NoAddopTermLst(
+                                                      ) [NoAddopTermLst]
+                                                    ) [Expression]
+                                                  ) [DesignatorStatementFill1]
+                                                ) [DesignatorStatement]
+                                              ) [DesignatorStStatement]
+                                            ) [MatchedStmt]
+                                          ) [StmtList]
+                                          MatchedStmt(
+                                            DesignatorStStatement(
+                                              DesignatorStatement(
+                                                DesignatorDerived1(
+                                                ) [DesignatorDerived1]
+                                                DesignatorStatementFill1(
+                                                  OpEq(
+                                                  ) [OpEq]
+                                                  Expression(
+                                                    NoMinus(
+                                                    ) [NoMinus]
+                                                    TermDeclaration(
+                                                      FactorConst(
+                                                        ConstNumber(
+                                                         0
+                                                        ) [ConstNumber]
+                                                      ) [FactorConst]
+                                                      NoMulopFactorLst(
+                                                      ) [NoMulopFactorLst]
+                                                    ) [TermDeclaration]
+                                                    NoAddopTermLst(
+                                                    ) [NoAddopTermLst]
+                                                  ) [Expression]
+                                                ) [DesignatorStatementFill1]
+                                              ) [DesignatorStatement]
+                                            ) [DesignatorStStatement]
+                                          ) [MatchedStmt]
+                                        ) [StmtList]
+                                        UnmatchedStmt(
+                                          ErrorIfUnmatched(
+                                            ErrorIfDerived1(
+                                            ) [ErrorIfDerived1]
+                                            MatchedStmt(
+                                              MatchedIf(
+                                                Condition(
+                                                  ConditionTerm(
+                                                    ConditionFact(
+                                                      Expression(
+                                                        NoMinus(
+                                                        ) [NoMinus]
+                                                        TermDeclaration(
+                                                          FactorDesignator(
+                                                            DesignatorDerived1(
+                                                            ) [DesignatorDerived1]
+                                                            NoActualParsWithParen(
+                                                            ) [NoActualParsWithParen]
+                                                          ) [FactorDesignator]
+                                                          NoMulopFactorLst(
+                                                          ) [NoMulopFactorLst]
+                                                        ) [TermDeclaration]
+                                                        NoAddopTermLst(
+                                                        ) [NoAddopTermLst]
+                                                      ) [Expression]
+                                                      RelopExpr(
+                                                        OpEqs(
+                                                        ) [OpEqs]
+                                                        Expression(
+                                                          NoMinus(
+                                                          ) [NoMinus]
+                                                          TermDeclaration(
+                                                            FactorConst(
+                                                              ConstNumber(
+                                                               5
+                                                              ) [ConstNumber]
+                                                            ) [FactorConst]
+                                                            NoMulopFactorLst(
+                                                            ) [NoMulopFactorLst]
+                                                          ) [TermDeclaration]
+                                                          NoAddopTermLst(
+                                                          ) [NoAddopTermLst]
+                                                        ) [Expression]
+                                                      ) [RelopExpr]
+                                                    ) [ConditionFact]
+                                                    NoConditionFactList(
+                                                    ) [NoConditionFactList]
+                                                  ) [ConditionTerm]
+                                                  NoConditionTermList(
+                                                  ) [NoConditionTermList]
+                                                ) [Condition]
+                                                PrintStatement(
+                                                  Expression(
+                                                    NoMinus(
+                                                    ) [NoMinus]
+                                                    TermDeclaration(
+                                                      FactorConst(
+                                                        ConstNumber(
+                                                         1
+                                                        ) [ConstNumber]
+                                                      ) [FactorConst]
+                                                      NoMulopFactorLst(
+                                                      ) [NoMulopFactorLst]
+                                                    ) [TermDeclaration]
+                                                    NoAddopTermLst(
+                                                    ) [NoAddopTermLst]
+                                                  ) [Expression]
+                                                  NoNumConsts(
+                                                  ) [NoNumConsts]
+                                                ) [PrintStatement]
+                                                PrintStatement(
+                                                  Expression(
+                                                    Minus(
+                                                    ) [Minus]
+                                                    TermDeclaration(
+                                                      FactorConst(
+                                                        ConstNumber(
+                                                         1
+                                                        ) [ConstNumber]
+                                                      ) [FactorConst]
+                                                      NoMulopFactorLst(
+                                                      ) [NoMulopFactorLst]
+                                                    ) [TermDeclaration]
+                                                    NoAddopTermLst(
+                                                    ) [NoAddopTermLst]
+                                                  ) [Expression]
+                                                  NoNumConsts(
+                                                  ) [NoNumConsts]
+                                                ) [PrintStatement]
+                                              ) [MatchedIf]
+                                            ) [MatchedStmt]
+                                          ) [ErrorIfUnmatched]
+                                        ) [UnmatchedStmt]
+                                      ) [StmtList]
+                                      MatchedStmt(
+                                        DesignatorStStatement(
+                                          DesignatorStatement(
+                                            DesignatorDerived1(
+                                            ) [DesignatorDerived1]
+                                            DesignatorStatementFill1(
+                                              OpEq(
+                                              ) [OpEq]
+                                              Expression(
+                                                NoMinus(
+                                                ) [NoMinus]
+                                                TermDeclaration(
+                                                  FactorNew(
+                                                    Type(
+                                                    ) [Type]
+                                                    ExprOptionalWBrackets(
+                                                      Expression(
+                                                        NoMinus(
+                                                        ) [NoMinus]
+                                                        TermDeclaration(
+                                                          FactorConst(
+                                                            ConstNumber(
+                                                             3
+                                                            ) [ConstNumber]
+                                                          ) [FactorConst]
+                                                          NoMulopFactorLst(
+                                                          ) [NoMulopFactorLst]
+                                                        ) [TermDeclaration]
+                                                        NoAddopTermLst(
+                                                        ) [NoAddopTermLst]
+                                                      ) [Expression]
+                                                    ) [ExprOptionalWBrackets]
+                                                  ) [FactorNew]
+                                                  NoMulopFactorLst(
+                                                  ) [NoMulopFactorLst]
+                                                ) [TermDeclaration]
+                                                NoAddopTermLst(
+                                                ) [NoAddopTermLst]
+                                              ) [Expression]
+                                            ) [DesignatorStatementFill1]
+                                          ) [DesignatorStatement]
+                                        ) [DesignatorStStatement]
+                                      ) [MatchedStmt]
+                                    ) [StmtList]
+                                    MatchedStmt(
+                                      DesignatorStStatement(
+                                        DesignatorStatement(
+                                          DesignatorDerived3(
+                                            ArrayDerived1(
+                                              DesignatorDerived1(
+                                              ) [DesignatorDerived1]
+                                            ) [ArrayDerived1]
+                                            Expression(
+                                              NoMinus(
+                                              ) [NoMinus]
+                                              TermDeclaration(
+                                                FactorConst(
+                                                  ConstNumber(
+                                                   0
+                                                  ) [ConstNumber]
+                                                ) [FactorConst]
+                                                NoMulopFactorLst(
+                                                ) [NoMulopFactorLst]
+                                              ) [TermDeclaration]
+                                              NoAddopTermLst(
+                                              ) [NoAddopTermLst]
+                                            ) [Expression]
+                                          ) [DesignatorDerived3]
+                                          DesignatorStatementFill1(
+                                            OpEq(
+                                            ) [OpEq]
+                                            Expression(
+                                              NoMinus(
+                                              ) [NoMinus]
+                                              TermDeclaration(
+                                                FactorConst(
+                                                  ConstNumber(
+                                                   1
+                                                  ) [ConstNumber]
+                                                ) [FactorConst]
+                                                NoMulopFactorLst(
+                                                ) [NoMulopFactorLst]
+                                              ) [TermDeclaration]
+                                              NoAddopTermLst(
+                                              ) [NoAddopTermLst]
+                                            ) [Expression]
+                                          ) [DesignatorStatementFill1]
+                                        ) [DesignatorStatement]
+                                      ) [DesignatorStStatement]
+                                    ) [MatchedStmt]
+                                  ) [StmtList]
+                                  MatchedStmt(
+                                    DesignatorStStatement(
+                                      DesignatorStatement(
+                                        DesignatorDerived3(
+                                          ArrayDerived1(
+                                            DesignatorDerived1(
+                                            ) [DesignatorDerived1]
+                                          ) [ArrayDerived1]
+                                          Expression(
+                                            NoMinus(
+                                            ) [NoMinus]
+                                            TermDeclaration(
+                                              FactorConst(
+                                                ConstNumber(
+                                                 1
+                                                ) [ConstNumber]
+                                              ) [FactorConst]
+                                              NoMulopFactorLst(
+                                              ) [NoMulopFactorLst]
+                                            ) [TermDeclaration]
+                                            NoAddopTermLst(
+                                            ) [NoAddopTermLst]
+                                          ) [Expression]
+                                        ) [DesignatorDerived3]
+                                        DesignatorStatementFill1(
+                                          OpEq(
+                                          ) [OpEq]
+                                          Expression(
+                                            NoMinus(
+                                            ) [NoMinus]
+                                            TermDeclaration(
+                                              FactorConst(
+                                                ConstNumber(
+                                                 2
+                                                ) [ConstNumber]
+                                              ) [FactorConst]
+                                              NoMulopFactorLst(
+                                              ) [NoMulopFactorLst]
+                                            ) [TermDeclaration]
+                                            NoAddopTermLst(
+                                            ) [NoAddopTermLst]
+                                          ) [Expression]
+                                        ) [DesignatorStatementFill1]
+                                      ) [DesignatorStatement]
+                                    ) [DesignatorStStatement]
+                                  ) [MatchedStmt]
+                                ) [StmtList]
+                                MatchedStmt(
+                                  DesignatorStStatement(
+                                    DesignatorStatement(
+                                      DesignatorDerived3(
+                                        ArrayDerived1(
+                                          DesignatorDerived1(
+                                          ) [DesignatorDerived1]
+                                        ) [ArrayDerived1]
+                                        Expression(
+                                          NoMinus(
+                                          ) [NoMinus]
+                                          TermDeclaration(
+                                            FactorConst(
+                                              ConstNumber(
+                                               2
+                                              ) [ConstNumber]
+                                            ) [FactorConst]
+                                            NoMulopFactorLst(
+                                            ) [NoMulopFactorLst]
+                                          ) [TermDeclaration]
+                                          NoAddopTermLst(
+                                          ) [NoAddopTermLst]
+                                        ) [Expression]
+                                      ) [DesignatorDerived3]
+                                      DesignatorStatementFill1(
+                                        OpEq(
+                                        ) [OpEq]
+                                        Expression(
+                                          NoMinus(
+                                          ) [NoMinus]
+                                          TermDeclaration(
+                                            FactorDesignator(
+                                              DesignatorDerived1(
+                                              ) [DesignatorDerived1]
+                                              ActualParsWithParen(
+                                                YesActualPars(
+                                                  ActPars(
+                                                    Expression(
+                                                      NoMinus(
+                                                      ) [NoMinus]
+                                                      TermDeclaration(
+                                                        FactorDesignator(
+                                                          DesignatorDerived3(
+                                                            ArrayDerived1(
+                                                              DesignatorDerived1(
+                                                              ) [DesignatorDerived1]
+                                                            ) [ArrayDerived1]
+                                                            Expression(
+                                                              NoMinus(
+                                                              ) [NoMinus]
+                                                              TermDeclaration(
+                                                                FactorConst(
+                                                                  ConstNumber(
+                                                                   1
+                                                                  ) [ConstNumber]
+                                                                ) [FactorConst]
+                                                                NoMulopFactorLst(
+                                                                ) [NoMulopFactorLst]
+                                                              ) [TermDeclaration]
+                                                              NoAddopTermLst(
+                                                              ) [NoAddopTermLst]
+                                                            ) [Expression]
+                                                          ) [DesignatorDerived3]
+                                                          NoActualParsWithParen(
+                                                          ) [NoActualParsWithParen]
+                                                        ) [FactorDesignator]
+                                                        NoMulopFactorLst(
+                                                        ) [NoMulopFactorLst]
+                                                      ) [TermDeclaration]
+                                                      NoAddopTermLst(
+                                                      ) [NoAddopTermLst]
+                                                    ) [Expression]
+                                                    ExprLst(
+                                                      NoExprLst(
+                                                      ) [NoExprLst]
+                                                      Expression(
+                                                        NoMinus(
+                                                        ) [NoMinus]
+                                                        TermDeclaration(
+                                                          FactorDesignator(
+                                                            DesignatorDerived3(
+                                                              ArrayDerived1(
+                                                                DesignatorDerived1(
+                                                                ) [DesignatorDerived1]
+                                                              ) [ArrayDerived1]
+                                                              Expression(
+                                                                NoMinus(
+                                                                ) [NoMinus]
+                                                                TermDeclaration(
+                                                                  FactorConst(
+                                                                    ConstNumber(
+                                                                     0
+                                                                    ) [ConstNumber]
+                                                                  ) [FactorConst]
+                                                                  NoMulopFactorLst(
+                                                                  ) [NoMulopFactorLst]
+                                                                ) [TermDeclaration]
+                                                                NoAddopTermLst(
+                                                                ) [NoAddopTermLst]
+                                                              ) [Expression]
+                                                            ) [DesignatorDerived3]
+                                                            NoActualParsWithParen(
+                                                            ) [NoActualParsWithParen]
+                                                          ) [FactorDesignator]
+                                                          NoMulopFactorLst(
+                                                          ) [NoMulopFactorLst]
+                                                        ) [TermDeclaration]
+                                                        NoAddopTermLst(
+                                                        ) [NoAddopTermLst]
+                                                      ) [Expression]
+                                                    ) [ExprLst]
+                                                  ) [ActPars]
+                                                ) [YesActualPars]
+                                              ) [ActualParsWithParen]
+                                            ) [FactorDesignator]
+                                            NoMulopFactorLst(
+                                            ) [NoMulopFactorLst]
+                                          ) [TermDeclaration]
+                                          AddopTermLst(
+                                            NoAddopTermLst(
+                                            ) [NoAddopTermLst]
+                                            OpPlus(
+                                            ) [OpPlus]
+                                            TermDeclaration(
+                                              FactorConst(
+                                                ConstNumber(
+                                                 1
+                                                ) [ConstNumber]
+                                              ) [FactorConst]
+                                              NoMulopFactorLst(
+                                              ) [NoMulopFactorLst]
+                                            ) [TermDeclaration]
+                                          ) [AddopTermLst]
+                                        ) [Expression]
+                                      ) [DesignatorStatementFill1]
+                                    ) [DesignatorStatement]
+                                  ) [DesignatorStStatement]
+                                ) [MatchedStmt]
+                              ) [StmtList]
+                              MatchedStmt(
+                                MatchedIf(
+                                  Condition(
+                                    ConditionTerm(
+                                      ConditionFact(
+                                        Expression(
+                                          NoMinus(
+                                          ) [NoMinus]
+                                          TermDeclaration(
+                                            FactorDesignator(
+                                              DesignatorDerived3(
+                                                ArrayDerived1(
+                                                  DesignatorDerived1(
+                                                  ) [DesignatorDerived1]
+                                                ) [ArrayDerived1]
+                                                Expression(
+                                                  NoMinus(
+                                                  ) [NoMinus]
+                                                  TermDeclaration(
+                                                    FactorConst(
+                                                      ConstNumber(
+                                                       2
+                                                      ) [ConstNumber]
+                                                    ) [FactorConst]
+                                                    NoMulopFactorLst(
+                                                    ) [NoMulopFactorLst]
+                                                  ) [TermDeclaration]
+                                                  NoAddopTermLst(
+                                                  ) [NoAddopTermLst]
+                                                ) [Expression]
+                                              ) [DesignatorDerived3]
+                                              NoActualParsWithParen(
+                                              ) [NoActualParsWithParen]
+                                            ) [FactorDesignator]
+                                            NoMulopFactorLst(
+                                            ) [NoMulopFactorLst]
+                                          ) [TermDeclaration]
+                                          NoAddopTermLst(
+                                          ) [NoAddopTermLst]
+                                        ) [Expression]
+                                        RelopExpr(
+                                          OpEqs(
+                                          ) [OpEqs]
+                                          Expression(
+                                            NoMinus(
+                                            ) [NoMinus]
+                                            TermDeclaration(
+                                              FactorConst(
+                                                ConstNumber(
+                                                 4
+                                                ) [ConstNumber]
+                                              ) [FactorConst]
+                                              NoMulopFactorLst(
+                                              ) [NoMulopFactorLst]
+                                            ) [TermDeclaration]
+                                            NoAddopTermLst(
+                                            ) [NoAddopTermLst]
+                                          ) [Expression]
+                                        ) [RelopExpr]
+                                      ) [ConditionFact]
+                                      NoConditionFactList(
+                                      ) [NoConditionFactList]
+                                    ) [ConditionTerm]
+                                    NoConditionTermList(
+                                    ) [NoConditionTermList]
+                                  ) [Condition]
+                                  PrintStatement(
+                                    Expression(
+                                      NoMinus(
+                                      ) [NoMinus]
+                                      TermDeclaration(
+                                        FactorDesignator(
+                                          DesignatorDerived1(
+                                          ) [DesignatorDerived1]
+                                          ActualParsWithParen(
+                                            YesActualPars(
+                                              ActPars(
+                                                Expression(
+                                                  NoMinus(
+                                                  ) [NoMinus]
+                                                  TermDeclaration(
+                                                    FactorConst(
+                                                      ConstChar(
+                                                       A
+                                                      ) [ConstChar]
+                                                    ) [FactorConst]
+                                                    NoMulopFactorLst(
+                                                    ) [NoMulopFactorLst]
+                                                  ) [TermDeclaration]
+                                                  NoAddopTermLst(
+                                                  ) [NoAddopTermLst]
+                                                ) [Expression]
+                                                NoExprLst(
+                                                ) [NoExprLst]
+                                              ) [ActPars]
+                                            ) [YesActualPars]
+                                          ) [ActualParsWithParen]
+                                        ) [FactorDesignator]
+                                        NoMulopFactorLst(
+                                        ) [NoMulopFactorLst]
+                                      ) [TermDeclaration]
+                                      NoAddopTermLst(
+                                      ) [NoAddopTermLst]
+                                    ) [Expression]
+                                    NoNumConsts(
+                                    ) [NoNumConsts]
+                                  ) [PrintStatement]
+                                  PrintStatement(
+                                    Expression(
+                                      NoMinus(
+                                      ) [NoMinus]
+                                      TermDeclaration(
+                                        FactorDesignator(
+                                          DesignatorDerived1(
+                                          ) [DesignatorDerived1]
+                                          ActualParsWithParen(
+                                            YesActualPars(
+                                              ActPars(
+                                                Expression(
+                                                  NoMinus(
+                                                  ) [NoMinus]
+                                                  TermDeclaration(
+                                                    FactorConst(
+                                                      ConstChar(
+                                                       a
+                                                      ) [ConstChar]
+                                                    ) [FactorConst]
+                                                    NoMulopFactorLst(
+                                                    ) [NoMulopFactorLst]
+                                                  ) [TermDeclaration]
+                                                  NoAddopTermLst(
+                                                  ) [NoAddopTermLst]
+                                                ) [Expression]
+                                                NoExprLst(
+                                                ) [NoExprLst]
+                                              ) [ActPars]
+                                            ) [YesActualPars]
+                                          ) [ActualParsWithParen]
+                                        ) [FactorDesignator]
+                                        NoMulopFactorLst(
+                                        ) [NoMulopFactorLst]
+                                      ) [TermDeclaration]
+                                      NoAddopTermLst(
+                                      ) [NoAddopTermLst]
+                                    ) [Expression]
+                                    NoNumConsts(
+                                    ) [NoNumConsts]
+                                  ) [PrintStatement]
+                                ) [MatchedIf]
+                              ) [MatchedStmt]
+                            ) [StmtList]
+                            MatchedStmt(
+                              PrintStatement(
+                                Expression(
+                                  NoMinus(
+                                  ) [NoMinus]
+                                  TermDeclaration(
+                                    FactorDesignator(
+                                      DesignatorDerived1(
+                                      ) [DesignatorDerived1]
+                                      NoActualParsWithParen(
+                                      ) [NoActualParsWithParen]
+                                    ) [FactorDesignator]
+                                    NoMulopFactorLst(
+                                    ) [NoMulopFactorLst]
+                                  ) [TermDeclaration]
+                                  NoAddopTermLst(
+                                  ) [NoAddopTermLst]
+                                ) [Expression]
+                                NoNumConsts(
+                                ) [NoNumConsts]
+                              ) [PrintStatement]
+                            ) [MatchedStmt]
+                          ) [StmtList]
+                          MatchedStmt(
+                            DesignatorStStatement(
+                              DesignatorStatement(
+                                DesignatorDerived1(
+                                ) [DesignatorDerived1]
+                                DesignatorStatementFill1(
+                                  OpEq(
+                                  ) [OpEq]
+                                  Expression(
+                                    NoMinus(
+                                    ) [NoMinus]
+                                    TermDeclaration(
+                                      FactorConst(
+                                        ConstNumber(
+                                         0
+                                        ) [ConstNumber]
+                                      ) [FactorConst]
+                                      NoMulopFactorLst(
+                                      ) [NoMulopFactorLst]
+                                    ) [TermDeclaration]
+                                    NoAddopTermLst(
+                                    ) [NoAddopTermLst]
+                                  ) [Expression]
+                                ) [DesignatorStatementFill1]
+                              ) [DesignatorStatement]
+                            ) [DesignatorStStatement]
+                          ) [MatchedStmt]
+                        ) [StmtList]
+                        UnmatchedStmt(
+                          UnmatchedIf(
+                            Condition(
+                              ConditionTerm(
+                                ConditionFact(
+                                  Expression(
+                                    NoMinus(
+                                    ) [NoMinus]
+                                    TermDeclaration(
+                                      FactorDesignator(
+                                        DesignatorDerived1(
+                                        ) [DesignatorDerived1]
+                                        NoActualParsWithParen(
+                                        ) [NoActualParsWithParen]
+                                      ) [FactorDesignator]
+                                      NoMulopFactorLst(
+                                      ) [NoMulopFactorLst]
+                                    ) [TermDeclaration]
+                                    NoAddopTermLst(
+                                    ) [NoAddopTermLst]
+                                  ) [Expression]
+                                  RelopExpr(
+                                    OpEqs(
+                                    ) [OpEqs]
+                                    Expression(
+                                      NoMinus(
+                                      ) [NoMinus]
+                                      TermDeclaration(
+                                        FactorConst(
+                                          ConstNumber(
+                                           3
+                                          ) [ConstNumber]
+                                        ) [FactorConst]
+                                        NoMulopFactorLst(
+                                        ) [NoMulopFactorLst]
+                                      ) [TermDeclaration]
+                                      NoAddopTermLst(
+                                      ) [NoAddopTermLst]
+                                    ) [Expression]
+                                  ) [RelopExpr]
+                                ) [ConditionFact]
+                                NoConditionFactList(
+                                ) [NoConditionFactList]
+                              ) [ConditionTerm]
+                              NoConditionTermList(
+                              ) [NoConditionTermList]
+                            ) [Condition]
+                            MatchedStmt(
+                              ListOfStatements(
+                                StmtList(
+                                  StmtList(
+                                    NoStmtList(
+                                    ) [NoStmtList]
+                                    MatchedStmt(
+                                      DesignatorStStatement(
+                                        DesignatorStatement(
+                                          DesignatorDerived1(
+                                          ) [DesignatorDerived1]
+                                          DesignatorStatementFill3(
+                                          ) [DesignatorStatementFill3]
+                                        ) [DesignatorStatement]
+                                      ) [DesignatorStStatement]
+                                    ) [MatchedStmt]
+                                  ) [StmtList]
+                                  MatchedStmt(
+                                    ContinueStatement(
+                                    ) [ContinueStatement]
+                                  ) [MatchedStmt]
+                                ) [StmtList]
+                              ) [ListOfStatements]
+                            ) [MatchedStmt]
+                          ) [UnmatchedIf]
+                        ) [UnmatchedStmt]
+                      ) [StmtList]
+                      UnmatchedStmt(
+                        UnmatchedIf(
+                          Condition(
+                            ConditionTerm(
+                              ConditionFact(
+                                Expression(
+                                  NoMinus(
+                                  ) [NoMinus]
+                                  TermDeclaration(
+                                    FactorDesignator(
+                                      DesignatorDerived1(
+                                      ) [DesignatorDerived1]
+                                      NoActualParsWithParen(
+                                      ) [NoActualParsWithParen]
+                                    ) [FactorDesignator]
+                                    NoMulopFactorLst(
+                                    ) [NoMulopFactorLst]
+                                  ) [TermDeclaration]
+                                  NoAddopTermLst(
+                                  ) [NoAddopTermLst]
+                                ) [Expression]
+                                RelopExpr(
+                                  OpEqs(
+                                  ) [OpEqs]
+                                  Expression(
+                                    NoMinus(
+                                    ) [NoMinus]
+                                    TermDeclaration(
+                                      FactorConst(
+                                        ConstNumber(
+                                         4
+                                        ) [ConstNumber]
+                                      ) [FactorConst]
+                                      NoMulopFactorLst(
+                                      ) [NoMulopFactorLst]
+                                    ) [TermDeclaration]
+                                    NoAddopTermLst(
+                                    ) [NoAddopTermLst]
+                                  ) [Expression]
+                                ) [RelopExpr]
+                              ) [ConditionFact]
+                              NoConditionFactList(
+                              ) [NoConditionFactList]
+                            ) [ConditionTerm]
+                            NoConditionTermList(
+                            ) [NoConditionTermList]
+                          ) [Condition]
+                          MatchedStmt(
+                            BreakStatement(
+                            ) [BreakStatement]
+                          ) [MatchedStmt]
+                        ) [UnmatchedIf]
+                      ) [UnmatchedStmt]
+                    ) [StmtList]
+                    MatchedStmt(
+                      DesignatorStStatement(
+                        DesignatorStatement(
+                          DesignatorDerived1(
+                          ) [DesignatorDerived1]
+                          DesignatorStatementFill1(
+                            OpEq(
+                            ) [OpEq]
+                            Expression(
+                              NoMinus(
+                              ) [NoMinus]
+                              TermDeclaration(
+                                FactorDesignator(
+                                  DesignatorDerived1(
+                                  ) [DesignatorDerived1]
+                                  ActualParsWithParen(
+                                    YesActualPars(
+                                      ActPars(
+                                        Expression(
+                                          NoMinus(
+                                          ) [NoMinus]
+                                          TermDeclaration(
+                                            FactorDesignator(
+                                              DesignatorDerived1(
+                                              ) [DesignatorDerived1]
+                                              NoActualParsWithParen(
+                                              ) [NoActualParsWithParen]
+                                            ) [FactorDesignator]
+                                            NoMulopFactorLst(
+                                            ) [NoMulopFactorLst]
+                                          ) [TermDeclaration]
+                                          NoAddopTermLst(
+                                          ) [NoAddopTermLst]
+                                        ) [Expression]
+                                        NoExprLst(
+                                        ) [NoExprLst]
+                                      ) [ActPars]
+                                    ) [YesActualPars]
+                                  ) [ActualParsWithParen]
+                                ) [FactorDesignator]
+                                NoMulopFactorLst(
+                                ) [NoMulopFactorLst]
+                              ) [TermDeclaration]
+                              NoAddopTermLst(
+                              ) [NoAddopTermLst]
+                            ) [Expression]
+                          ) [DesignatorStatementFill1]
+                        ) [DesignatorStatement]
+                      ) [DesignatorStStatement]
+                    ) [MatchedStmt]
+                  ) [StmtList]
+                  MatchedStmt(
+                    MatchedIf(
+                      Condition(
+                        ConditionTerm(
+                          ConditionFact(
+                            Expression(
+                              NoMinus(
+                              ) [NoMinus]
+                              TermDeclaration(
+                                FactorDesignator(
+                                  DesignatorDerived1(
+                                  ) [DesignatorDerived1]
+                                  NoActualParsWithParen(
+                                  ) [NoActualParsWithParen]
+                                ) [FactorDesignator]
+                                NoMulopFactorLst(
+                                ) [NoMulopFactorLst]
+                              ) [TermDeclaration]
+                              NoAddopTermLst(
+                              ) [NoAddopTermLst]
+                            ) [Expression]
+                            RelopExpr(
+                              OpEqs(
+                              ) [OpEqs]
+                              Expression(
+                                NoMinus(
+                                ) [NoMinus]
+                                TermDeclaration(
+                                  FactorConst(
+                                    ConstNumber(
+                                     3
+                                    ) [ConstNumber]
+                                  ) [FactorConst]
+                                  NoMulopFactorLst(
+                                  ) [NoMulopFactorLst]
+                                ) [TermDeclaration]
+                                NoAddopTermLst(
+                                ) [NoAddopTermLst]
+                              ) [Expression]
+                            ) [RelopExpr]
+                          ) [ConditionFact]
+                          NoConditionFactList(
+                          ) [NoConditionFactList]
+                        ) [ConditionTerm]
+                        NoConditionTermList(
+                        ) [NoConditionTermList]
+                      ) [Condition]
+                      PrintStatement(
+                        Expression(
+                          NoMinus(
+                          ) [NoMinus]
+                          TermDeclaration(
+                            FactorConst(
+                              ConstNumber(
+                               4
+                              ) [ConstNumber]
+                            ) [FactorConst]
+                            NoMulopFactorLst(
+                            ) [NoMulopFactorLst]
+                          ) [TermDeclaration]
+                          NoAddopTermLst(
+                          ) [NoAddopTermLst]
+                        ) [Expression]
+                        NoNumConsts(
+                        ) [NoNumConsts]
+                      ) [PrintStatement]
+                      PrintStatement(
+                        Expression(
+                          Minus(
+                          ) [Minus]
+                          TermDeclaration(
+                            FactorConst(
+                              ConstNumber(
+                               4
+                              ) [ConstNumber]
+                            ) [FactorConst]
+                            NoMulopFactorLst(
+                            ) [NoMulopFactorLst]
+                          ) [TermDeclaration]
+                          NoAddopTermLst(
+                          ) [NoAddopTermLst]
+                        ) [Expression]
+                        NoNumConsts(
+                        ) [NoNumConsts]
+                      ) [PrintStatement]
+                    ) [MatchedIf]
+                  ) [MatchedStmt]
+                ) [StmtList]
+                MatchedStmt(
+                  ReadStatement(
+                    DesignatorDerived3(
+                      ArrayDerived1(
+                        DesignatorDerived1(
+                        ) [DesignatorDerived1]
+                      ) [ArrayDerived1]
+                      Expression(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermDeclaration(
+                          FactorConst(
+                            ConstNumber(
+                             0
+                            ) [ConstNumber]
+                          ) [FactorConst]
+                          NoMulopFactorLst(
+                          ) [NoMulopFactorLst]
+                        ) [TermDeclaration]
+                        NoAddopTermLst(
+                        ) [NoAddopTermLst]
+                      ) [Expression]
+                    ) [DesignatorDerived3]
+                  ) [ReadStatement]
+                ) [MatchedStmt]
+              ) [StmtList]
+              MatchedStmt(
+                ReadStatement(
+                  DesignatorDerived3(
+                    ArrayDerived1(
+                      DesignatorDerived1(
+                      ) [DesignatorDerived1]
+                    ) [ArrayDerived1]
+                    Expression(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermDeclaration(
+                        FactorConst(
+                          ConstNumber(
+                           1
+                          ) [ConstNumber]
+                        ) [FactorConst]
+                        NoMulopFactorLst(
+                        ) [NoMulopFactorLst]
+                      ) [TermDeclaration]
+                      NoAddopTermLst(
+                      ) [NoAddopTermLst]
+                    ) [Expression]
+                  ) [DesignatorDerived3]
+                ) [ReadStatement]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              ReadStatement(
+                DesignatorDerived3(
+                  ArrayDerived1(
+                    DesignatorDerived1(
+                    ) [DesignatorDerived1]
+                  ) [ArrayDerived1]
+                  Expression(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermDeclaration(
+                      FactorConst(
+                        ConstNumber(
+                         2
+                        ) [ConstNumber]
+                      ) [FactorConst]
+                      NoMulopFactorLst(
+                      ) [NoMulopFactorLst]
+                    ) [TermDeclaration]
+                    NoAddopTermLst(
+                    ) [NoAddopTermLst]
+                  ) [Expression]
+                ) [DesignatorDerived3]
+              ) [ReadStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            PrintStatement(
+              Expression(
+                NoMinus(
+                ) [NoMinus]
+                TermDeclaration(
+                  FactorDesignator(
+                    DesignatorDerived1(
+                    ) [DesignatorDerived1]
+                    NoActualParsWithParen(
+                    ) [NoActualParsWithParen]
+                  ) [FactorDesignator]
+                  NoMulopFactorLst(
+                  ) [NoMulopFactorLst]
+                ) [TermDeclaration]
+                NoAddopTermLst(
+                ) [NoAddopTermLst]
+              ) [Expression]
+              NoNumConsts(
+              ) [NoNumConsts]
+            ) [PrintStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStatement(
+            Expression(
+              NoMinus(
+              ) [NoMinus]
+              TermDeclaration(
+                FactorDesignator(
+                  DesignatorDerived1(
+                  ) [DesignatorDerived1]
+                  ActualParsWithParen(
+                    YesActualPars(
+                      ActPars(
+                        Expression(
+                          NoMinus(
+                          ) [NoMinus]
+                          TermDeclaration(
+                            FactorDesignator(
+                              DesignatorDerived1(
+                              ) [DesignatorDerived1]
+                              ActualParsWithParen(
+                                YesActualPars(
+                                  ActPars(
+                                    Expression(
+                                      NoMinus(
+                                      ) [NoMinus]
+                                      TermDeclaration(
+                                        FactorDesignator(
+                                          DesignatorDerived3(
+                                            ArrayDerived1(
+                                              DesignatorDerived1(
+                                              ) [DesignatorDerived1]
+                                            ) [ArrayDerived1]
+                                            Expression(
+                                              NoMinus(
+                                              ) [NoMinus]
+                                              TermDeclaration(
+                                                FactorConst(
+                                                  ConstNumber(
+                                                   0
+                                                  ) [ConstNumber]
+                                                ) [FactorConst]
+                                                NoMulopFactorLst(
+                                                ) [NoMulopFactorLst]
+                                              ) [TermDeclaration]
+                                              NoAddopTermLst(
+                                              ) [NoAddopTermLst]
+                                            ) [Expression]
+                                          ) [DesignatorDerived3]
+                                          NoActualParsWithParen(
+                                          ) [NoActualParsWithParen]
+                                        ) [FactorDesignator]
+                                        NoMulopFactorLst(
+                                        ) [NoMulopFactorLst]
+                                      ) [TermDeclaration]
+                                      NoAddopTermLst(
+                                      ) [NoAddopTermLst]
+                                    ) [Expression]
+                                    ExprLst(
+                                      NoExprLst(
+                                      ) [NoExprLst]
+                                      Expression(
+                                        NoMinus(
+                                        ) [NoMinus]
+                                        TermDeclaration(
+                                          FactorDesignator(
+                                            DesignatorDerived3(
+                                              ArrayDerived1(
+                                                DesignatorDerived1(
+                                                ) [DesignatorDerived1]
+                                              ) [ArrayDerived1]
+                                              Expression(
+                                                NoMinus(
+                                                ) [NoMinus]
+                                                TermDeclaration(
+                                                  FactorConst(
+                                                    ConstNumber(
+                                                     1
+                                                    ) [ConstNumber]
+                                                  ) [FactorConst]
+                                                  NoMulopFactorLst(
+                                                  ) [NoMulopFactorLst]
+                                                ) [TermDeclaration]
+                                                NoAddopTermLst(
+                                                ) [NoAddopTermLst]
+                                              ) [Expression]
+                                            ) [DesignatorDerived3]
+                                            NoActualParsWithParen(
+                                            ) [NoActualParsWithParen]
+                                          ) [FactorDesignator]
+                                          NoMulopFactorLst(
+                                          ) [NoMulopFactorLst]
+                                        ) [TermDeclaration]
+                                        NoAddopTermLst(
+                                        ) [NoAddopTermLst]
+                                      ) [Expression]
+                                    ) [ExprLst]
+                                  ) [ActPars]
+                                ) [YesActualPars]
+                              ) [ActualParsWithParen]
+                            ) [FactorDesignator]
+                            NoMulopFactorLst(
+                            ) [NoMulopFactorLst]
+                          ) [TermDeclaration]
+                          NoAddopTermLst(
+                          ) [NoAddopTermLst]
+                        ) [Expression]
+                        ExprLst(
+                          NoExprLst(
+                          ) [NoExprLst]
+                          Expression(
+                            NoMinus(
+                            ) [NoMinus]
+                            TermDeclaration(
+                              FactorDesignator(
+                                DesignatorDerived3(
+                                  ArrayDerived1(
+                                    DesignatorDerived1(
+                                    ) [DesignatorDerived1]
+                                  ) [ArrayDerived1]
+                                  Expression(
+                                    NoMinus(
+                                    ) [NoMinus]
+                                    TermDeclaration(
+                                      FactorConst(
+                                        ConstNumber(
+                                         2
+                                        ) [ConstNumber]
+                                      ) [FactorConst]
+                                      NoMulopFactorLst(
+                                      ) [NoMulopFactorLst]
+                                    ) [TermDeclaration]
+                                    NoAddopTermLst(
+                                    ) [NoAddopTermLst]
+                                  ) [Expression]
+                                ) [DesignatorDerived3]
+                                NoActualParsWithParen(
+                                ) [NoActualParsWithParen]
+                              ) [FactorDesignator]
+                              NoMulopFactorLst(
+                              ) [NoMulopFactorLst]
+                            ) [TermDeclaration]
+                            NoAddopTermLst(
+                            ) [NoAddopTermLst]
+                          ) [Expression]
+                        ) [ExprLst]
+                      ) [ActPars]
+                    ) [YesActualPars]
+                  ) [ActualParsWithParen]
+                ) [FactorDesignator]
+                NoMulopFactorLst(
+                ) [NoMulopFactorLst]
+              ) [TermDeclaration]
+              NoAddopTermLst(
+              ) [NoAddopTermLst]
+            ) [Expression]
+            NoNumConsts(
+            ) [NoNumConsts]
+          ) [PrintStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program1]
+INFO  03:38:51,018 - ===================================
+INFO  03:38:51,023 -  Print count calls = 11
+INFO  03:38:51,023 -  Deklarisanih globalnih promenljivih ima = 3
+INFO  03:38:51,023 -  Deklarisanih lokalnih promenljivih ima = 1
+INFO  03:38:51,024 - Konstanti ima = 0

@@ -1,0 +1,29 @@
+program MJProgram
+{	int x,y;
+	int mnozenje(int a, int b){
+		return a * b;
+	}
+	
+	int sabiranje(int a, int b){
+		return a + b;
+	}
+	
+	int oduzimanje(int a, int b){
+		return a - b;
+	}
+	
+	int deljenje(int a, int b){
+		return a/b;
+	}
+	
+	void D(){
+		print('d', 20);
+	}
+	
+	
+	
+	void main() int b[];
+	{
+		print(oduzimanje(x,y));
+	}
+}

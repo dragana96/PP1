@@ -1,0 +1,65 @@
+/*
+package rs.ac.bg.etf.pp1;
+import rs.ac.bg.etf.pp1.ast.*;
+import org.apache.log4j.*;
+
+public class RuleVisitor extends VisitorAdaptor {
+	
+	//Logger log = Logger.getLogger(MJParserTest.class);
+	int printCallCount = 0;
+	int globalVarDeclCount = 0;
+	int varDeclCount = 0;
+	int constDeclCount = 0;
+
+	 
+	
+	  public void visit(GVarDeclaration Var) { 
+	    	
+		  globalVarDeclCount++;
+	    	//log.info("Prepoznata deklaracija promenljive!");
+	    	
+	    
+	    }
+	  
+	  public void visit(GVarArray Var) { 
+	    	
+		  globalVarDeclCount++;
+	    	//log.info("Prepoznata deklaracija promenljive!");
+	    	
+	    
+	    }
+	  
+	  public void visit(LVarDeclaration Var) { 
+	    	
+		  varDeclCount++;
+	    	//log.info("Prepoznata deklaracija promenljive!");
+	    	
+	    
+	    }
+	  
+	  public void visit(LVarArray Var) { 
+	    	
+		 varDeclCount++;
+	    	//log.info("Prepoznata deklaracija promenljive!");
+	    	
+	    
+	    }
+	  
+	  public void visit(ConstDeclrtion ConstDeclaration) { 
+	    	
+		    constDeclCount++;
+	    //	log.info("Prepoznata deklaracija promenljive!");
+	    	
+	    
+	    }
+    public void visit(PrintStatement PrintStatement) { 
+    	
+    	printCallCount++;
+    	//log.info("Prepoznata naredba print!");
+    	
+    
+    }
+
+
+}
+*/

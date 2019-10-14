@@ -1,0 +1,725 @@
+
+package rs.ac.bg.etf.pp1;
+
+import java.util.Stack;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+import org.apache.log4j.Logger;
+
+public class SemanticAnalyzer extends VisitorAdaptor {
+
+	int globalVarDeclCount = 0;
+	int varDeclCount = 0;
+	int constDeclCount = 0;
+	int printCallCount = 0;
+	int nVars;
+	boolean errorDetected = false;
+
+	Obj currentEnum = null;
+	int numEnumConst = 0;
+	List<Integer> enumConst = new ArrayList<Integer>();
+
+	Obj currentMethod = null;
+	Struct currentMethodType;
+	boolean returnFound = false;
+
+	Struct currentType = null;
+	int currentLevel = 0;
+	Stack<Obj> paramStack = new Stack<Obj>();
+	Stack<Integer> numParamStack = new Stack<Integer>();
+
+	Logger log = Logger.getLogger(getClass());
+
+	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.error(msg.toString());
+	}
+
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- PROGRAM --------------------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+	public void visit(ProgName progName) {
+
+		report_info("Pocetak programa  " + progName.getProgramName(), progName);
+		// Pravi se novi Obj cvor sa prosledjenim atributima kind, name i type, pa se
+		// zatim ubacuje u tabelu simbola.
+		// Povratna vrednost:
+		// novostvoreni cvor, ako cvor sa tim imenom nije vec postojao u tabeli simbola.
+		// postojeci cvor iz tabele simbola, ako je doslo do greske jer smo pokusali da
+		// u tabelu simbola
+		// za opseg ubacimo cvor sa imenom koje vec postoji.
+		progName.obj = TabExtended.insert(Obj.Prog, progName.getProgramName(), TabExtended.noType);
+		TabExtended.insert(Obj.Type, "bool", TabExtended.boolType);
+		TabExtended.openScope(); // otvaranje novog opsega
+
+	}
+
+	public void visit(Program program) {
+
+		// moramo da ulancamo sve lokalne simbole
+		nVars = Tab.currentScope.getnVars();
+		
+		TabExtended.chainLocalSymbols(program.getProgName().obj);
+		TabExtended.closeScope(); // zatvaramo scope
+		report_info("Kraj ", null);
+	}
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- TIP ------------------------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+	public void visit(Type type) {
+
+		// proveravamo da li se radi o tipu
+		// U hes tabeli opsega trazi Obj cvor sa imenom name, pocevsi od
+		// najugnezdenijeg opsega, pa redom kroz opsege na nizim nivoima.
+		// Povratna vrednost:
+		// - pronadjeni Obj cvor, ako je pretrazivanje bilo uspesno.
+		// -TabExtended.noObj objekat, ako je pretrazivanje bilo neuspesno.
+		Obj typeNode = TabExtended.find(type.getTypeName());
+		if (typeNode == TabExtended.noObj) {
+			report_error("Greska: Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola", type);
+			type.struct = TabExtended.noType; // povratna vrednost
+		} else {
+			if (Obj.Type == typeNode.getKind()) {
+				type.struct = typeNode.getType();
+			} else {
+				report_error("Greska: Ime " + type.getTypeName() + " ne predstavlja tip ", type);
+				type.struct = TabExtended.noType;
+			}
+
+		}
+		currentType = type.struct;
+	}
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- GLOBALNE PROMENLJIVE -------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+	public void visit(GVarDecl varDecl) {
+		currentType = null;
+	}
+
+	public void visit(GVarDeclaration globalVar) {
+		globalVarDeclCount++;
+		report_info(currentType.getKind() + "glo var", null);
+
+		// moramo izvrsiti proveru da li je vec deklarisana
+		// tek onda mozemo da ubacimo u listu simbola
+
+		if (TabExtended.currentScope().findSymbol(globalVar.getGlobalVarName()) != null) {
+			report_error("Greska na liniji " + globalVar.getLine() + ", promenljiva " + globalVar.getGlobalVarName()
+					+ " je vec deklarisana", null);
+		} else {
+			report_info("Deklarisana globalna promenljiva " + globalVar.getGlobalVarName(), globalVar);
+			TabExtended.insert(Obj.Var, globalVar.getGlobalVarName(), currentType);
+		}
+	}
+
+	public void visit(GVarArray globalVarArray) {
+		globalVarDeclCount++;
+		report_info(currentType.getKind() + "glo niz", null);
+		// moramo izvrsiti proveru da li je vec deklarisana
+		// tek onda mozemo da ubacimo u listu simbola
+
+		if (TabExtended.currentScope().findSymbol(globalVarArray.getGlobalVarName()) != null) {
+			report_error("Greska na liniji " + globalVarArray.getLine() + ", niz " + globalVarArray.getGlobalVarName()
+					+ " je vec deklarisan", null);
+		} else {
+			report_info("Deklarisan globalni niz " + globalVarArray.getGlobalVarName(), globalVarArray);
+			TabExtended.insert(Obj.Var, globalVarArray.getGlobalVarName(), currentType);
+		}
+	}
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- LOKALNE PROMENLJIVE --------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+	public void visit(LVarDecl varDecl) {
+		currentType = null;
+	}
+
+	public void visit(LVarDeclaration localVar) {
+
+		// moramo izvrsiti proveru da li je vec deklarisana
+		// tek onda mozemo da ubacimo u listu simbola
+		varDeclCount++;
+		report_info(currentType.getKind() + "lok var", null);
+
+		if (TabExtended.currentScope().findSymbol(localVar.getLocalVarName()) != null) {
+			report_error("Greska na liniji " + localVar.getLine() + ", promenljiva " + localVar.getLocalVarName()
+					+ " je vec deklarisana", null);
+			return;
+		} else {
+			report_info("Deklarisana lokalna promenljiva " + localVar.getLocalVarName(), localVar);
+			TabExtended.insert(Obj.Var, localVar.getLocalVarName(), currentType);
+		}
+	}
+
+	public void visit(LVarArray localVarArray) {
+		varDeclCount++;
+		report_info(currentType.getKind() + "lok niz", null);
+		// moramo izvrsiti proveru da li je vec deklarisana
+		// tek onda mozemo da ubacimo u listu simbola
+
+		if (TabExtended.currentScope().findSymbol(localVarArray.getLocalArrName()) != null) {
+			report_error("Greska na liniji " + localVarArray.getLine() + ", niz " + localVarArray.getLocalArrName()
+					+ " je vec deklarisan", null);
+			return;
+		} else {
+			report_info("Deklarisan lokalni niz " + localVarArray.getLocalArrName(), localVarArray);
+			TabExtended.insert(Obj.Var, localVarArray.getLocalArrName(), currentType);
+		}
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- ENUM -----------------------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+
+	public void visit(EnumDecl en) {
+		if (TabExtended.currentScope().findSymbol(en.getEnumName()) != null) {
+			report_error("Greska na liniji " + en.getLine() + " : enum " + en.getEnumName() + " je vec deklarisan! ",
+					null);
+			return;
+		}
+		currentEnum = TabExtended.insert(Obj.Type, en.getEnumName(), TabExtended.enumType);
+		
+		en.obj = currentEnum;
+		
+		TabExtended.openScope();
+		report_info("Obradjuje se enum " + en.getEnumName(), en);
+	}
+	
+	
+	public void visit(EnumWithValue enumValue) {
+
+		report_info("Dodeljivanje vrednosti elementu enum-a: " + enumValue.getName() + ", vrednost je: " + enumValue.getEnumValue(), null);
+		enumValue.obj = TabExtended.insert(Obj.Con, enumValue.getName(), Tab.intType);
+		enumValue.obj.setAdr(enumValue.getEnumValue());
+		
+	}
+	
+	public void visit(EnumNoValue enumValue) {
+
+		report_info("Dodeljivanje vrednosti elementu enum-a: " + enumValue.getName() + ", vrednost je: 0 " , null);
+		enumValue.obj = TabExtended.insert(Obj.Con, enumValue.getName(), Tab.intType);
+		enumValue.obj.setAdr(0);
+		
+	}
+	
+	
+	
+
+	public void visit(EnumDeclaration en) {
+		if (currentEnum == null)
+			return;
+
+		TabExtended.chainLocalSymbols(currentEnum);
+		TabExtended.closeScope();
+
+		currentEnum = null;
+		numEnumConst = 0;
+		enumConst = null;
+
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- KONSTANTE ------------------------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+
+	public void visit(ConstDecl con) {
+		currentType = null;
+	}
+
+	public void visit(ConstDeclaration constDecl) {
+		report_info(currentType.getKind() + "konstanta", null);
+		constDeclCount++;
+		if (TabExtended.currentScope().findSymbol(constDecl.getConstName()) != null) {
+			report_error("Greska na liniji " + constDecl.getLine() + " : konstanta " + constDecl.getConstName()
+					+ " vec deklarisana! ", null);
+			// return;
+		}
+		TabExtended.insert(Obj.Con, constDecl.getConstName(), currentType);
+		report_info("Deklarisana konstanta " + constDecl.getConstName(), constDecl);
+
+		int address = 0;
+
+		if (constDecl.getConstValue() instanceof ConstNumber) {
+			address = ((ConstNumber) constDecl.getConstValue()).getN();
+			constDecl.getConstValue().struct = TabExtended.intType;
+		} else if (constDecl.getConstValue() instanceof ConstChar) {
+			address = ((ConstChar) constDecl.getConstValue()).getC();
+			constDecl.getConstValue().struct = TabExtended.charType;
+		} else if (constDecl.getConstValue() instanceof ConstBool) {
+			String value = ((ConstBool) constDecl.getConstValue()).getB();
+			constDecl.getConstValue().struct = TabExtended.boolType;
+			address = value.equals("true") ? 1 : 0;
+		}
+
+		if (currentType.equals(constDecl.getConstValue().struct)) {
+			TabExtended.insert(Obj.Con, constDecl.getConstName(), currentType).setAdr(address);
+		} else {
+			report_error("Greska na liniji " + constDecl.getLine()
+					+ " , ne poklapa se tip vrednosti sa tipom konstante " + constDecl.getConstName() + "!", null);
+		}
+
+	}
+
+	public void visit(StartMethodSt st) {
+		TabExtended.chainLocalSymbols(currentMethod);
+	}
+
+	public void visit(MethodName methodName) {
+		// provera da li je deklarisana
+		if (TabExtended.currentScope().findSymbol(methodName.getMethodName()) != null) {
+			report_error("Greska na liniji " + methodName.getLine() + " : metoda " + methodName.getMethodName()
+					+ " vec deklarisana! ", null);
+		}
+
+		// ako nije definisana, ubacujemo u TabExtended tabelu simbola
+		currentMethod = TabExtended.insert(Obj.Meth, methodName.getMethodName(), currentMethodType);
+		methodName.obj = currentMethod;
+
+		// postavljanje parametara
+		currentMethod.setLevel(0);
+		TabExtended.openScope(); // otvaramo novi scope
+		report_info("Obradjuje se  funkcija " + methodName.getMethodName(), methodName);
+	}
+
+	public void visit(MethodDeclaration methodDeclaration) {
+
+		if (currentMethod == null) { // ukoliko je doslo do greske pri deklaraciji
+			return;
+		}
+
+		if (returnFound == false && currentMethod.getType() != TabExtended.noType) {
+			report_error("Greska na liniji " + methodDeclaration.getLine() + ", funkcija " + currentMethod.getName()
+					+ " nema RETURN iskaz!", null);
+		}
+
+		TabExtended.closeScope();
+
+		report_info("Zavrsena funkcija " + currentMethod.getName(), methodDeclaration);
+		returnFound = false;
+		currentMethod = null;
+	}
+
+	public void visit(ReturnMethodType returnMethodType) {
+		currentMethodType = ((ReturnMethodType) returnMethodType).getType().struct;
+		returnFound = false;
+
+	}
+
+	public void visit(VoidMethodType returnType) {
+		returnFound = true;
+		currentMethodType = TabExtended.noType;
+	}
+
+	public void visit(ReturnStatement returnStmt) {
+
+		returnFound = true;
+		Struct currMethType = currentMethod.getType();
+
+		if (!currMethType.compatibleWith(returnStmt.getExpr().struct)) {
+			report_error("Greska na liniji " + returnStmt.getLine() + " : "
+					+ "tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije "
+					+ currentMethod.getName(), null);
+		}
+
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- DESIGNATOR -----------------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+
+	public void visit(DesignatorValue designator) {
+		Obj obj = TabExtended.find(designator.getDesName());
+
+		if (obj == TabExtended.noObj) {
+			report_error("Greska na liniji " + designator.getLine() + " : ime " + designator.getDesName()
+					+ " nije deklarisano!", null);
+			return;
+		} else {
+			report_info("Pristup elementu " + designator.getDesName(), designator);
+		}
+		designator.obj = obj;
+
+	}
+
+	public void visit(DesignatorArray elem) {
+		Obj designator = TabExtended.find(elem.getDesignator().obj.getName());
+		if (elem.getExpr().struct != TabExtended.intType && elem.getExpr().struct != TabExtended.enumType)
+			report_error("Greska na liniji " + elem.getLine() + " : vrednost unutar zagrada mora biti tipa int!", null);
+		if (designator == TabExtended.noObj) {
+			report_error("Greska na liniji " + elem.getLine() + " : niz " + elem.getDesignator().obj.getName()
+					+ " nije deklarisan!", null);
+		} else {
+			report_info("Pristup elementu niza " + elem.getDesignator().obj.getName(), elem);
+		}
+		elem.obj = new Obj(Obj.Elem, elem.getDesignator().obj.getName(), designator.getType());
+	}
+
+	public void visit(DesignatorDot classDesignator) {
+		if (classDesignator.getDesignator().obj.getType().getKind() != TabExtended.Enum)
+			report_error("Greska! Tip mora biti enum. : ", classDesignator);
+		else {
+
+			classDesignator.obj = new Obj(Obj.Con, "", TabExtended.enumType);
+		}
+
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- FORMALNI PARAMETRI ---------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+
+	public void visit(FormParDeclaration formPar) {
+		if (TabExtended.currentScope().findSymbol(formPar.getFormName()) != null) {
+			report_error("Greska na liniji " + formPar.getLine() + " : formalni parametar " + formPar.getFormName()
+					+ " vec deklarisan! ", null);
+		} else {
+			Obj obj = TabExtended.insert(Obj.Var, formPar.getFormName(), formPar.getType().struct);
+			obj.setFpPos(currentMethod.getLevel());
+			currentMethod.setLevel(currentMethod.getLevel() + 1);
+			report_info("Deklarisan formalni parametar: " + formPar.getFormName(), formPar);
+		}
+	}
+
+	public void visit(FormParArr formArray) {
+		if (TabExtended.currentScope().findSymbol(formArray.getFormName()) != null) {
+			report_error("Greska na liniji " + formArray.getLine() + " : formalni parametar " + formArray.getFormName()
+					+ " vec deklarisan! ", null);
+
+		} else {
+			Obj obj = TabExtended.insert(Obj.Var, formArray.getFormName(),
+					new Struct(Struct.Array, formArray.getType().struct));
+			obj.setFpPos(currentMethod.getLevel());
+			currentMethod.setLevel(currentMethod.getLevel() + 1); // dodaje se parametar
+			report_info("Deklarisan formalni parametar: " + formArray.getFormName(), formArray);
+		}
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- FACTOR, TERM, EXPR ---------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+	public void visit(FactorDesignator factorVar) {
+		factorVar.struct = factorVar.getDesignator().obj.getType();
+	}
+
+	public void visit(FactorNumber factorVar) {
+		factorVar.struct = TabExtended.intType;
+	}
+
+	public void visit(FactorChar factorVar) {
+		factorVar.struct = TabExtended.charType;
+	}
+
+	public void visit(FactorBool factorVar) {
+		factorVar.struct = TabExtended.boolType;
+	}
+
+	public void visit(FactorNewArray newArray) {
+		if (newArray.getExpr().struct != TabExtended.intType) {
+			report_error("Greska na liniji " + newArray.getLine() + " : niz mora da bude tipa int!", null);
+		}
+		newArray.struct = new Struct(Struct.Array, newArray.getType().struct);
+	}
+
+	public void visit(FactorExpr factorParen) {
+		factorParen.struct = factorParen.getExpr().struct;
+	}
+
+	public void visit(FactorDesignatorFunction methodCall) {
+
+		Obj func = methodCall.getDesignator().obj;
+
+		if (numParamStack.size() > 0)
+			currentLevel = numParamStack.pop();
+		else
+			currentLevel = 0;
+		if (func.getKind() == Obj.Meth) {
+
+			if(TabExtended.noType == func.getType()) {
+				report_error("Semanticka greska: funkcija " + func.getName() + " se ne moze koristiti u izrazima jer nema povratnu vrednost, na liniji " + methodCall.getLine(), null);
+
+			} else
+			report_info("Pronadjen poziv funkcije: " + func.getName() + " na liniji " + methodCall.getLine(), null);
+
+			if (func.getLevel() != currentLevel) {
+				report_error("Neodgovarajuci broj parametara funkcije  " + func.getName() + " ! Greska ", methodCall);
+				paramStack.removeAllElements();
+				return;
+			}
+
+			if (func.getLevel() > 0) {
+				Iterator<Obj> itPar = func.getLocalSymbols().iterator();
+
+				for (int i = 0; i < currentLevel && !paramStack.isEmpty(); i++ ) {
+
+					Struct stackPop = paramStack.pop().getType();
+					Struct nextIt = itPar.next().getType();
+					if (!stackPop.assignableTo(nextIt)) {
+						if (!(((stackPop.getKind() == 6) && (nextIt.getKind() == 1)) || ((stackPop.getKind() == 1) && (nextIt.getKind() == 6))))
+							report_error("Greska na liniji " + methodCall.getLine()
+									+ " : pogresan tip parametara u funkciji " + func.getName(), null);
+					}
+
+				}
+			}
+		} else {
+			report_error("Greska na liniji " + methodCall.getLine() + " : procCall, ime " + func.getName()
+					+ " nije funkcija!", null);
+			// ako postoje neki parametri treba ih skloniti sa steka
+			paramStack.removeAllElements();
+			return;
+		}
+
+		currentLevel = 0;
+		methodCall.struct = func.getType();
+	}
+
+	// ----
+
+	public void visit(TermFactor termFactor) {
+		termFactor.struct = termFactor.getFactor().struct;
+	}
+
+	public void visit(TermMulopFactor term) {
+		if (term.getFactor().struct != TabExtended.intType && term.getFactor().struct != TabExtended.enumType
+				&& term.getFactor().struct.getKind() != 3)
+			report_error("Greska na liniji " + term.getLine() + " : tipovi kod mnozenja moraju biti int!", null);
+		if (term.getTerm().struct != TabExtended.intType && term.getTerm().struct != TabExtended.enumType
+				&& term.getTerm().struct.getKind() != 3)
+			report_error("Greska na liniji " + term.getLine() + " : tipovi kod mnozenja moraju biti int!", null);
+		term.struct = term.getFactor().struct;
+	}
+
+	// ------
+
+	public void visit(ExprTerm exprTerm) {
+		exprTerm.struct = exprTerm.getTerm().struct;
+	}
+
+	public void visit(ExprAddop exprAddop) {
+
+		if (exprAddop.getExpresion().struct.compatibleWith(exprAddop.getTerm().struct)
+				|| ((exprAddop.getExpresion().struct == TabExtended.intType
+						|| exprAddop.getExpresion().struct == TabExtended.enumType)
+						&& (exprAddop.getTerm().struct == TabExtended.intType
+								|| exprAddop.getTerm().struct == TabExtended.enumType))) {
+			exprAddop.struct = exprAddop.getExpresion().struct;
+		} else {
+			report_error("Greska na liniji " + exprAddop.getLine() + " : nekompatibilni tipovi u izrazu za sabiranje!",
+					null);
+			exprAddop.struct = TabExtended.noType;
+		}
+
+	}
+
+	public void visit(Expr expr) {
+
+		if (expr.getExpresion().struct != null)
+			expr.struct = expr.getExpresion().struct;
+		else
+			expr.struct = TabExtended.noType;
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- DESIGNATOR ISKAZ -----------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+
+	public void visit(DessignatorAssign designatorAssignment) {
+		// report_info(designatorAssignment.toString() + "designator assignment WTF",
+		// null);
+		Obj designator = designatorAssignment.getDesignator().obj;
+		if (designator.getKind() != Obj.Var && designator.getKind() != Obj.Elem) {
+			report_error("Vrednost se moze dodeliti samo promenjivoj ili elementu niza!  Greska ",
+					designatorAssignment);
+		}
+		// za niz
+
+		Struct exprType = null;
+		if (designatorAssignment.getExpr().struct.getKind() == 3) {
+			exprType = designatorAssignment.getExpr().struct.getElemType();
+		} else {
+			exprType = designatorAssignment.getExpr().struct;
+		}
+
+		Struct desigType = null;
+		if (designatorAssignment.getDesignator().obj.getType().getKind() == 3) {
+
+			desigType = designatorAssignment.getDesignator().obj.getType().getElemType();
+		} else {
+			desigType = designatorAssignment.getDesignator().obj.getType();
+		}
+		if (!exprType.compatibleWith(desigType)) {
+			if (!((exprType.getKind() == TabExtended.Enum && desigType.getKind() == 1)
+					|| (exprType.getKind() == 1 && desigType.getKind() == TabExtended.Enum))) {
+				report_error("Greska na liniji " + designatorAssignment.getLine() + " : "
+						+ "tip izraza ne slaze se sa tipom designatora u dodeli ", null);
+
+			}
+		}
+
+		report_info("Uspesno dodeljena vrednost promenjivoj " + designatorAssignment.getDesignator().obj.getName() + " : ",
+				designatorAssignment);
+	}
+
+	public void visit(DesignatorIncrement des) {
+		Obj designator = des.getDesignator().obj;
+		if (designator.getKind() != Obj.Var && designator.getKind() != Obj.Elem) {
+			report_error("Inkrementirati se moze samo promenjiva ili element niza!  Greska ", des);
+			return;
+		}
+		if (designator.getType() != TabExtended.intType) {
+			report_error("Pokusaj inkrementiranja promenjive koja nije int!  Greska ", des);
+			return;
+		}
+
+		report_info("Uspesno inkrementirana vrednost. ", des);
+	}
+
+	public void visit(DesignatorDecrement des) {
+		Obj designator = des.getDesignator().obj;
+		if (designator.getKind() != Obj.Var && designator.getKind() != Obj.Elem) {
+			report_error("Dekrementirati se moze samo promenjiva ili element niza!  Greska ", des);
+			return;
+		}
+		if (designator.getType() != TabExtended.intType) {
+			report_error("Pokusaj dekrementiranja promenjive koja nije int!  Greska ", des);
+			return;
+		}
+
+		report_info("Uspesno dekrementirana vrednost. ", des);
+	}
+
+	public void visit(SingleParam param) {
+		Obj newParam = new Obj(Obj.Var, "param", param.getExpr().struct);
+		paramStack.push(newParam);
+		numParamStack.push(1);
+
+	}
+
+	public void visit(MultipleParams param) {
+		Obj newParam = new Obj(Obj.Var, "param", param.getExpr().struct);
+		paramStack.push(newParam);
+		currentLevel = numParamStack.pop();
+		numParamStack.push(++currentLevel);
+	}
+
+	public void visit(DesignatorMethodCall func) {
+		Obj methodObj = func.getDesignator().obj;
+		if (numParamStack.size() > 0)
+			currentLevel = numParamStack.pop();
+		else
+			currentLevel = 0;
+		if (methodObj.getKind() != Obj.Meth) {
+			report_error("Pozvana funkcija  " + methodObj.getName() + " nije funkcija ! Greska ", func);
+		} else {
+			
+			if (methodObj.getLevel() != currentLevel) {
+				report_error("Neodgovarajuci broj parametara funkcije  " + methodObj.getName() + " ! Greska ", func);
+				return;
+			}
+			
+			report_info("Pozvana funkcija  " + methodObj.getName(), func);
+			
+			if (methodObj.getLevel() > 0) {
+				Iterator<Obj> itPar = methodObj.getLocalSymbols().iterator();
+				for (int i = 0; i < currentLevel && !paramStack.isEmpty(); i++) {
+
+					Struct stackPop = paramStack.pop().getType();
+					if (stackPop.getKind() == 3) {
+						stackPop = stackPop.getElemType();
+					}
+					Struct nextIt = itPar.next().getType();
+					if (nextIt.getKind() == 3) {
+						nextIt = nextIt.getElemType();
+					}
+					if (!stackPop.assignableTo(nextIt)) {
+						if (!(((stackPop.getKind() == 6) && (nextIt.getKind() == 1)) || ((stackPop.getKind() == 1) && (nextIt.getKind() == 6))))
+							report_error("Pogresan tip parametra " + methodObj.getName() + " ! Greska ", func);
+					}
+
+				}
+			}
+		}
+
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- READ -----------------------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+
+	public void visit(ReadStatement readDesignatorStmt) {
+		Designator designator = readDesignatorStmt.getDesignator();
+		if (designator.obj.getKind() != Obj.Var && designator.obj.getKind() != Obj.Elem
+				&& designator.obj.getKind() != Obj.Fld)
+			report_error(
+					"Greska! Ono cemu se dodeljuje vrednost mora biti promenjiva, element niza ili polje unutar objekta! : ",
+					readDesignatorStmt);
+		else {
+			if (designator.obj.getType().getKind() != Struct.Int && designator.obj.getType().getKind() != Struct.Char
+					&& designator.obj.getType().getKind() != TabExtended.Bool
+					&& designator.obj.getType().getKind() != 6) {
+				report_error("Greska! Objekat nad kojim je pozvana funkcija read mora biti tipa int, char ili bool. : ",
+						readDesignatorStmt);
+			} else {
+				report_info("Uspesno pozvana funkcija read. : ", readDesignatorStmt);
+			}
+		}
+	}
+	
+	// ------------------------------------------------------------------------------------------------------------------
+	// ------------------------------------------- PRINT ----------------------------------------------------------------
+	// ------------------------------------------------------------------------------------------------------------------
+
+
+	public void visit(PrintStatementWithoutNumConst printStmt) {
+		Expr expr = printStmt.getExpr();
+		if (expr.struct.getKind() != Struct.Int && expr.struct.getKind() != Struct.Char
+				&& expr.struct.getKind() != TabExtended.Bool && expr.struct.getKind() != 6)
+			report_error("Greska! PrintStmt! Expr mora biti tipa int, char ili bool! : ", printStmt);
+		else
+			report_info("Uspesno pozvana funkcija print. : ", printStmt);
+
+	}
+
+	public void visit(PrintStatementWithNumConst printStmt) {
+		Expr expr = printStmt.getExpr();
+		if (expr.struct.getKind() != Struct.Int && expr.struct.getKind() != Struct.Char
+				&& expr.struct.getKind() != TabExtended.Bool && expr.struct.getKind() != 6)
+			report_error("Greska! PrintStmt! Expr mora biti tipa int, char ili bool! : ", printStmt);
+		else
+			report_info("Uspesno pozvana funkcija print. : ", printStmt);
+
+	}
+	
+	public boolean passed(){
+    	return !errorDetected;
+    }
+
+}

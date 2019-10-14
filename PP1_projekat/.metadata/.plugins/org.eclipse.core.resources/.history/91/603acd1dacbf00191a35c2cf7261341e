@@ -1,0 +1,359 @@
+/*package rs.ac.bg.etf.pp1;
+
+import java.util.Stack;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+import org.apache.log4j.Logger;
+
+public class SemanticAnalyzer extends VisitorAdaptor {
+
+	int globalVarDeclCount = 0;
+	int varDeclCount = 0;
+	int constDeclCount = 0;
+	int printCallCount = 0;
+	boolean errorDetected = false;
+	
+	Obj currentEnum = null;
+	int numEnumConst = 0;
+	List<Integer> enumConst =  new ArrayList<Integer>();
+
+	Obj currentMethod = null;
+	Struct currentMethodType;
+	boolean returnFound = false;
+	boolean hasReturn = false;
+	int nVars;
+	Struct currentType = null;
+	int currentLevel = 0;
+	Stack<Obj> paramStack = new Stack<Obj>();
+	Stack<Integer> numParamStack = new Stack<Integer>();
+
+	Logger log = Logger.getLogger(getClass());
+
+	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.error(msg.toString());
+	}
+
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+	
+	
+	//---------------------------------------- PROGRAM -------------------------------------------------
+
+		public void visit(ProgName progName) {
+
+			report_info("Pocetak programa  " + progName.getProgramName(), progName);
+			// Pravi se novi Obj cvor sa prosledjenim atributima kind, name i type, pa se zatim ubacuje u tabelu simbola. 
+			// Povratna vrednost: 
+			// novostvoreni cvor, ako cvor sa tim imenom nije vec postojao u tabeli simbola.
+			// postojeci cvor iz tabele simbola, ako je doslo do greske jer smo pokusali da u tabelu simbola
+			// za opseg ubacimo cvor sa imenom koje vec postoji.
+			progName.obj = TabExtended.insert(Obj.Prog, progName.getProgramName(), TabExtended.noType);
+			TabExtended.insert(Obj.Type, "bool", TabExtended.boolType);
+			TabExtended.openScope(); // otvaranje novog opsega
+
+		}
+
+		public void visit(Program program) {
+
+			// moramo da ulancamo sve lokalne simbole
+			TabExtended.chainLocalSymbols(program.getProgName().obj);
+			TabExtended.closeScope(); // zatvaramo scope
+			report_info("Kraj ", null);
+		}
+		
+		
+		//---------------------------------------------------- TIP ------------------------------------------------------------
+
+		public void visit(Type type) {
+
+			// proveravamo da li se radi o tipu
+			// U hes tabeli opsega trazi Obj cvor sa imenom name, pocevsi od
+			// najugnezdenijeg opsega, pa redom kroz opsege na nizim nivoima. 
+			// Povratna vrednost: 
+			//- pronadjeni Obj cvor, ako je pretrazivanje bilo uspesno. 
+			// -Tab.noObj objekat, ako je pretrazivanje bilo neuspesno.
+			Obj typeNode = TabExtended.find(type.getTypeName());
+			if (typeNode == TabExtended.noObj) {
+				report_error("Greska: Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola", type);
+				type.struct = TabExtended.noType; // povratna vrednost
+			} else {
+				if (Obj.Type == typeNode.getKind()) {
+					type.struct = typeNode.getType();
+				} else {
+					report_error("Greska: Ime " + type.getTypeName() + " ne predstavlja tip ", type);
+					type.struct = TabExtended.noType;
+				}
+
+			}
+			currentType = type.struct;
+		}
+
+		
+		
+		
+		//---------------------------------------- GLOBALNE PROMENLJIVE  -------------------------------------------------
+		public void visit(GVarDeclaration globalVar) {
+			globalVarDeclCount++;
+			
+			// moramo izvrsiti proveru da li je vec deklarisana
+			// tek onda mozemo da ubacimo u listu simbola
+
+			if (TabExtended.currentScope().findSymbol(globalVar.getGlobalVarName()) != null) {
+				report_error("Greska na liniji " + globalVar.getLine() + ", promenljiva " + globalVar.getGlobalVarName()
+						+ " je vec deklarisana", null);
+			} else {
+				report_info("Deklarisana globalna promenljiva " + globalVar.getGlobalVarName(), globalVar);
+				TabExtended.insert(Obj.Var, globalVar.getGlobalVarName(), currentType);
+			}
+		}
+
+		public void visit(GVarArray globalVarArray) {
+			globalVarDeclCount++;
+			// moramo izvrsiti proveru da li je vec deklarisana
+			// tek onda mozemo da ubacimo u listu simbola
+
+			if (TabExtended.currentScope().findSymbol(globalVarArray.getGlobalVarName()) != null) {
+				report_error("Greska na liniji " + globalVarArray.getLine() + ", niz " + globalVarArray.getGlobalVarName()
+						+ " je vec deklarisan", null);
+			} else {
+				report_info("Deklarisan globalni niz " + globalVarArray.getGlobalVarName(), globalVarArray);
+				TabExtended.insert(Obj.Var, globalVarArray.getGlobalVarName(), currentType);
+			}
+		}
+		
+		//------------------------------------------- LOKALNE PROMENLJIVE ---------------------------------------------------------
+
+		public void visit(LVarDeclaration localVar) {
+
+			// moramo izvrsiti proveru da li je vec deklarisana
+			// tek onda mozemo da ubacimo u listu simbola
+			varDeclCount++;
+
+			if (TabExtended.currentScope().findSymbol(localVar.getLocalVarName()) != null) {
+				report_error("Greska na liniji " + localVar.getLine() + ", promenljiva " + localVar.getLocalVarName()
+						+ " je vec deklarisana", null);
+				return;
+			} else {
+				report_info("Deklarisana lokalna promenljiva " + localVar.getLocalVarName(), localVar);
+				TabExtended.insert(Obj.Var, localVar.getLocalVarName(), currentType);
+			}
+		}
+
+		public void visit(LVarArray localVarArray) {
+			varDeclCount++;
+
+			// moramo izvrsiti proveru da li je vec deklarisana
+			// tek onda mozemo da ubacimo u listu simbola
+
+			if (TabExtended.currentScope().findSymbol(localVarArray.getLocalArrName()) != null) {
+				report_error("Greska na liniji " + localVarArray.getLine() + ", niz " + localVarArray.getLocalArrName()
+						+ " je vec deklarisan", null);
+				return;
+			} else {
+				report_info("Deklarisan lokalni niz " + localVarArray.getLocalArrName(), localVarArray);
+				TabExtended.insert(Obj.Var, localVarArray.getLocalArrName(), currentType);
+			}
+		}
+
+		//------------------------------------------- ENUM ---------------------------------------------------------
+		
+		public void visit(EnumDecl en) {
+			if(Tab.currentScope().findSymbol(en.getEnumName()) != null) {
+				report_error("Greska na liniji " + en.getLine() + " : enum "+en.getEnumName()+ " je vec deklarisan! ", null);
+				return;
+			}
+			currentEnum = Tab.insert(Obj.Type, en.getEnumName(), TabExtended.enumType);
+			en.obj = currentEnum;
+			Tab.openScope();
+			report_info("Obradjuje se enum " + en.getEnumName(), en);
+		}
+
+		public void visit(EnumDeclaration en){
+			if(currentEnum==null)return;
+			
+			Tab.chainLocalSymbols(currentEnum);
+			Tab.closeScope();
+			
+			currentEnum = null;
+			numEnumConst = 0;
+			enumConst = null;
+			
+		}
+		
+		//--------------------------------------------------- KONSTANTE -----------------------------------------------------------------
+
+		public void visit(ConstDeclaration constDecl) {
+			constDeclCount++;
+			if (Tab.currentScope().findSymbol(constDecl.getConstName()) != null) {
+				report_error("Greska na liniji " + constDecl.getLine() + " : konstanta " + constDecl.getConstName()
+						+ " vec deklarisana! ", null);
+				// return;
+			}
+			Tab.insert(Obj.Con, constDecl.getConstName(), currentType);
+			report_info("Deklarisana konstanta " + constDecl.getConstName(), constDecl);
+
+			int address = 0;
+
+			if (constDecl.getConstValue() instanceof ConstNumber) {
+				address = ((ConstNumber) constDecl.getConstValue()).getN();
+				constDecl.getConstValue().struct = Tab.intType;
+			} else if (constDecl.getConstValue() instanceof ConstChar) {
+				address = ((ConstChar) constDecl.getConstValue()).getC();
+				constDecl.getConstValue().struct = Tab.charType;
+			} else if (constDecl.getConstValue() instanceof ConstBool) {
+				String value = ((ConstBool) constDecl.getConstValue()).getB();
+				constDecl.getConstValue().struct = TabExtended.boolType;
+				address = value.equals("true") ? 1 : 0;
+			}
+
+			if (currentType.equals(constDecl.getConstValue().struct)) {
+				Tab.insert(Obj.Con, constDecl.getConstName(), currentType).setAdr(address);
+			} else {
+				report_error("Greska na liniji " + constDecl.getLine()
+						+ " , ne poklapa se tip vrednosti sa tipom konstante " + constDecl.getConstName() + "!", null);
+			}
+
+		}
+
+		// --------------------------------- DEKLARACIJA METODA ------------------------------------------------
+		public void visit(StartMethodSt st) {
+			Tab.chainLocalSymbols(currentMethod);
+		}
+
+		public void visit(MethodName methodName) {
+			// provera da li je deklarisana
+			if (TabExtended.currentScope().findSymbol(methodName.getMethodName()) != null) {
+				report_error("Greska na liniji " + methodName.getLine() + " : metoda " + methodName.getMethodName()
+						+ " vec deklarisana! ", null);
+			}
+
+			// ako nije definisana, ubacujemo u TabExtended tabelu simbola
+			currentMethod = TabExtended.insert(Obj.Meth, methodName.getMethodName(), currentMethodType);
+			methodName.obj = currentMethod;
+
+			// postavljanje parametara
+			currentMethod.setLevel(0);
+			TabExtended.openScope(); // otvaramo novi scope
+			report_info("Obradjuje se  funkcija " + methodName.getMethodName(), methodName);
+		}
+
+		public void visit(MethodDeclaration methodDeclaration) {
+
+			if (currentMethod == null) { // ukoliko je doslo do greske pri deklaraciji
+				return;
+			}
+
+			
+			if (returnFound == false && currentMethod.getType() != TabExtended.noType) {
+				report_error("Greska na liniji " + methodDeclaration.getLine() + ", funkcija " + currentMethod.getName()
+						+ " nema RETURN iskaz!", null);
+			}
+
+			TabExtended.closeScope();
+
+			report_info("Zavrsena funkcija " + currentMethod.getName(), methodDeclaration);
+			returnFound = false;
+			currentMethod = null;
+		}
+
+		public void visit(ReturnMethodType returnMethodType) {
+			currentMethodType = ((ReturnMethodType) returnMethodType).getType().struct;
+			returnFound = false;
+
+		}
+
+		public void visit(VoidMethodType returnType) {
+			returnFound = true;
+			currentMethodType = TabExtended.noType;
+		}
+		
+		public void visit(ReturnStatement returnStmt) {
+			
+			returnFound = true;
+			Struct currMethType = currentMethod.getType();
+		
+			if (!currMethType.compatibleWith(returnStmt.getExpr().struct)) {
+				report_error("Greska na liniji " + returnStmt.getLine() + " : "
+						+ "tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije "
+						+ currentMethod.getName(), null);
+			}
+			
+		
+		}
+		
+		public void visit(DesignatorValue designator) {
+			Obj obj = Tab.find(designator.getDesName());
+			if(obj == Tab.noObj) {
+				report_error("Greska na liniji " + designator.getLine() + " : ime "+designator.getDesName()+" nije deklarisano!", null);
+			}else {
+				report_info("Pristup elementu " + designator.getDesName(), designator);
+			}
+			designator.obj = obj;
+		}
+		
+		public void visit(DesignatorArray elem) {
+			Obj designator = Tab.find(elem.getDesignator().obj.getName());
+			if(elem.getExpr().struct != Tab.intType && elem.getExpr().struct != TabExtended.enumType)
+				report_error("Greska na liniji " + elem.getLine() + " : vrednost unutar zagrada mora biti tipa int!", null);
+			if(designator==Tab.noObj) {
+				report_error("Greska na liniji " + elem.getLine() + " : niz "+elem.getDesignator().obj.getName()+" nije deklarisan!", null);
+			}else {
+				report_info("Pristup elementu niza " + elem.getDesignator().obj.getName(), elem);
+			}
+			elem.obj = new Obj(Obj.Elem, elem.getDesignator().obj.getName(), designator.getType().getElemType());
+		}
+		
+		public void visit(DesignatorDot desig) {
+			Obj des = desig.getDesignator().obj;
+			Obj ident = Tab.find(desig.getDesNameDot());
+			if(des.getType() != TabExtended.enumType) {
+				report_error("Greska na liniji " + desig.getLine() + " : promenjiva "+des.getName()+" mora biti nabrajanje (enum)!", null);
+				desig.obj = ident;
+			}
+			else{
+				Iterator<Obj> itPar = des.getLocalSymbols().iterator();//Iterator svih simbola naseg objekta
+				boolean found = false;
+				while(itPar.hasNext()) {
+					Obj obj = itPar.next();
+					if (desig.getDesNameDot().equalsIgnoreCase(obj.getName())) { //da li je parametar koji smo skinuli sa steka moze da se dodeli sledecem simbolu metode
+						found = true;
+						desig.obj = obj;
+					}
+				}
+				if(!found) {
+					report_error("Greska na liniji " + desig.getLine() + " : identifikator "+ desig.getDesNameDot() +" nije jedan od konstanti unutar nabrajanja "+ des.getName(), null);
+					desig.obj = ident;
+				}
+			}
+		}
+
+		
+		
+		
+
+			
+				
+			
+
+		
+		
+	
+	
+}
+*/

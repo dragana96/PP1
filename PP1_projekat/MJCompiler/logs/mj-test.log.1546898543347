@@ -1,0 +1,117 @@
+INFO  23:00:03,072 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  23:00:03,166 - #2 program
+INFO  23:00:03,166 - #5 MJProgram
+INFO  23:00:03,167 - #5 int
+INFO  23:00:03,169 - #5 x
+INFO  23:00:03,170 - #11 ,
+INFO  23:00:03,171 - #5 y
+INFO  23:00:03,171 - #8 ;
+INFO  23:00:03,171 - #3 {
+INFO  23:00:03,172 - #17 void
+INFO  23:00:03,173 - #5 main
+INFO  23:00:03,175 - #18 (
+INFO  23:00:03,175 - #19 )
+INFO  23:00:03,177 - #3 {
+INFO  23:00:03,178 - #47 print
+INFO  23:00:03,180 - #18 (
+INFO  23:00:03,180 - #20 1
+INFO  23:00:03,182 - #11 ,
+INFO  23:00:03,184 - #20 3
+INFO  23:00:03,184 - #19 )
+INFO  23:00:03,185 - #8 ;
+INFO  23:00:03,185 - #47 print
+INFO  23:00:03,185 - #18 (
+INFO  23:00:03,185 - #20 2
+INFO  23:00:03,186 - #19 )
+INFO  23:00:03,186 - #8 ;
+INFO  23:00:03,186 - #4 }
+INFO  23:00:03,186 - #4 }
+INFO  23:00:03,188 - Program(
+  ProgNameDerived1(
+  ) [ProgNameDerived1]
+  DeclarationLst(
+    NoDeclarationLst(
+    ) [NoDeclarationLst]
+    VarDeclaration(
+      VarDecl(
+        Type(
+        ) [Type]
+        NoBrackets(
+        ) [NoBrackets]
+        VarDeclarationList(
+          NoVarDeclarationList(
+          ) [NoVarDeclarationList]
+          NoBrackets(
+          ) [NoBrackets]
+        ) [VarDeclarationList]
+      ) [VarDecl]
+    ) [VarDeclaration]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationsInClass(
+      ) [NoVarDeclarationsInClass]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            PrintStatement(
+              Expression(
+                NoMinus(
+                ) [NoMinus]
+                TermDeclaration(
+                  FactorConst(
+                    ConstNumber(
+                     1
+                    ) [ConstNumber]
+                  ) [FactorConst]
+                  NoMulopFactorLst(
+                  ) [NoMulopFactorLst]
+                ) [TermDeclaration]
+                NoAddopTermLst(
+                ) [NoAddopTermLst]
+              ) [Expression]
+              NumConsts1(
+               3
+              ) [NumConsts1]
+            ) [PrintStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStatement(
+            Expression(
+              NoMinus(
+              ) [NoMinus]
+              TermDeclaration(
+                FactorConst(
+                  ConstNumber(
+                   2
+                  ) [ConstNumber]
+                ) [FactorConst]
+                NoMulopFactorLst(
+                ) [NoMulopFactorLst]
+              ) [TermDeclaration]
+              NoAddopTermLst(
+              ) [NoAddopTermLst]
+            ) [Expression]
+            NoNumConsts(
+            ) [NoNumConsts]
+          ) [PrintStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  23:00:03,189 - ===================================
+INFO  23:00:03,192 - Prepoznata promenljiva!
+INFO  23:00:03,192 - Prepoznata naredba print!
+INFO  23:00:03,192 - Prepoznata naredba print!
+INFO  23:00:03,192 -  Print count calls = 2
+INFO  23:00:03,192 -  Deklarisanih promenljivih ima = 1

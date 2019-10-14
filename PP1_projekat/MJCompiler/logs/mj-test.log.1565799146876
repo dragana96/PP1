@@ -1,0 +1,270 @@
+INFO  18:09:40,230 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  18:09:40,317 - #2 program
+INFO  18:09:40,317 - #22 MJProgram
+INFO  18:09:40,317 - #22 int
+INFO  18:09:40,318 - #22 noviInt
+INFO  18:09:40,319 - #7 ;
+INFO  18:09:40,319 - #3 {
+INFO  18:09:40,320 - #16 void
+INFO  18:09:40,321 - #22 main
+INFO  18:09:40,322 - #17 (
+INFO  18:09:40,323 - #18 )
+INFO  18:09:40,323 - #22 bool
+INFO  18:09:40,324 - #22 b
+INFO  18:09:40,324 - #8 [
+INFO  18:09:40,324 - #9 ]
+INFO  18:09:40,324 - #7 ;
+INFO  18:09:40,325 - #3 {
+INFO  18:09:40,326 - #40 if
+INFO  18:09:40,327 - #17 (
+INFO  18:09:40,327 - #22 noviInt
+INFO  18:09:40,328 - #35 >
+INFO  18:09:40,330 - #20 c
+INFO  18:09:40,331 - #18 )
+INFO  18:09:40,334 - #22 noviInt
+INFO  18:09:40,334 - #6 =
+INFO  18:09:40,334 - #19 0
+INFO  18:09:40,336 - #7 ;
+INFO  18:09:40,336 - #40 if
+INFO  18:09:40,337 - #17 (
+INFO  18:09:40,337 - #22 b
+INFO  18:09:40,337 - #36 >=
+INFO  18:09:40,337 - #22 b
+INFO  18:09:40,338 - #18 )
+INFO  18:09:40,338 - #3 {
+INFO  18:09:40,338 - #22 noviInt
+INFO  18:09:40,339 - #6 =
+INFO  18:09:40,339 - #19 1
+INFO  18:09:40,339 - #7 ;
+INFO  18:09:40,339 - #4 }
+INFO  18:09:40,339 - #22 do
+INFO  18:09:40,339 - #47 print
+ERROR 18:09:40,339 - Sintaksna greska na liniji 13
+INFO  18:09:40,340 - #17 (
+INFO  18:09:40,340 - #19 1
+INFO  18:09:40,340 - #18 )
+INFO  18:09:40,341 - #7 ;
+INFO  18:09:40,341 - #22 while
+INFO  18:09:40,341 - #17 (
+INFO  18:09:40,342 - #22 pera
+ERROR 18:09:40,342 - Izvrsen oporavak do ; u liniji 13
+INFO  18:09:40,343 - #34 !=
+ERROR 18:09:40,343 - Sintaksna greska na liniji 13
+INFO  18:09:40,343 - #22 zdera
+INFO  18:09:40,343 - #18 )
+INFO  18:09:40,343 - #7 ;
+INFO  18:09:40,343 - #4 }
+INFO  18:09:40,343 - #4 }
+ERROR 18:09:40,344 - Izvrsen oporavak do ; u liniji 13
+INFO  18:09:40,347 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    NoDeclarationLst(
+    ) [NoDeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         int
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           noviInt
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        LVarDecl(
+          Type(
+           bool
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarArray(
+             b
+              Brackets(
+              ) [Brackets]
+            ) [LVarArray]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              NoStmtList(
+              ) [NoStmtList]
+              UnmatchedStmt(
+                UnmatchedIf(
+                  Condition(
+                    ConditionTerm(
+                      ConditionFact(
+                        Expr(
+                          ExprTerm(
+                            ExprWithoutMinus(
+                            ) [ExprWithoutMinus]
+                            TermFactor(
+                              FactorDesignator(
+                                DesignatorValue(
+                                 noviInt
+                                ) [DesignatorValue]
+                              ) [FactorDesignator]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [Expr]
+                        RelopExpr(
+                          OpMore(
+                          ) [OpMore]
+                          Expr(
+                            ExprTerm(
+                              ExprWithoutMinus(
+                              ) [ExprWithoutMinus]
+                              TermFactor(
+                                FactorChar(
+                                 c
+                                ) [FactorChar]
+                              ) [TermFactor]
+                            ) [ExprTerm]
+                          ) [Expr]
+                        ) [RelopExpr]
+                      ) [ConditionFact]
+                      NoConditionFactList(
+                      ) [NoConditionFactList]
+                    ) [ConditionTerm]
+                    NoConditionTermList(
+                    ) [NoConditionTermList]
+                  ) [Condition]
+                  MatchedStmt(
+                    DesignatorStStatement(
+                      DessignatorAssign(
+                        DesignatorValue(
+                         noviInt
+                        ) [DesignatorValue]
+                        OpEq(
+                        ) [OpEq]
+                        Expr(
+                          ExprTerm(
+                            ExprWithoutMinus(
+                            ) [ExprWithoutMinus]
+                            TermFactor(
+                              FactorNumber(
+                               0
+                              ) [FactorNumber]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [Expr]
+                      ) [DessignatorAssign]
+                    ) [DesignatorStStatement]
+                  ) [MatchedStmt]
+                ) [UnmatchedIf]
+              ) [UnmatchedStmt]
+            ) [StmtList]
+            UnmatchedStmt(
+              UnmatchedIf(
+                Condition(
+                  ConditionTerm(
+                    ConditionFact(
+                      Expr(
+                        ExprTerm(
+                          ExprWithoutMinus(
+                          ) [ExprWithoutMinus]
+                          TermFactor(
+                            FactorDesignator(
+                              DesignatorValue(
+                               b
+                              ) [DesignatorValue]
+                            ) [FactorDesignator]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                      ) [Expr]
+                      RelopExpr(
+                        OpMeq(
+                        ) [OpMeq]
+                        Expr(
+                          ExprTerm(
+                            ExprWithoutMinus(
+                            ) [ExprWithoutMinus]
+                            TermFactor(
+                              FactorDesignator(
+                                DesignatorValue(
+                                 b
+                                ) [DesignatorValue]
+                              ) [FactorDesignator]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [Expr]
+                      ) [RelopExpr]
+                    ) [ConditionFact]
+                    NoConditionFactList(
+                    ) [NoConditionFactList]
+                  ) [ConditionTerm]
+                  NoConditionTermList(
+                  ) [NoConditionTermList]
+                ) [Condition]
+                MatchedStmt(
+                  ListOfStatements(
+                    StmtList(
+                      NoStmtList(
+                      ) [NoStmtList]
+                      MatchedStmt(
+                        DesignatorStStatement(
+                          DessignatorAssign(
+                            DesignatorValue(
+                             noviInt
+                            ) [DesignatorValue]
+                            OpEq(
+                            ) [OpEq]
+                            Expr(
+                              ExprTerm(
+                                ExprWithoutMinus(
+                                ) [ExprWithoutMinus]
+                                TermFactor(
+                                  FactorNumber(
+                                   1
+                                  ) [FactorNumber]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [Expr]
+                          ) [DessignatorAssign]
+                        ) [DesignatorStStatement]
+                      ) [MatchedStmt]
+                    ) [StmtList]
+                  ) [ListOfStatements]
+                ) [MatchedStmt]
+              ) [UnmatchedIf]
+            ) [UnmatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          ErrorStmt(
+          ) [ErrorStmt]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  18:09:40,349 - ===================================
+INFO  18:09:40,352 -  Print count calls = 0
+INFO  18:09:40,353 -  Deklarisanih promenljivih ima = 0
+INFO  18:09:40,353 -  Globalnih promenljivih ima = 1

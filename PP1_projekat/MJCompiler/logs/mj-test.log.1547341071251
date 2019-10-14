@@ -1,0 +1,779 @@
+INFO  01:55:40,094 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  01:55:40,196 - #2 program
+INFO  01:55:40,197 - #22 MJProgram
+INFO  01:55:40,197 - #22 int
+INFO  01:55:40,199 - #22 b
+INFO  01:55:40,200 - #7 ;
+INFO  01:55:40,201 - #22 char
+INFO  01:55:40,201 - #22 y
+INFO  01:55:40,202 - #7 ;
+INFO  01:55:40,202 - #3 {
+INFO  01:55:40,202 - #22 int
+INFO  01:55:40,203 - #22 mnozenje
+INFO  01:55:40,203 - #17 (
+INFO  01:55:40,204 - #22 int
+INFO  01:55:40,205 - #22 a
+INFO  01:55:40,205 - #10 ,
+INFO  01:55:40,205 - #22 int
+INFO  01:55:40,205 - #22 b
+INFO  01:55:40,205 - #18 )
+INFO  01:55:40,206 - #3 {
+INFO  01:55:40,206 - #45 return
+INFO  01:55:40,208 - #22 a
+INFO  01:55:40,208 - #29 *
+ERROR 01:55:40,208 - Sintaksna greska na liniji 6
+INFO  01:55:40,208 - #22 b
+INFO  01:55:40,208 - #7 ;
+INFO  01:55:40,208 - #4 }
+INFO  01:55:40,209 - #22 int
+INFO  01:55:40,209 - #22 sabiranje
+ERROR 01:55:40,209 - Izvrsen oporavak do ; u liniji 6
+INFO  01:55:40,211 - #17 (
+INFO  01:55:40,211 - #22 int
+INFO  01:55:40,211 - #22 a
+INFO  01:55:40,211 - #10 ,
+INFO  01:55:40,211 - #22 int
+INFO  01:55:40,211 - #22 b
+INFO  01:55:40,211 - #18 )
+INFO  01:55:40,211 - #3 {
+INFO  01:55:40,211 - #45 return
+INFO  01:55:40,212 - #22 a
+INFO  01:55:40,212 - #33 +
+ERROR 01:55:40,212 - Sintaksna greska na liniji 10
+INFO  01:55:40,212 - #22 b
+INFO  01:55:40,212 - #7 ;
+INFO  01:55:40,212 - #4 }
+INFO  01:55:40,212 - #22 int
+INFO  01:55:40,212 - #22 oduzimanje
+ERROR 01:55:40,213 - Izvrsen oporavak do ; u liniji 10
+INFO  01:55:40,213 - #17 (
+INFO  01:55:40,213 - #22 int
+INFO  01:55:40,213 - #22 a
+INFO  01:55:40,213 - #10 ,
+INFO  01:55:40,213 - #22 int
+INFO  01:55:40,213 - #22 b
+INFO  01:55:40,213 - #18 )
+INFO  01:55:40,214 - #3 {
+INFO  01:55:40,214 - #45 return
+INFO  01:55:40,214 - #22 a
+INFO  01:55:40,215 - #31 -
+ERROR 01:55:40,215 - Sintaksna greska na liniji 14
+INFO  01:55:40,215 - #22 b
+INFO  01:55:40,215 - #7 ;
+INFO  01:55:40,215 - #4 }
+INFO  01:55:40,216 - #22 int
+INFO  01:55:40,216 - #22 deljenje
+ERROR 01:55:40,216 - Izvrsen oporavak do ; u liniji 14
+INFO  01:55:40,216 - #17 (
+INFO  01:55:40,216 - #22 int
+INFO  01:55:40,216 - #22 a
+INFO  01:55:40,217 - #10 ,
+INFO  01:55:40,217 - #22 int
+INFO  01:55:40,217 - #22 b
+INFO  01:55:40,217 - #18 )
+INFO  01:55:40,217 - #3 {
+INFO  01:55:40,217 - #45 return
+INFO  01:55:40,217 - #22 a
+INFO  01:55:40,218 - #30 /
+ERROR 01:55:40,218 - Sintaksna greska na liniji 18
+INFO  01:55:40,218 - #22 b
+INFO  01:55:40,218 - #7 ;
+INFO  01:55:40,218 - #4 }
+INFO  01:55:40,218 - #16 void
+INFO  01:55:40,218 - #22 D
+ERROR 01:55:40,218 - Izvrsen oporavak do ; u liniji 18
+INFO  01:55:40,219 - #17 (
+INFO  01:55:40,220 - #22 int
+INFO  01:55:40,220 - #22 a
+INFO  01:55:40,220 - #18 )
+INFO  01:55:40,220 - #3 {
+INFO  01:55:40,220 - #47 print
+INFO  01:55:40,220 - #17 (
+INFO  01:55:40,221 - #20 d
+INFO  01:55:40,221 - #10 ,
+INFO  01:55:40,222 - #19 20
+INFO  01:55:40,222 - #18 )
+INFO  01:55:40,222 - #7 ;
+INFO  01:55:40,222 - #4 }
+INFO  01:55:40,222 - #22 char
+INFO  01:55:40,222 - #22 M
+INFO  01:55:40,223 - #17 (
+INFO  01:55:40,223 - #18 )
+INFO  01:55:40,224 - #22 char
+INFO  01:55:40,224 - #22 c
+INFO  01:55:40,224 - #7 ;
+INFO  01:55:40,224 - #3 {
+INFO  01:55:40,225 - #22 c
+INFO  01:55:40,225 - #6 =
+INFO  01:55:40,225 - #20 m
+INFO  01:55:40,227 - #7 ;
+INFO  01:55:40,227 - #45 return
+INFO  01:55:40,228 - #22 c
+INFO  01:55:40,228 - #7 ;
+ERROR 01:55:40,228 - Sintaksna greska na liniji 27
+INFO  01:55:40,228 - #4 }
+INFO  01:55:40,228 - #16 void
+INFO  01:55:40,228 - #22 main
+ERROR 01:55:40,228 - Izvrsen oporavak do ; u liniji 27
+INFO  01:55:40,229 - #17 (
+INFO  01:55:40,229 - #18 )
+INFO  01:55:40,229 - #22 int
+INFO  01:55:40,229 - #22 b
+INFO  01:55:40,229 - #8 [
+INFO  01:55:40,229 - #9 ]
+INFO  01:55:40,230 - #7 ;
+INFO  01:55:40,231 - #3 {
+INFO  01:55:40,231 - #22 b
+INFO  01:55:40,231 - #6 =
+INFO  01:55:40,232 - #25 new
+INFO  01:55:40,232 - #22 int
+INFO  01:55:40,232 - #8 [
+INFO  01:55:40,232 - #19 2
+INFO  01:55:40,232 - #9 ]
+INFO  01:55:40,233 - #7 ;
+INFO  01:55:40,233 - #46 read
+INFO  01:55:40,240 - #17 (
+INFO  01:55:40,240 - #22 b
+INFO  01:55:40,240 - #8 [
+ERROR 01:55:40,240 - Sintaksna greska na liniji 33
+INFO  01:55:40,240 - #19 0
+INFO  01:55:40,240 - #9 ]
+INFO  01:55:40,240 - #18 )
+INFO  01:55:40,240 - #7 ;
+INFO  01:55:40,240 - #46 read
+INFO  01:55:40,240 - #17 (
+INFO  01:55:40,240 - #22 b
+ERROR 01:55:40,241 - Izvrsen oporavak do ; u liniji 33
+INFO  01:55:40,241 - #8 [
+ERROR 01:55:40,241 - Sintaksna greska na liniji 34
+INFO  01:55:40,241 - #19 1
+INFO  01:55:40,241 - #9 ]
+INFO  01:55:40,241 - #18 )
+INFO  01:55:40,241 - #7 ;
+INFO  01:55:40,241 - #47 print
+INFO  01:55:40,241 - #17 (
+INFO  01:55:40,241 - #22 sabiranje
+ERROR 01:55:40,242 - Izvrsen oporavak do ; u liniji 34
+INFO  01:55:40,242 - #17 (
+ERROR 01:55:40,242 - Sintaksna greska na liniji 36
+INFO  01:55:40,242 - #22 b
+INFO  01:55:40,242 - #8 [
+INFO  01:55:40,242 - #19 0
+INFO  01:55:40,242 - #9 ]
+INFO  01:55:40,242 - #10 ,
+INFO  01:55:40,242 - #22 b
+INFO  01:55:40,242 - #8 [
+INFO  01:55:40,242 - #19 1
+INFO  01:55:40,242 - #9 ]
+INFO  01:55:40,242 - #18 )
+INFO  01:55:40,243 - #10 ,
+INFO  01:55:40,243 - #19 25
+INFO  01:55:40,243 - #18 )
+INFO  01:55:40,243 - #7 ;
+INFO  01:55:40,243 - #47 print
+INFO  01:55:40,243 - #17 (
+INFO  01:55:40,243 - #20 s
+ERROR 01:55:40,243 - Izvrsen oporavak do ; u liniji 36
+INFO  01:55:40,243 - #10 ,
+INFO  01:55:40,243 - #19 20
+INFO  01:55:40,243 - #18 )
+INFO  01:55:40,244 - #7 ;
+INFO  01:55:40,244 - #47 print
+INFO  01:55:40,244 - #17 (
+INFO  01:55:40,244 - #22 oduzimanje
+INFO  01:55:40,244 - #17 (
+ERROR 01:55:40,244 - Sintaksna greska na liniji 39
+INFO  01:55:40,244 - #22 b
+INFO  01:55:40,244 - #8 [
+INFO  01:55:40,244 - #19 0
+INFO  01:55:40,244 - #9 ]
+INFO  01:55:40,244 - #10 ,
+INFO  01:55:40,244 - #22 b
+INFO  01:55:40,245 - #8 [
+INFO  01:55:40,245 - #19 1
+INFO  01:55:40,245 - #9 ]
+INFO  01:55:40,245 - #18 )
+INFO  01:55:40,245 - #10 ,
+INFO  01:55:40,245 - #19 25
+INFO  01:55:40,245 - #18 )
+INFO  01:55:40,245 - #7 ;
+INFO  01:55:40,245 - #47 print
+INFO  01:55:40,245 - #17 (
+INFO  01:55:40,245 - #20 o
+ERROR 01:55:40,245 - Izvrsen oporavak do ; u liniji 39
+INFO  01:55:40,246 - #10 ,
+INFO  01:55:40,246 - #19 20
+INFO  01:55:40,246 - #18 )
+INFO  01:55:40,246 - #7 ;
+INFO  01:55:40,246 - #47 print
+INFO  01:55:40,246 - #17 (
+INFO  01:55:40,246 - #22 mnozenje
+INFO  01:55:40,246 - #17 (
+ERROR 01:55:40,246 - Sintaksna greska na liniji 42
+INFO  01:55:40,246 - #22 b
+INFO  01:55:40,247 - #8 [
+INFO  01:55:40,247 - #19 0
+INFO  01:55:40,247 - #9 ]
+INFO  01:55:40,247 - #10 ,
+INFO  01:55:40,247 - #22 b
+INFO  01:55:40,247 - #8 [
+INFO  01:55:40,247 - #19 1
+INFO  01:55:40,247 - #9 ]
+INFO  01:55:40,247 - #18 )
+INFO  01:55:40,247 - #10 ,
+INFO  01:55:40,247 - #19 25
+INFO  01:55:40,247 - #18 )
+INFO  01:55:40,248 - #7 ;
+INFO  01:55:40,248 - #47 print
+INFO  01:55:40,248 - #17 (
+INFO  01:55:40,248 - #22 M
+ERROR 01:55:40,248 - Izvrsen oporavak do ; u liniji 42
+INFO  01:55:40,248 - #17 (
+ERROR 01:55:40,248 - Sintaksna greska na liniji 43
+INFO  01:55:40,248 - #18 )
+INFO  01:55:40,248 - #10 ,
+INFO  01:55:40,248 - #19 20
+INFO  01:55:40,248 - #18 )
+INFO  01:55:40,248 - #7 ;
+INFO  01:55:40,249 - #47 print
+INFO  01:55:40,249 - #17 (
+INFO  01:55:40,249 - #22 deljenje
+ERROR 01:55:40,249 - Izvrsen oporavak do ; u liniji 43
+INFO  01:55:40,249 - #17 (
+ERROR 01:55:40,249 - Sintaksna greska na liniji 45
+INFO  01:55:40,249 - #22 b
+INFO  01:55:40,249 - #8 [
+INFO  01:55:40,249 - #19 0
+INFO  01:55:40,249 - #9 ]
+INFO  01:55:40,249 - #10 ,
+INFO  01:55:40,249 - #22 b
+INFO  01:55:40,249 - #8 [
+INFO  01:55:40,250 - #19 1
+INFO  01:55:40,250 - #9 ]
+INFO  01:55:40,250 - #18 )
+INFO  01:55:40,250 - #10 ,
+INFO  01:55:40,250 - #19 25
+INFO  01:55:40,250 - #18 )
+INFO  01:55:40,251 - #7 ;
+INFO  01:55:40,251 - #22 b
+INFO  01:55:40,251 - #8 [
+INFO  01:55:40,251 - #19 3
+INFO  01:55:40,251 - #9 ]
+INFO  01:55:40,251 - #6 =
+INFO  01:55:40,251 - #22 D
+INFO  01:55:40,251 - #17 (
+INFO  01:55:40,252 - #22 y
+INFO  01:55:40,252 - #18 )
+INFO  01:55:40,252 - #7 ;
+INFO  01:55:40,252 - #47 print
+INFO  01:55:40,252 - #17 (
+INFO  01:55:40,252 - #22 sabiranje
+ERROR 01:55:40,252 - Izvrsen oporavak do ; u liniji 45
+INFO  01:55:40,252 - #17 (
+ERROR 01:55:40,252 - Sintaksna greska na liniji 48
+INFO  01:55:40,252 - #22 sabiranje
+INFO  01:55:40,252 - #17 (
+INFO  01:55:40,253 - #22 b
+INFO  01:55:40,253 - #8 [
+INFO  01:55:40,253 - #19 0
+INFO  01:55:40,253 - #9 ]
+INFO  01:55:40,253 - #10 ,
+INFO  01:55:40,253 - #22 b
+INFO  01:55:40,253 - #8 [
+INFO  01:55:40,253 - #19 1
+INFO  01:55:40,253 - #9 ]
+INFO  01:55:40,253 - #18 )
+INFO  01:55:40,254 - #10 ,
+INFO  01:55:40,254 - #22 oduzimanje
+INFO  01:55:40,254 - #17 (
+INFO  01:55:40,254 - #22 b
+INFO  01:55:40,254 - #8 [
+INFO  01:55:40,254 - #19 0
+INFO  01:55:40,254 - #9 ]
+INFO  01:55:40,254 - #10 ,
+INFO  01:55:40,254 - #22 b
+INFO  01:55:40,254 - #8 [
+INFO  01:55:40,254 - #19 1
+INFO  01:55:40,255 - #9 ]
+INFO  01:55:40,255 - #18 )
+INFO  01:55:40,255 - #18 )
+INFO  01:55:40,255 - #10 ,
+INFO  01:55:40,255 - #19 25
+INFO  01:55:40,255 - #18 )
+INFO  01:55:40,255 - #7 ;
+INFO  01:55:40,255 - #4 }
+INFO  01:55:40,255 - #4 }
+ERROR 01:55:40,255 - Izvrsen oporavak do ; u liniji 48
+INFO  01:55:40,284 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           int
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             b
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         char
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           y
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      MethodDeclarationList(
+        MethodDeclarationList(
+          MethodDeclarationList(
+            MethodDeclarationList(
+              MethodDeclarationList(
+                NoMethodDeclarationList(
+                ) [NoMethodDeclarationList]
+                MethodDeclaration(
+                  ReturnMethodType(
+                    Type(
+                     int
+                    ) [Type]
+                  ) [ReturnMethodType]
+                  MethodName(
+                   mnozenje
+                  ) [MethodName]
+                  FormalParamsYes(
+                    MoreFormPars(
+                      FormParDeclaration(
+                        Type(
+                         int
+                        ) [Type]
+                       a
+                      ) [FormParDeclaration]
+                      OneFormPars(
+                        FormParDeclaration(
+                          Type(
+                           int
+                          ) [Type]
+                         b
+                        ) [FormParDeclaration]
+                      ) [OneFormPars]
+                    ) [MoreFormPars]
+                  ) [FormalParamsYes]
+                  NoLocalVarDeclList(
+                  ) [NoLocalVarDeclList]
+                  StmtList(
+                    NoStmtList(
+                    ) [NoStmtList]
+                    MatchedStmt(
+                      ErrorStmt(
+                      ) [ErrorStmt]
+                    ) [MatchedStmt]
+                  ) [StmtList]
+                ) [MethodDeclaration]
+              ) [MethodDeclarationList]
+              MethodDeclaration(
+                ReturnMethodType(
+                  Type(
+                   int
+                  ) [Type]
+                ) [ReturnMethodType]
+                MethodName(
+                 sabiranje
+                ) [MethodName]
+                FormalParamsYes(
+                  MoreFormPars(
+                    FormParDeclaration(
+                      Type(
+                       int
+                      ) [Type]
+                     a
+                    ) [FormParDeclaration]
+                    OneFormPars(
+                      FormParDeclaration(
+                        Type(
+                         int
+                        ) [Type]
+                       b
+                      ) [FormParDeclaration]
+                    ) [OneFormPars]
+                  ) [MoreFormPars]
+                ) [FormalParamsYes]
+                NoLocalVarDeclList(
+                ) [NoLocalVarDeclList]
+                StmtList(
+                  NoStmtList(
+                  ) [NoStmtList]
+                  MatchedStmt(
+                    ErrorStmt(
+                    ) [ErrorStmt]
+                  ) [MatchedStmt]
+                ) [StmtList]
+              ) [MethodDeclaration]
+            ) [MethodDeclarationList]
+            MethodDeclaration(
+              ReturnMethodType(
+                Type(
+                 int
+                ) [Type]
+              ) [ReturnMethodType]
+              MethodName(
+               oduzimanje
+              ) [MethodName]
+              FormalParamsYes(
+                MoreFormPars(
+                  FormParDeclaration(
+                    Type(
+                     int
+                    ) [Type]
+                   a
+                  ) [FormParDeclaration]
+                  OneFormPars(
+                    FormParDeclaration(
+                      Type(
+                       int
+                      ) [Type]
+                     b
+                    ) [FormParDeclaration]
+                  ) [OneFormPars]
+                ) [MoreFormPars]
+              ) [FormalParamsYes]
+              NoLocalVarDeclList(
+              ) [NoLocalVarDeclList]
+              StmtList(
+                NoStmtList(
+                ) [NoStmtList]
+                MatchedStmt(
+                  ErrorStmt(
+                  ) [ErrorStmt]
+                ) [MatchedStmt]
+              ) [StmtList]
+            ) [MethodDeclaration]
+          ) [MethodDeclarationList]
+          MethodDeclaration(
+            ReturnMethodType(
+              Type(
+               int
+              ) [Type]
+            ) [ReturnMethodType]
+            MethodName(
+             deljenje
+            ) [MethodName]
+            FormalParamsYes(
+              MoreFormPars(
+                FormParDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [FormParDeclaration]
+                OneFormPars(
+                  FormParDeclaration(
+                    Type(
+                     int
+                    ) [Type]
+                   b
+                  ) [FormParDeclaration]
+                ) [OneFormPars]
+              ) [MoreFormPars]
+            ) [FormalParamsYes]
+            NoLocalVarDeclList(
+            ) [NoLocalVarDeclList]
+            StmtList(
+              NoStmtList(
+              ) [NoStmtList]
+              MatchedStmt(
+                ErrorStmt(
+                ) [ErrorStmt]
+              ) [MatchedStmt]
+            ) [StmtList]
+          ) [MethodDeclaration]
+        ) [MethodDeclarationList]
+        MethodDeclaration(
+          VoidMethodType(
+          ) [VoidMethodType]
+          MethodName(
+           D
+          ) [MethodName]
+          FormalParamsYes(
+            OneFormPars(
+              FormParDeclaration(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormParDeclaration]
+            ) [OneFormPars]
+          ) [FormalParamsYes]
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              PrintStatementWithNumConst(
+                ExpressionWithoutMinus(
+                  ExprTerm(
+                    TermFactor(
+                      FactorConst(
+                        ConstChar(
+                         d
+                        ) [ConstChar]
+                      ) [FactorConst]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [ExpressionWithoutMinus]
+               20
+              ) [PrintStatementWithNumConst]
+            ) [MatchedStmt]
+          ) [StmtList]
+        ) [MethodDeclaration]
+      ) [MethodDeclarationList]
+      MethodDeclaration(
+        ReturnMethodType(
+          Type(
+           char
+          ) [Type]
+        ) [ReturnMethodType]
+        MethodName(
+         M
+        ) [MethodName]
+        NoFormalParams(
+        ) [NoFormalParams]
+        LocalVarDeclList(
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          LVarDecl(
+            Type(
+             char
+            ) [Type]
+            LSingleVarDeclaration(
+              LVarDeclaration(
+               c
+              ) [LVarDeclaration]
+            ) [LSingleVarDeclaration]
+          ) [LVarDecl]
+        ) [LocalVarDeclList]
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              DesignatorStStatement(
+                DessignatorAssign(
+                  DesignatorValue(
+                   c
+                  ) [DesignatorValue]
+                  OpEq(
+                  ) [OpEq]
+                  ExpressionWithoutMinus(
+                    ExprTerm(
+                      TermFactor(
+                        FactorConst(
+                          ConstChar(
+                           m
+                          ) [ConstChar]
+                        ) [FactorConst]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [ExpressionWithoutMinus]
+                ) [DessignatorAssign]
+              ) [DesignatorStStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDeclaration]
+    ) [MethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        LVarDecl(
+          Type(
+           int
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarArray(
+             b
+              Brackets(
+              ) [Brackets]
+            ) [LVarArray]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    StmtList(
+                      StmtList(
+                        StmtList(
+                          StmtList(
+                            NoStmtList(
+                            ) [NoStmtList]
+                            MatchedStmt(
+                              DesignatorStStatement(
+                                DessignatorAssign(
+                                  DesignatorValue(
+                                   b
+                                  ) [DesignatorValue]
+                                  OpEq(
+                                  ) [OpEq]
+                                  ExpressionWithoutMinus(
+                                    ExprTerm(
+                                      TermFactor(
+                                        FactorNewArray(
+                                          Type(
+                                           int
+                                          ) [Type]
+                                          ExpressionWithoutMinus(
+                                            ExprTerm(
+                                              TermFactor(
+                                                FactorConst(
+                                                  ConstNumber(
+                                                   2
+                                                  ) [ConstNumber]
+                                                ) [FactorConst]
+                                              ) [TermFactor]
+                                            ) [ExprTerm]
+                                          ) [ExpressionWithoutMinus]
+                                        ) [FactorNewArray]
+                                      ) [TermFactor]
+                                    ) [ExprTerm]
+                                  ) [ExpressionWithoutMinus]
+                                ) [DessignatorAssign]
+                              ) [DesignatorStStatement]
+                            ) [MatchedStmt]
+                          ) [StmtList]
+                          MatchedStmt(
+                            ErrorStmt(
+                            ) [ErrorStmt]
+                          ) [MatchedStmt]
+                        ) [StmtList]
+                        MatchedStmt(
+                          ErrorStmt(
+                          ) [ErrorStmt]
+                        ) [MatchedStmt]
+                      ) [StmtList]
+                      MatchedStmt(
+                        ErrorStmt(
+                        ) [ErrorStmt]
+                      ) [MatchedStmt]
+                    ) [StmtList]
+                    MatchedStmt(
+                      PrintStatementWithNumConst(
+                        ExpressionWithoutMinus(
+                          ExprTerm(
+                            TermFactor(
+                              FactorConst(
+                                ConstChar(
+                                 s
+                                ) [ConstChar]
+                              ) [FactorConst]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [ExpressionWithoutMinus]
+                       20
+                      ) [PrintStatementWithNumConst]
+                    ) [MatchedStmt]
+                  ) [StmtList]
+                  MatchedStmt(
+                    ErrorStmt(
+                    ) [ErrorStmt]
+                  ) [MatchedStmt]
+                ) [StmtList]
+                MatchedStmt(
+                  PrintStatementWithNumConst(
+                    ExpressionWithoutMinus(
+                      ExprTerm(
+                        TermFactor(
+                          FactorConst(
+                            ConstChar(
+                             o
+                            ) [ConstChar]
+                          ) [FactorConst]
+                        ) [TermFactor]
+                      ) [ExprTerm]
+                    ) [ExpressionWithoutMinus]
+                   20
+                  ) [PrintStatementWithNumConst]
+                ) [MatchedStmt]
+              ) [StmtList]
+              MatchedStmt(
+                ErrorStmt(
+                ) [ErrorStmt]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              ErrorStmt(
+              ) [ErrorStmt]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          ErrorStmt(
+          ) [ErrorStmt]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  01:55:40,290 - Pocetak programa  MJProgram na liniji 1
+INFO  01:55:40,290 - Deklarisana globalna promenljiva b na liniji 2
+INFO  01:55:40,291 - Deklarisana globalna promenljiva y na liniji 3
+INFO  01:55:40,291 - Obradjuje se  funkcija mnozenje na liniji 5
+INFO  01:55:40,291 - Deklarisan formalni parametar: a na liniji 5
+INFO  01:55:40,291 - Deklarisan formalni parametar: b na liniji 5
+INFO  01:55:40,291 - Obradjuje se  funkcija sabiranje na liniji 9
+INFO  01:55:40,291 - Deklarisan formalni parametar: a na liniji 9
+INFO  01:55:40,291 - Deklarisan formalni parametar: b na liniji 9
+INFO  01:55:40,291 - Obradjuje se  funkcija oduzimanje na liniji 13
+INFO  01:55:40,292 - Deklarisan formalni parametar: a na liniji 13
+INFO  01:55:40,292 - Deklarisan formalni parametar: b na liniji 13
+INFO  01:55:40,292 - Obradjuje se  funkcija deljenje na liniji 17
+INFO  01:55:40,292 - Deklarisan formalni parametar: a na liniji 17
+INFO  01:55:40,292 - Deklarisan formalni parametar: b na liniji 17
+INFO  01:55:40,292 - Obradjuje se  funkcija D na liniji 21
+INFO  01:55:40,292 - Deklarisan formalni parametar: a na liniji 21
+INFO  01:55:40,292 - Obradjuje se  funkcija M na liniji 25
+INFO  01:55:40,293 - Deklarisana lokalna promenljiva c na liniji 25
+INFO  01:55:40,293 - Obradjuje se  funkcija main na liniji 30
+INFO  01:55:40,293 - Deklarisan lokalni niz b na liniji 30
+INFO  01:55:40,293 - ===================================
+INFO  01:55:40,293 -  Deklarisanih globalnih promenljivih ima = 2
+INFO  01:55:40,293 -  Deklarisanih lokalnih promenljivih ima = 2
+INFO  01:55:40,293 -  Konstanti ima = 0
+INFO  01:55:40,293 - ===================================
+ERROR 01:55:40,295 - Parsiranje NIJE uspesno zavrseno!

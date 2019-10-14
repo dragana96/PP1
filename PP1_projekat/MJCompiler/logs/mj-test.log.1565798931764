@@ -1,0 +1,143 @@
+INFO  18:05:22,492 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  18:05:22,600 - #2 program
+INFO  18:05:22,600 - #22 MJProgram
+INFO  18:05:22,601 - #22 int
+INFO  18:05:22,604 - #22 x
+INFO  18:05:22,605 - #6 =
+ERROR 18:05:22,605 - Sintaksna greska na liniji 3
+INFO  18:05:22,606 - #19 3
+INFO  18:05:22,606 - #10 ,
+INFO  18:05:22,606 - #22 y
+INFO  18:05:22,608 - #6 =
+INFO  18:05:22,608 - #7 ;
+INFO  18:05:22,608 - #22 int
+INFO  18:05:22,609 - #22 y
+INFO  18:05:22,609 - #7 ;
+ERROR 18:05:22,609 - Izvrsen oporavak od greske pri deklarisanju globalne prom. u liniji 3
+INFO  18:05:22,610 - #3 {
+INFO  18:05:22,610 - #22 int
+INFO  18:05:22,611 - #22 main
+INFO  18:05:22,612 - #17 (
+INFO  18:05:22,613 - #18 )
+INFO  18:05:22,613 - #3 {
+INFO  18:05:22,614 - #47 print
+INFO  18:05:22,616 - #17 (
+INFO  18:05:22,616 - #19 1
+INFO  18:05:22,618 - #18 )
+INFO  18:05:22,620 - #7 ;
+INFO  18:05:22,620 - #22 x
+INFO  18:05:22,621 - #6 =
+INFO  18:05:22,621 - #22 y
+INFO  18:05:22,623 - #33 +
+INFO  18:05:22,623 - #19 5
+INFO  18:05:22,625 - #33 +
+INFO  18:05:22,625 - #7 ;
+ERROR 18:05:22,625 - Sintaksna greska na liniji 11
+INFO  18:05:22,625 - #47 print
+INFO  18:05:22,625 - #17 (
+INFO  18:05:22,625 - #19 2
+ERROR 18:05:22,625 - Izvrsen oporavak do ; u liniji 11
+INFO  18:05:22,626 - #18 )
+INFO  18:05:22,626 - #7 ;
+INFO  18:05:22,626 - #4 }
+INFO  18:05:22,626 - #4 }
+INFO  18:05:22,629 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           int
+          ) [Type]
+          GSingleVarDeclaration(
+            GError1(
+            ) [GError1]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         int
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           y
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      ReturnMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [ReturnMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoLocalVarDeclList(
+      ) [NoLocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              PrintStatementWithoutNumConst(
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorNumber(
+                       1
+                      ) [FactorNumber]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [PrintStatementWithoutNumConst]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStatementWithoutNumConst(
+            Expr(
+              ExprTerm(
+                ExprWithoutMinus(
+                ) [ExprWithoutMinus]
+                TermFactor(
+                  FactorNumber(
+                   2
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStatementWithoutNumConst]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  18:05:22,629 - ===================================
+INFO  18:05:22,636 -  Print count calls = 2
+INFO  18:05:22,637 -  Deklarisanih promenljivih ima = 0
+INFO  18:05:22,637 -  Globalnih promenljivih ima = 2

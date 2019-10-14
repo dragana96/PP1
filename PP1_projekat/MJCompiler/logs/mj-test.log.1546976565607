@@ -1,0 +1,203 @@
+INFO  20:41:05,098 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  20:41:05,192 - #2 program
+INFO  20:41:05,192 - #5 MJProgram
+INFO  20:41:05,192 - #5 int
+INFO  20:41:05,192 - #20 2
+ERROR 20:41:05,192 - Sintaksna greska na liniji 4
+INFO  20:41:05,192 - #11 ,
+INFO  20:41:05,192 - #5 u
+INFO  20:41:05,192 - #8 ;
+INFO  20:41:05,192 - #6 const
+INFO  20:41:05,192 - #5 int
+INFO  20:41:05,192 - #5 b
+DEBUG 20:41:05,192 - Uspesan oporavak od greske pri deklaraciji globalne promenljive
+INFO  20:41:05,192 - #7 =
+INFO  20:41:05,192 - #20 5
+INFO  20:41:05,192 - #11 ,
+INFO  20:41:05,192 - #5 i
+INFO  20:41:05,192 - #7 =
+INFO  20:41:05,192 - #22 true
+INFO  20:41:05,192 - #8 ;
+INFO  20:41:05,192 - #3 {
+INFO  20:41:05,192 - #5 int
+INFO  20:41:05,192 - #5 main
+INFO  20:41:05,192 - #18 (
+INFO  20:41:05,192 - #19 )
+INFO  20:41:05,207 - #3 {
+INFO  20:41:05,207 - #47 print
+INFO  20:41:05,207 - #18 (
+INFO  20:41:05,207 - #20 1
+INFO  20:41:05,207 - #19 )
+INFO  20:41:05,207 - #8 ;
+INFO  20:41:05,207 - #5 x
+INFO  20:41:05,207 - #7 =
+INFO  20:41:05,207 - #5 y
+INFO  20:41:05,207 - #33 +
+INFO  20:41:05,207 - #20 5
+INFO  20:41:05,207 - #33 +
+INFO  20:41:05,207 - #5 t
+INFO  20:41:05,207 - #8 ;
+INFO  20:41:05,207 - #47 print
+INFO  20:41:05,207 - #18 (
+INFO  20:41:05,207 - #20 2
+INFO  20:41:05,207 - #19 )
+INFO  20:41:05,207 - #8 ;
+INFO  20:41:05,207 - #4 }
+INFO  20:41:05,207 - #4 }
+INFO  20:41:05,207 - Program(
+  ProgNameDerived1(
+  ) [ProgNameDerived1]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      VarDeclaration1(
+        VarDeclDerived1(
+        ) [VarDeclDerived1]
+      ) [VarDeclaration1]
+    ) [DeclarationLst]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+        ) [Type]
+        ConstDeclrtion(
+          ConstNumber(
+           5
+          ) [ConstNumber]
+        ) [ConstDeclrtion]
+        ConstValuesLst(
+          NoConstValuesLst(
+          ) [NoConstValuesLst]
+          ConstDeclrtion(
+            ConstBool(
+             true
+            ) [ConstBool]
+          ) [ConstDeclrtion]
+        ) [ConstValuesLst]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      NonVoidMethodType(
+        Type(
+        ) [Type]
+      ) [NonVoidMethodType]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationsInClass(
+      ) [NoVarDeclarationsInClass]
+      StmtList(
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              PrintStatement(
+                Expression(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermDeclaration(
+                    FactorConst(
+                      ConstNumber(
+                       1
+                      ) [ConstNumber]
+                    ) [FactorConst]
+                    NoMulopFactorLst(
+                    ) [NoMulopFactorLst]
+                  ) [TermDeclaration]
+                  NoAddopTermLst(
+                  ) [NoAddopTermLst]
+                ) [Expression]
+                NoNumConsts(
+                ) [NoNumConsts]
+              ) [PrintStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            DesignatorStStatement(
+              DesignatorStatement(
+                DesignatorDerived1(
+                ) [DesignatorDerived1]
+                DesignatorStatementFill1(
+                  OpEq(
+                  ) [OpEq]
+                  Expression(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermDeclaration(
+                      FactorDesignator(
+                        DesignatorDerived1(
+                        ) [DesignatorDerived1]
+                        NoActualParsWithParen(
+                        ) [NoActualParsWithParen]
+                      ) [FactorDesignator]
+                      NoMulopFactorLst(
+                      ) [NoMulopFactorLst]
+                    ) [TermDeclaration]
+                    AddopTermLst(
+                      AddopTermLst(
+                        NoAddopTermLst(
+                        ) [NoAddopTermLst]
+                        OpPlus(
+                        ) [OpPlus]
+                        TermDeclaration(
+                          FactorConst(
+                            ConstNumber(
+                             5
+                            ) [ConstNumber]
+                          ) [FactorConst]
+                          NoMulopFactorLst(
+                          ) [NoMulopFactorLst]
+                        ) [TermDeclaration]
+                      ) [AddopTermLst]
+                      OpPlus(
+                      ) [OpPlus]
+                      TermDeclaration(
+                        FactorDesignator(
+                          DesignatorDerived1(
+                          ) [DesignatorDerived1]
+                          NoActualParsWithParen(
+                          ) [NoActualParsWithParen]
+                        ) [FactorDesignator]
+                        NoMulopFactorLst(
+                        ) [NoMulopFactorLst]
+                      ) [TermDeclaration]
+                    ) [AddopTermLst]
+                  ) [Expression]
+                ) [DesignatorStatementFill1]
+              ) [DesignatorStatement]
+            ) [DesignatorStStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStatement(
+            Expression(
+              NoMinus(
+              ) [NoMinus]
+              TermDeclaration(
+                FactorConst(
+                  ConstNumber(
+                   2
+                  ) [ConstNumber]
+                ) [FactorConst]
+                NoMulopFactorLst(
+                ) [NoMulopFactorLst]
+              ) [TermDeclaration]
+              NoAddopTermLst(
+              ) [NoAddopTermLst]
+            ) [Expression]
+            NoNumConsts(
+            ) [NoNumConsts]
+          ) [PrintStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  20:41:05,223 - ===================================
+INFO  20:41:05,223 -  Print count calls = 2
+INFO  20:41:05,223 -  Deklarisanih promenljivih ima = 0
+INFO  20:41:05,223 - Konstanti ima = 2

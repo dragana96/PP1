@@ -1,0 +1,44 @@
+// Test301
+
+program test301
+
+	enum Broj { NULA, JEDAN, PET=5, DESET=10}
+
+	const int jedan = 1;
+	const int pet = 5;
+
+	int niz[];
+	char nizch[];
+	
+{
+	int inc(int broj)
+	{
+		return broj + 5;
+	}
+
+	
+	void main()	
+		int bodovi;
+	
+	{
+		
+		
+
+		bodovi = 1;
+		bodovi++;
+		bodovi = bodovi * pet;
+		bodovi--;
+		print(bodovi); 
+			
+			
+		//read(bodovi);
+		bodovi = inc(bodovi);
+		print(bodovi);
+			
+	
+	}
+}
+
+
+
+

@@ -1,0 +1,119 @@
+INFO  01:02:20,280 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  01:02:20,494 - #2 program
+INFO  01:02:20,495 - #22 test301
+INFO  01:02:20,495 - #14 enum
+INFO  01:02:20,498 - #22 Broj
+INFO  01:02:20,498 - #3 {
+INFO  01:02:20,498 - #22 NULA
+INFO  01:02:20,499 - #10 ,
+INFO  01:02:20,499 - #22 JEDAN
+INFO  01:02:20,499 - #10 ,
+INFO  01:02:20,500 - #22 PET
+INFO  01:02:20,500 - #6 =
+INFO  01:02:20,500 - #19 5
+INFO  01:02:20,500 - #10 ,
+INFO  01:02:20,502 - #22 DESET
+INFO  01:02:20,502 - #6 =
+INFO  01:02:20,502 - #19 10
+INFO  01:02:20,502 - #4 }
+INFO  01:02:20,503 - #3 {
+INFO  01:02:20,505 - #16 void
+INFO  01:02:20,507 - #22 main
+INFO  01:02:20,508 - #17 (
+INFO  01:02:20,510 - #18 )
+INFO  01:02:20,511 - #3 {
+INFO  01:02:20,513 - #47 print
+INFO  01:02:20,518 - #17 (
+INFO  01:02:20,518 - #22 Broj
+INFO  01:02:20,521 - #26 .
+INFO  01:02:20,521 - #22 PET
+INFO  01:02:20,521 - #18 )
+INFO  01:02:20,543 - #7 ;
+INFO  01:02:20,543 - #4 }
+INFO  01:02:20,544 - #4 }
+INFO  01:02:20,617 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationLst(
+    NoDeclarationLst(
+    ) [NoDeclarationLst]
+    EnumDeclaration(
+      EnumDecl(
+       Broj
+        NumConstListComma(
+          NumConstListComma(
+            NumConstListComma(
+              NoNumConstListNoComma(
+                EnumNoValue(
+                 NULA
+                ) [EnumNoValue]
+              ) [NoNumConstListNoComma]
+              EnumNoValue(
+               JEDAN
+              ) [EnumNoValue]
+            ) [NumConstListComma]
+            EnumWithValue(
+             PET
+             5
+            ) [EnumWithValue]
+          ) [NumConstListComma]
+          EnumWithValue(
+           DESET
+           10
+          ) [EnumWithValue]
+        ) [NumConstListComma]
+      ) [EnumDecl]
+    ) [EnumDeclaration]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoLocalVarDeclList(
+      ) [NoLocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        MatchedStmt(
+          PrintStatementWithoutNumConst(
+            Expr(
+              ExprTerm(
+                ExprWithoutMinus(
+                ) [ExprWithoutMinus]
+                TermFactor(
+                  FactorDesignator(
+                    DesignatorDot(
+                      DesignatorValue(
+                       Broj
+                      ) [DesignatorValue]
+                     PET
+                    ) [DesignatorDot]
+                  ) [FactorDesignator]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStatementWithoutNumConst]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  01:02:20,618 - ===================================
+INFO  01:02:20,640 - Pocetak programa  test301 na liniji 1
+INFO  01:02:20,642 - Dodeljivanje vrednosti elementu enum-a: NULA, vrednost je: 0 
+INFO  01:02:20,642 - Dodeljivanje vrednosti elementu enum-a: JEDAN, vrednost je: 0 
+INFO  01:02:20,643 - Dodeljivanje vrednosti elementu enum-a: PET, vrednost je: 5
+INFO  01:02:20,643 - Dodeljivanje vrednosti elementu enum-a: DESET, vrednost je: 10
+INFO  01:02:20,643 - Obradjuje se enum Broj na liniji 3
+INFO  01:02:20,644 - Obradjuje se  funkcija main na liniji 7
+INFO  01:02:20,644 - Pristup elementu Broj na liniji 11

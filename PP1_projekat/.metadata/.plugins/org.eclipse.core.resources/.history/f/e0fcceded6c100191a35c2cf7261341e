@@ -1,0 +1,184 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
+import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.concepts.Obj;
+
+public class CodeGenerator extends VisitorAdaptor {
+	
+	private int mainPc;
+	
+	public int getMainPc() {
+		return mainPc;
+	}
+	
+	public void visit(PrintStatementWithoutNumConst printStmt){
+		if(printStmt.getExpr().struct == TabExtended.intType){
+			Code.loadConst(5);
+			Code.put(Code.print);
+		}else{
+			Code.loadConst(1);
+			Code.put(Code.bprint);
+		}
+	}
+
+	
+	
+
+	
+	/*
+	public void visit(ConstNumber num) {
+		Obj obj = new Obj(Obj.Con, "con", num.struct, num.getN(), 0);
+		Code.load(obj);
+	}
+	
+	public void visit(ConstChar ch) {
+		Obj obj = new Obj(Obj.Con, "con", ch.struct, ch.getC(), 0);
+		Code.load(obj);
+	}
+	
+	public void visit(ConstBool bool) {
+		int value = 0;
+		if( bool.getB().equals("true")) value = 1;
+		Obj con = new Obj(Obj.Con, "con", bool.struct, value, 0);
+		Code.load(con);
+	}
+	*/
+	
+	public void visit(MethodName mName) {
+		
+		if("main".equals(mName.getMethodName())) {
+			mainPc = Code.pc;
+		}
+		mName.obj.setAdr(Code.pc);
+		
+		//generisemo pocetne instrukcije
+		SyntaxNode methodNode = mName.getParent();
+		VarCounter varCnt = new VarCounter();
+		methodNode.traverseTopDown(varCnt);
+		
+		FormParamCounter fpCnt = new FormParamCounter();
+		methodNode.traverseTopDown(fpCnt);
+		
+		// generisanje pocetne instrukcije 
+		
+		Code.put(Code.enter);
+		Code.put(fpCnt.getCount());
+		Code.put(fpCnt.getCount() + varCnt.getCount());
+		
+		
+		
+		
+	}
+	
+	public void visit(MethodDeclaration methodDeclaration) {
+		
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		
+	}
+	
+	public void visit(DessignatorAssign assignment) {
+		Code.store(assignment.getDesignator().obj);
+		
+	}
+	
+	public void visit(DesignatorValue design) {
+		
+		SyntaxNode parent = design.getParent();
+		if (DessignatorAssign.class != parent.getClass() && DesignatorMethodCall.class != parent.getClass()
+				&& FactorDesignatorFunction.class != parent.getClass() && ReadStatement.class != parent.getClass()) {
+			Code.load(design.obj);
+		}
+	}
+	
+	public void visit(FactorDesignatorFunction funcCall) {
+		Obj functionObj = funcCall.getDesignator().obj;
+		
+		
+		if("ord".equals(functionObj.getName()) || "chr".equals(functionObj.getName()))
+			return;
+		
+		if("len".equals(functionObj.getName())) {
+			Code.put(Code.arraylength);
+			return;
+		}
+		
+		int offset = functionObj.getAdr() - Code.mainPc;
+		Code.put(Code.call);
+		//Code.put(mainPc);
+		Code.put2(offset);
+		
+	}
+	
+	public void visit(DesignatorMethodCall procCall) {
+		Obj functionObj = procCall.getDesignator().obj;
+		
+		
+		if("ord".equals(functionObj.getName()) || "chr".equals(functionObj.getName()))
+			return;
+		
+		if("len".equals(functionObj.getName())) {
+			Code.put(Code.arraylength);
+			return;
+		}
+		
+		int offset = functionObj.getAdr() - Code.mainPc;
+		Code.put(Code.call);
+		Code.put(mainPc);
+		
+		Code.put2(offset);
+		if(procCall.getDesignator().obj.getType() != TabExtended.noType) {
+			Code.put(Code.pop);
+		}
+		
+	}
+	
+	
+	
+	
+	public void visit(FactorNumber num) {
+		Obj con = TabExtended.insert(Obj.Con, "$", num.struct);
+		con.setLevel(0);
+		con.setAdr(num.getN());		
+		Code.load(con);
+	}
+	
+	public void visit(FactorChar FactorChar) {
+		Code.load(new Obj(Obj.Con, "$", TabExtended.charType, FactorChar.getC(), 0));
+	}
+
+	
+	public void visit(FactorBool FactorBool) {
+		int value = FactorBool.getB().equals("true") ? 1 : 0;
+		Code.load(new Obj(Obj.Con, "$", TabExtended.boolType, value, 0));
+	}
+	
+	
+	public void visit(ExprAddop ExprAddop) {
+		if (ExprAddop.getAddop() instanceof OpPlus)
+			Code.put(Code.add);
+		else
+			Code.put(Code.sub);
+	}
+	
+	public void visit(ExprTerm ExprTerm) {
+		if (ExprTerm.getExprMinus() instanceof ExprMin) {
+			Code.put(Code.neg);
+		}
+	}
+
+	
+	public void visit(TermMulopFactor TermMulop) {
+		if (TermMulop.getMulop() instanceof OpMultiply)
+			Code.put(Code.mul);
+		else if (TermMulop.getMulop() instanceof OpDivide)
+			Code.put(Code.div);
+		else
+			Code.put(Code.rem);
+	}
+	
+
+}

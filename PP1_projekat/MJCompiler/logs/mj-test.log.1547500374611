@@ -1,0 +1,298 @@
+INFO  22:08:21,784 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  22:08:21,971 - #2 program
+INFO  22:08:21,971 - #22 Program
+INFO  22:08:21,971 - #5 const
+INFO  22:08:21,974 - #22 int
+INFO  22:08:21,974 - #22 pi
+INFO  22:08:21,975 - #6 =
+INFO  22:08:21,975 - #19 3
+INFO  22:08:21,975 - #10 ,
+INFO  22:08:21,976 - #22 e
+INFO  22:08:21,977 - #6 =
+INFO  22:08:21,977 - #19 2
+INFO  22:08:21,977 - #7 ;
+INFO  22:08:21,978 - #22 int
+INFO  22:08:21,980 - #22 z
+INFO  22:08:21,980 - #7 ;
+INFO  22:08:21,980 - #22 char
+INFO  22:08:21,981 - #22 k
+INFO  22:08:21,981 - #7 ;
+INFO  22:08:21,981 - #22 int
+INFO  22:08:21,981 - #22 y
+INFO  22:08:21,982 - #7 ;
+INFO  22:08:21,982 - #3 {
+INFO  22:08:21,982 - #16 void
+INFO  22:08:21,983 - #22 main
+INFO  22:08:21,985 - #17 (
+INFO  22:08:21,986 - #18 )
+INFO  22:08:21,987 - #22 int
+INFO  22:08:21,988 - #22 i
+INFO  22:08:21,988 - #7 ;
+INFO  22:08:21,989 - #22 int
+INFO  22:08:21,989 - #22 x
+INFO  22:08:21,989 - #8 [
+INFO  22:08:21,989 - #9 ]
+INFO  22:08:21,990 - #7 ;
+INFO  22:08:21,991 - #3 {
+INFO  22:08:21,991 - #22 x
+INFO  22:08:21,993 - #6 =
+INFO  22:08:21,994 - #25 new
+INFO  22:08:21,999 - #22 int
+INFO  22:08:21,999 - #8 [
+INFO  22:08:21,999 - #19 3
+INFO  22:08:21,999 - #9 ]
+INFO  22:08:22,001 - #7 ;
+INFO  22:08:22,002 - #22 i
+INFO  22:08:22,003 - #6 =
+INFO  22:08:22,003 - #19 0
+INFO  22:08:22,003 - #7 ;
+INFO  22:08:22,003 - #22 z
+INFO  22:08:22,003 - #6 =
+INFO  22:08:22,003 - #22 i
+INFO  22:08:22,004 - #7 ;
+INFO  22:08:22,004 - #22 k
+INFO  22:08:22,004 - #6 =
+INFO  22:08:22,004 - #20 k
+INFO  22:08:22,005 - #7 ;
+INFO  22:08:22,005 - #4 }
+INFO  22:08:22,005 - #4 }
+INFO  22:08:22,026 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      DeclarationLst(
+        DeclarationLst(
+          NoDeclarationLst(
+          ) [NoDeclarationLst]
+          ConstDeclaration1(
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              ConstListDerived2(
+                ConstListDerived1(
+                  ConstDeclaration(
+                   pi
+                    ConstNumber(
+                     3
+                    ) [ConstNumber]
+                  ) [ConstDeclaration]
+                ) [ConstListDerived1]
+                ConstDeclaration(
+                 e
+                  ConstNumber(
+                   2
+                  ) [ConstNumber]
+                ) [ConstDeclaration]
+              ) [ConstListDerived2]
+            ) [ConstDecl]
+          ) [ConstDeclaration1]
+        ) [DeclarationLst]
+        GlobalVarDeclaration1(
+          GVarDecl(
+            Type(
+             int
+            ) [Type]
+            GSingleVarDeclaration(
+              GVarDeclaration(
+               z
+              ) [GVarDeclaration]
+            ) [GSingleVarDeclaration]
+          ) [GVarDecl]
+        ) [GlobalVarDeclaration1]
+      ) [DeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           char
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             k
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         int
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           y
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        LocalVarDeclList(
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          LVarDecl(
+            Type(
+             int
+            ) [Type]
+            LSingleVarDeclaration(
+              LVarDeclaration(
+               i
+              ) [LVarDeclaration]
+            ) [LSingleVarDeclaration]
+          ) [LVarDecl]
+        ) [LocalVarDeclList]
+        LVarDecl(
+          Type(
+           int
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarArray(
+             x
+              Brackets(
+              ) [Brackets]
+            ) [LVarArray]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              NoStmtList(
+              ) [NoStmtList]
+              MatchedStmt(
+                DesignatorStStatement(
+                  DessignatorAssign(
+                    DesignatorValue(
+                     x
+                    ) [DesignatorValue]
+                    OpEq(
+                    ) [OpEq]
+                    Expr(
+                      ExprTerm(
+                        ExprWithoutMinus(
+                        ) [ExprWithoutMinus]
+                        TermFactor(
+                          FactorNewArray(
+                            Type(
+                             int
+                            ) [Type]
+                            Expr(
+                              ExprTerm(
+                                ExprWithoutMinus(
+                                ) [ExprWithoutMinus]
+                                TermFactor(
+                                  FactorNumber(
+                                   3
+                                  ) [FactorNumber]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [Expr]
+                          ) [FactorNewArray]
+                        ) [TermFactor]
+                      ) [ExprTerm]
+                    ) [Expr]
+                  ) [DessignatorAssign]
+                ) [DesignatorStStatement]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              DesignatorStStatement(
+                DessignatorAssign(
+                  DesignatorValue(
+                   i
+                  ) [DesignatorValue]
+                  OpEq(
+                  ) [OpEq]
+                  Expr(
+                    ExprTerm(
+                      ExprWithoutMinus(
+                      ) [ExprWithoutMinus]
+                      TermFactor(
+                        FactorNumber(
+                         0
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [Expr]
+                ) [DessignatorAssign]
+              ) [DesignatorStStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            DesignatorStStatement(
+              DessignatorAssign(
+                DesignatorValue(
+                 z
+                ) [DesignatorValue]
+                OpEq(
+                ) [OpEq]
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorValue(
+                         i
+                        ) [DesignatorValue]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DessignatorAssign]
+            ) [DesignatorStStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          DesignatorStStatement(
+            DessignatorAssign(
+              DesignatorValue(
+               k
+              ) [DesignatorValue]
+              OpEq(
+              ) [OpEq]
+              Expr(
+                ExprTerm(
+                  ExprWithoutMinus(
+                  ) [ExprWithoutMinus]
+                  TermFactor(
+                    FactorChar(
+                     k
+                    ) [FactorChar]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [Expr]
+            ) [DessignatorAssign]
+          ) [DesignatorStStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  22:08:22,056 - Pocetak programa  Program na liniji 1
+INFO  22:08:22,056 - Deklarisana konstanta pi na liniji 2
+INFO  22:08:22,057 - Deklarisana konstanta e na liniji 2
+INFO  22:08:22,057 - Deklarisana globalna promenljiva z na liniji 3
+INFO  22:08:22,058 - Deklarisana globalna promenljiva k na liniji 4
+INFO  22:08:22,061 - Deklarisana globalna promenljiva y na liniji 5
+INFO  22:08:22,062 - Obradjuje se  funkcija main na liniji 8
+INFO  22:08:22,062 - Deklarisana lokalna promenljiva i na liniji 8
+INFO  22:08:22,072 - Deklarisan lokalni niz x na liniji 8
+INFO  22:08:22,072 - Pristup x na liniji 10

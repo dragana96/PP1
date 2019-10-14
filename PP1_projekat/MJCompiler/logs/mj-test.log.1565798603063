@@ -1,0 +1,135 @@
+INFO  18:02:50,956 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  18:02:51,040 - #2 program
+INFO  18:02:51,040 - #22 MJProgram
+INFO  18:02:51,041 - #22 int
+INFO  18:02:51,042 - #22 x
+INFO  18:02:51,043 - #7 ;
+INFO  18:02:51,043 - #22 int
+INFO  18:02:51,044 - #22 y
+INFO  18:02:51,044 - #7 ;
+INFO  18:02:51,044 - #3 {
+INFO  18:02:51,044 - #22 int
+INFO  18:02:51,046 - #22 main
+INFO  18:02:51,046 - #17 (
+INFO  18:02:51,047 - #18 )
+INFO  18:02:51,049 - #3 {
+INFO  18:02:51,050 - #47 print
+INFO  18:02:51,051 - #17 (
+INFO  18:02:51,052 - #19 1
+INFO  18:02:51,053 - #18 )
+INFO  18:02:51,054 - #7 ;
+INFO  18:02:51,054 - #22 x
+INFO  18:02:51,055 - #6 =
+INFO  18:02:51,055 - #22 y
+INFO  18:02:51,057 - #33 +
+INFO  18:02:51,057 - #19 5
+INFO  18:02:51,059 - #33 +
+INFO  18:02:51,059 - #7 ;
+ERROR 18:02:51,059 - Sintaksna greska na liniji 8
+INFO  18:02:51,059 - #47 print
+INFO  18:02:51,059 - #17 (
+INFO  18:02:51,059 - #19 2
+ERROR 18:02:51,060 - Izvrsen oporavak do ; u liniji 8
+INFO  18:02:51,061 - #18 )
+INFO  18:02:51,061 - #7 ;
+INFO  18:02:51,061 - #4 }
+INFO  18:02:51,061 - #4 }
+INFO  18:02:51,063 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           int
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             x
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         int
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           y
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      ReturnMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [ReturnMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoLocalVarDeclList(
+      ) [NoLocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              PrintStatementWithoutNumConst(
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorNumber(
+                       1
+                      ) [FactorNumber]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [PrintStatementWithoutNumConst]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStatementWithoutNumConst(
+            Expr(
+              ExprTerm(
+                ExprWithoutMinus(
+                ) [ExprWithoutMinus]
+                TermFactor(
+                  FactorNumber(
+                   2
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStatementWithoutNumConst]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  18:02:51,064 - ===================================
+INFO  18:02:51,068 -  Print count calls = 2

@@ -1,0 +1,168 @@
+// lekser == leksicki analizator - sluzi za realizaciju faze leksicke
+// analize, odnosno u kodu identifikujemo neke leksicke celine
+// koje imaju neki sintaksni smisao, transformisemo u tokene
+// i saljemo dalje sintaksnom analizatoru
+
+// dakle, mi hocemo da identifikujemo  sve moguce tokene koje
+// lekser moze da vrati obradjujuci izvorni kod napisan u Mikrojavi
+
+// ****IMPORT SEKCIJA****
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.Symbol;
+
+%%
+// ****SEKCIJA DIREKTIVA*****
+
+%{
+
+	//funkcije napisane da bi pravile tokene, jedna pravi na osnovu
+	//tipa, a druga na osnovu tipa i vrednosti
+	
+	private Symbol new_symbol(int type) {
+		return new Symbol(type, yyline+1, yycolumn);
+	}
+	
+	private Symbol new_symbol(int type, Object value) {
+		return new Symbol(type, yyline+1, yycolumn, value);
+	}
+	
+	// token je predstavljen klasom Symbol tako da nasa implementacija
+	// zavisi od klase Symbol koja se nalazi u java_cup paketu
+	// koji moramo da stavimo u import sekciju 
+	
+%}
+
+
+// skener
+%cup 
+
+// pratimo broj linija i kolona
+%line
+%column
+
+// dodajemo novo stanje za pisanje komentara
+%xstate COMMENT
+				
+
+// kada lekser dodje do kraja ulaznog fajla lekser moze da izvrsi
+// neku akciju koju definisemo sa EOF, znaci kada dodje do kraja 
+// vracamo token EOF
+
+%eofval{
+	return new_symbol(sym.EOF);
+%eofval}
+
+%%
+// ****REGULARNI IZRAZI****
+
+// na osnovu regularnih izraza treba da omogucimo akcije kada 
+// se okine neki od tih regularnih izraza
+
+
+
+// ignorisati sve vrste belih i kontrolnih znakova u kodu
+" "     { }
+"\b"    { } // backspace
+"\t"    { } // tabulator
+"\r\n"  { } // novi red
+"\f"    { } // znak za prelazak na novi list papira
+
+
+// regularni izrazi za ostale tokene
+
+"program" { return new_symbol(sym.PROG, yytext()); } // yytext() - vraca sekvencu znakova koji su trenutno procitani
+"break" { return new_symbol(sym.BREAK, yytext());}
+"class" { return new_symbol(sym.CLASS, yytext());}
+"interface" { return new_symbol(sym.INTERFACE, yytext());}
+"enum" { return new_symbol(sym.ENUM, yytext());}
+"else" { return new_symbol(sym.ELSE, yytext());}
+"const" { return new_symbol(sym.CONST, yytext());}
+"if" { return new_symbol(sym.IF, yytext());}
+"new" { return new_symbol(sym.NEW, yytext());}
+"print" { return new_symbol(sym.PRINT, yytext());}
+"read" { return new_symbol(sym.READ, yytext());}
+"return" { return new_symbol(sym.RETURN, yytext());}
+"void" { return new_symbol(sym.VOID, yytext());}
+"for" { return new_symbol(sym.FOR, yytext());}
+"extends" { return new_symbol(sym.EXTENDS, yytext());}
+"continue" { return new_symbol(sym.CONTINUE, yytext());}
+"implements" { return new_symbol(sym.IMPLEMENTS, yytext());}
+
+
+"+" { return new_symbol(sym.PLUS, yytext());}
+"-" { return new_symbol(sym.MINUS, yytext());}
+"*" { return new_symbol(sym.MULTIPLY, yytext());}
+"/" { return new_symbol(sym.DIVIDE, yytext());}
+"%" { return new_symbol(sym.MOD, yytext());}
+
+"==" { return new_symbol(sym.EQUALS, yytext());}
+"!=" { return new_symbol(sym.DIFFERENT, yytext());}
+">" { return new_symbol(sym.MORE, yytext());}
+">=" { return new_symbol(sym.MOREEQUAL, yytext());}
+"<" { return new_symbol(sym.LESS, yytext());}
+"<=" { return new_symbol(sym.LESSEQUAL, yytext());}
+"&&" { return new_symbol(sym.AND, yytext());}
+"||" { return new_symbol(sym.OR, yytext());}
+
+"=" { return new_symbol(sym.EQUAL, yytext());}
+"++" { return new_symbol(sym.INC, yytext());}
+"--" { return new_symbol(sym.DEC, yytext());}
+";" { return new_symbol(sym.SEMI, yytext());}
+"," { return new_symbol(sym.COMMA, yytext());}
+"." { return new_symbol(sym.DOT, yytext());}
+
+"(" { return new_symbol(sym.LPAREN, yytext());}
+")" { return new_symbol(sym.RPAREN, yytext());}
+"[" { return new_symbol(sym.LBRACKETS, yytext());}
+"]" { return new_symbol(sym.RBRACKETS, yytext());}
+"{" { return new_symbol(sym.LBRACE, yytext());}
+"}" { return new_symbol(sym.RBRACE, yytext());}
+
+// svaka linija bi mogla da ima neku oznaku stanja u kojoj se
+// regularni izraz razmatra, pre linije napisemo <stanje>
+// nije krucijalno, ali bitno je kod komentara jer se citaju
+// u drugom stanju 
+
+// prelazimo u stanje obrade komentara
+"//" { yybegin(COMMENT);}
+
+// treba da detektujemo kada dolazimo do kraja reda i kada
+// da prestanemo sa ignorisanjem karaktera iz uvodnog fajla
+
+// tacka predstavlja bilo koji znak koji treba procitati iz 
+// uvodnog fajla, njena akcija jeste ostanak u stanju komentara
+<COMMENT> . {yybegin(COMMENT);} 
+
+// kada dodjemo do znakova za novi red prebaci u stanje YYINITIAL
+<COMMENT> "\r\n" { yybegin(YYINITIAL);}
+
+// regularni izrazi za konstante
+[0-9]+ {return new_symbol(sym.NUMBER, new Integer(yytext()));} 
+//  |
+//  |
+//  |------->  [...] bilo koji od znakova unutar zagrada, 
+// ponovljen jednom ili vise puta,
+// da je * bilo bi da je ponovljen nula ili vise puta
+
+"'"."'" {return new_symbol(sym.CHAR, new Character (yytext().charAt(1)));}
+"true"|"false" {return new_symbol(sym.BOOL, new String (yytext()));}
+
+// regularni izraz za identifikator
+([a-z]|[A-Z])[a-z|A-Z|0-9|_]* {return new_symbol(sym.IDENT, yytext());}
+
+// ako ne moze da se okine nijedan od regularnih izraza iznad njega
+// striktno na kraju sekcije, akcija - ispisati leksicku gresku
+
+. { System.err.println("Leksicka greska ("+yytext()+") u liniji "+(yyline+1) + ", koloni: " + yycolumn); }
+
+
+
+
+
+
+
+
+
+
+

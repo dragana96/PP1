@@ -1,0 +1,291 @@
+INFO  21:52:26,682 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  21:52:26,762 - #2 program
+INFO  21:52:26,762 - #22 Program
+INFO  21:52:26,762 - #5 const
+INFO  21:52:26,764 - #22 int
+INFO  21:52:26,764 - #22 pi
+INFO  21:52:26,765 - #6 =
+INFO  21:52:26,766 - #19 3
+INFO  21:52:26,766 - #10 ,
+INFO  21:52:26,766 - #22 e
+INFO  21:52:26,766 - #6 =
+INFO  21:52:26,767 - #19 2
+INFO  21:52:26,767 - #7 ;
+INFO  21:52:26,767 - #22 int
+INFO  21:52:26,769 - #22 z
+INFO  21:52:26,769 - #7 ;
+INFO  21:52:26,769 - #22 char
+INFO  21:52:26,769 - #22 k
+INFO  21:52:26,769 - #7 ;
+INFO  21:52:26,770 - #3 {
+INFO  21:52:26,770 - #16 void
+INFO  21:52:26,771 - #22 main
+INFO  21:52:26,772 - #17 (
+INFO  21:52:26,773 - #18 )
+INFO  21:52:26,774 - #22 int
+INFO  21:52:26,775 - #22 i
+INFO  21:52:26,775 - #7 ;
+INFO  21:52:26,775 - #22 int
+INFO  21:52:26,775 - #22 x
+INFO  21:52:26,775 - #8 [
+INFO  21:52:26,775 - #9 ]
+INFO  21:52:26,775 - #7 ;
+INFO  21:52:26,776 - #3 {
+INFO  21:52:26,776 - #22 x
+INFO  21:52:26,778 - #6 =
+INFO  21:52:26,778 - #25 new
+INFO  21:52:26,781 - #22 int
+INFO  21:52:26,781 - #8 [
+INFO  21:52:26,781 - #19 3
+INFO  21:52:26,781 - #9 ]
+INFO  21:52:26,782 - #7 ;
+INFO  21:52:26,783 - #22 i
+INFO  21:52:26,783 - #6 =
+INFO  21:52:26,783 - #19 0
+INFO  21:52:26,784 - #7 ;
+INFO  21:52:26,785 - #22 z
+INFO  21:52:26,785 - #6 =
+INFO  21:52:26,785 - #22 i
+INFO  21:52:26,785 - #7 ;
+INFO  21:52:26,786 - #22 k
+INFO  21:52:26,786 - #6 =
+INFO  21:52:26,789 - #20 k
+INFO  21:52:26,790 - #7 ;
+INFO  21:52:26,790 - #4 }
+INFO  21:52:26,790 - #4 }
+INFO  21:52:26,816 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      DeclarationLst(
+        NoDeclarationLst(
+        ) [NoDeclarationLst]
+        ConstDeclaration1(
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            ConstListDerived2(
+              ConstListDerived1(
+                ConstDeclaration(
+                 pi
+                  ConstNumber(
+                   3
+                  ) [ConstNumber]
+                ) [ConstDeclaration]
+              ) [ConstListDerived1]
+              ConstDeclaration(
+               e
+                ConstNumber(
+                 2
+                ) [ConstNumber]
+              ) [ConstDeclaration]
+            ) [ConstListDerived2]
+          ) [ConstDecl]
+        ) [ConstDeclaration1]
+      ) [DeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           int
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             z
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         char
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           k
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        LocalVarDeclList(
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          LVarDecl(
+            Type(
+             int
+            ) [Type]
+            LSingleVarDeclaration(
+              LVarDeclaration(
+               i
+              ) [LVarDeclaration]
+            ) [LSingleVarDeclaration]
+          ) [LVarDecl]
+        ) [LocalVarDeclList]
+        LVarDecl(
+          Type(
+           int
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarArray(
+             x
+              Brackets(
+              ) [Brackets]
+            ) [LVarArray]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              NoStmtList(
+              ) [NoStmtList]
+              MatchedStmt(
+                DesignatorStStatement(
+                  DessignatorAssign(
+                    DesignatorValue(
+                     x
+                    ) [DesignatorValue]
+                    OpEq(
+                    ) [OpEq]
+                    Expr(
+                      ExprTerm(
+                        ExprWithoutMinus(
+                        ) [ExprWithoutMinus]
+                        TermFactor(
+                          FactorNewArray(
+                            Type(
+                             int
+                            ) [Type]
+                            Expr(
+                              ExprTerm(
+                                ExprWithoutMinus(
+                                ) [ExprWithoutMinus]
+                                TermFactor(
+                                  FactorNumber(
+                                   3
+                                  ) [FactorNumber]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [Expr]
+                          ) [FactorNewArray]
+                        ) [TermFactor]
+                      ) [ExprTerm]
+                    ) [Expr]
+                  ) [DessignatorAssign]
+                ) [DesignatorStStatement]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              DesignatorStStatement(
+                DessignatorAssign(
+                  DesignatorValue(
+                   i
+                  ) [DesignatorValue]
+                  OpEq(
+                  ) [OpEq]
+                  Expr(
+                    ExprTerm(
+                      ExprWithoutMinus(
+                      ) [ExprWithoutMinus]
+                      TermFactor(
+                        FactorNumber(
+                         0
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [Expr]
+                ) [DessignatorAssign]
+              ) [DesignatorStStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            DesignatorStStatement(
+              DessignatorAssign(
+                DesignatorValue(
+                 z
+                ) [DesignatorValue]
+                OpEq(
+                ) [OpEq]
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorValue(
+                         i
+                        ) [DesignatorValue]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DessignatorAssign]
+            ) [DesignatorStStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          DesignatorStStatement(
+            DessignatorAssign(
+              DesignatorValue(
+               k
+              ) [DesignatorValue]
+              OpEq(
+              ) [OpEq]
+              Expr(
+                ExprTerm(
+                  ExprWithoutMinus(
+                  ) [ExprWithoutMinus]
+                  TermFactor(
+                    FactorChar(
+                     k
+                    ) [FactorChar]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [Expr]
+            ) [DessignatorAssign]
+          ) [DesignatorStStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  21:52:26,820 - Pocetak programa  Program na liniji 1
+INFO  21:52:26,821 - Deklarisana konstanta pi na liniji 2
+INFO  21:52:26,821 - Deklarisana konstanta e na liniji 2
+INFO  21:52:26,821 - Deklarisana globalna promenljiva z na liniji 3
+INFO  21:52:26,821 - Deklarisana globalna promenljiva k na liniji 4
+INFO  21:52:26,821 - Obradjuje se  funkcija main na liniji 7
+INFO  21:52:26,821 - Deklarisana lokalna promenljiva i na liniji 7
+INFO  21:52:26,821 - Deklarisan lokalni niz x na liniji 7
+INFO  21:52:26,821 - Pristup x na liniji 9
+ERROR 21:52:26,822 - Greska na liniji 9 : tip izraza ne slaze se sa tipom designatora u dodeli 
+INFO  21:52:26,822 - Pristup i na liniji 10
+INFO  21:52:26,822 - Pristup z na liniji 11
+INFO  21:52:26,823 - Pristup i na liniji 11
+INFO  21:52:26,829 - Pristup k na liniji 12
+INFO  21:52:26,829 - ===================================
+INFO  21:52:26,829 -  Deklarisanih globalnih promenljivih ima = 2
+INFO  21:52:26,829 -  Deklarisanih lokalnih promenljivih ima = 2
+INFO  21:52:26,829 -  Konstanti ima = 2
+INFO  21:52:26,829 - ===================================
+ERROR 21:52:26,830 - Parsiranje NIJE uspesno zavrseno!

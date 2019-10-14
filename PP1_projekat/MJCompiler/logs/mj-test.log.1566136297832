@@ -1,0 +1,285 @@
+INFO  15:51:04,582 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  15:51:04,661 - #2 program
+INFO  15:51:04,661 - #22 MJProgram
+INFO  15:51:04,661 - #22 int
+INFO  15:51:04,663 - #22 x
+INFO  15:51:04,664 - #7 ;
+INFO  15:51:04,664 - #22 int
+INFO  15:51:04,665 - #22 y
+INFO  15:51:04,665 - #7 ;
+INFO  15:51:04,665 - #3 {
+INFO  15:51:04,665 - #22 int
+INFO  15:51:04,666 - #22 k
+INFO  15:51:04,666 - #17 (
+INFO  15:51:04,667 - #18 )
+INFO  15:51:04,668 - #22 int
+INFO  15:51:04,668 - #22 c
+INFO  15:51:04,669 - #7 ;
+INFO  15:51:04,669 - #3 {
+INFO  15:51:04,669 - #22 c
+INFO  15:51:04,671 - #6 =
+INFO  15:51:04,671 - #19 2
+INFO  15:51:04,673 - #7 ;
+INFO  15:51:04,675 - #47 print
+INFO  15:51:04,675 - #17 (
+INFO  15:51:04,675 - #19 0
+INFO  15:51:04,675 - #18 )
+INFO  15:51:04,675 - #7 ;
+INFO  15:51:04,675 - #45 return
+INFO  15:51:04,675 - #22 c
+INFO  15:51:04,676 - #33 +
+INFO  15:51:04,676 - #19 2
+INFO  15:51:04,677 - #7 ;
+INFO  15:51:04,677 - #4 }
+INFO  15:51:04,678 - #22 int
+INFO  15:51:04,678 - #22 main
+INFO  15:51:04,678 - #17 (
+INFO  15:51:04,678 - #18 )
+INFO  15:51:04,678 - #3 {
+INFO  15:51:04,678 - #47 print
+INFO  15:51:04,678 - #17 (
+INFO  15:51:04,678 - #19 1
+INFO  15:51:04,678 - #18 )
+INFO  15:51:04,679 - #7 ;
+INFO  15:51:04,679 - #47 print
+INFO  15:51:04,679 - #17 (
+INFO  15:51:04,679 - #19 2
+INFO  15:51:04,679 - #18 )
+INFO  15:51:04,679 - #7 ;
+INFO  15:51:04,679 - #45 return
+INFO  15:51:04,679 - #19 1
+INFO  15:51:04,680 - #7 ;
+INFO  15:51:04,680 - #4 }
+INFO  15:51:04,680 - #4 }
+INFO  15:51:04,707 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           int
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             x
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         int
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           y
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      NoMethodDeclarationList(
+      ) [NoMethodDeclarationList]
+      MethodDeclaration(
+        ReturnMethodType(
+          Type(
+           int
+          ) [Type]
+        ) [ReturnMethodType]
+        MethodName(
+         k
+        ) [MethodName]
+        NoFormalParams(
+        ) [NoFormalParams]
+        LocalVarDeclList(
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          LVarDecl(
+            Type(
+             int
+            ) [Type]
+            LSingleVarDeclaration(
+              LVarDeclaration(
+               c
+              ) [LVarDeclaration]
+            ) [LSingleVarDeclaration]
+          ) [LVarDecl]
+        ) [LocalVarDeclList]
+        StartMethodSt(
+        ) [StartMethodSt]
+        StmtList(
+          StmtList(
+            StmtList(
+              NoStmtList(
+              ) [NoStmtList]
+              MatchedStmt(
+                DesignatorStStatement(
+                  DessignatorAssign(
+                    DesignatorValue(
+                     c
+                    ) [DesignatorValue]
+                    OpEq(
+                    ) [OpEq]
+                    Expr(
+                      ExprTerm(
+                        ExprWithoutMinus(
+                        ) [ExprWithoutMinus]
+                        TermFactor(
+                          FactorNumber(
+                           2
+                          ) [FactorNumber]
+                        ) [TermFactor]
+                      ) [ExprTerm]
+                    ) [Expr]
+                  ) [DessignatorAssign]
+                ) [DesignatorStStatement]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              PrintStatementWithoutNumConst(
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorNumber(
+                       0
+                      ) [FactorNumber]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [PrintStatementWithoutNumConst]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            ReturnStatement(
+              Expr(
+                ExprAddop(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorValue(
+                         c
+                        ) [DesignatorValue]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                  OpPlus(
+                  ) [OpPlus]
+                  TermFactor(
+                    FactorNumber(
+                     2
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprAddop]
+              ) [Expr]
+            ) [ReturnStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDeclaration]
+    ) [MethodDeclarationList]
+    MethodDeclaration(
+      ReturnMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [ReturnMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoLocalVarDeclList(
+      ) [NoLocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              PrintStatementWithoutNumConst(
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorNumber(
+                       1
+                      ) [FactorNumber]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [PrintStatementWithoutNumConst]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            PrintStatementWithoutNumConst(
+              Expr(
+                ExprTerm(
+                  ExprWithoutMinus(
+                  ) [ExprWithoutMinus]
+                  TermFactor(
+                    FactorNumber(
+                     2
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [Expr]
+            ) [PrintStatementWithoutNumConst]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          ReturnStatement(
+            Expr(
+              ExprTerm(
+                ExprWithoutMinus(
+                ) [ExprWithoutMinus]
+                TermFactor(
+                  FactorNumber(
+                   1
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [ReturnStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:51:04,710 - ===================================
+INFO  15:51:04,717 - Pocetak programa  MJProgram na liniji 1
+INFO  15:51:04,718 - 1glo var
+INFO  15:51:04,718 - Deklarisana globalna promenljiva x na liniji 2
+INFO  15:51:04,718 - 1glo var
+INFO  15:51:04,718 - Deklarisana globalna promenljiva y na liniji 2
+INFO  15:51:04,718 - Obradjuje se  funkcija k na liniji 5
+INFO  15:51:04,718 - 1lok var
+INFO  15:51:04,719 - Deklarisana lokalna promenljiva c na liniji 5
+INFO  15:51:04,719 - Pristup elementu c na liniji 6
+INFO  15:51:04,719 - Uspesno dodeljena vrednost promenjivoj c :  na liniji 6
+INFO  15:51:04,719 - Uspesno pozvana funkcija print. :  na liniji 7
+INFO  15:51:04,720 - Pristup elementu c na liniji 10
+INFO  15:51:04,720 - Zavrsena funkcija k na liniji 5
+INFO  15:51:04,726 - Obradjuje se  funkcija main na liniji 13
+INFO  15:51:04,726 - Uspesno pozvana funkcija print. :  na liniji 7
+INFO  15:51:04,726 - Uspesno pozvana funkcija print. :  na liniji 7
+INFO  15:51:04,726 - Zavrsena funkcija main na liniji 13
+INFO  15:51:04,727 - Kraj 
+INFO  15:51:04,727 -  Deklarisanih promenljivih ima = 1
+INFO  15:51:04,727 -  Globalnih promenljivih ima = 2
+INFO  15:51:04,727 -  Deklarisanih konstanti ima = 0
+INFO  15:51:04,738 - Parsiranje uspesno zavrseno!

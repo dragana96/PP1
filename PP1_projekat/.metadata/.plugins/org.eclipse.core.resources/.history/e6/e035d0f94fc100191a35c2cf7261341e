@@ -1,0 +1,55 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.concepts.Obj;
+
+public class CodeGenerator extends VisitorAdaptor {
+	
+	private int mainPc;
+	
+	public int getMainPc() {
+		return mainPc;
+	}
+	
+	public void visit(PrintStatementWithoutNumConst printStmt) {
+		if(printStmt.getExpr().struct == TabExtended.intType) {
+			Code.loadConst(5);
+			Code.put(Code.print);
+		} else if(printStmt.getExpr().struct == TabExtended.charType){
+			Code.loadConst(1);
+			Code.put(Code.bprint);
+			
+		} else if(printStmt.getExpr().struct == TabExtended.enumType){
+			Code.loadConst(5);
+			Code.put(Code.print);
+			
+		} else if(printStmt.getExpr().struct == TabExtended.boolType){
+			Code.loadConst(1);
+			Code.put(Code.bprint);
+			
+		}
+	}
+	
+	//----KONSTANTE
+	
+	
+	public void visit(ConstNumber num) {
+		Obj obj = new Obj(Obj.Con, "con", num.struct, num.getN(), 0);
+		Code.load(obj);
+	}
+	
+	public void visit(ConstChar ch) {
+		Obj obj = new Obj(Obj.Con, "con", ch.struct, ch.getC(), 0);
+		Code.load(obj);
+	}
+	
+	public void visit(ConstBool bool) {
+		int value = 0;
+		if( bool.getB().equals("true")) value = 1;
+		Obj con = new Obj(Obj.Con, "con", bool.struct, value, 0);
+		Code.load(con);
+	}
+
+}

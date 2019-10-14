@@ -1,0 +1,245 @@
+INFO  22:13:27,768 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  22:13:27,965 - #2 program
+INFO  22:13:27,966 - #22 Program
+INFO  22:13:27,966 - #3 {
+INFO  22:13:27,969 - #16 void
+INFO  22:13:27,971 - #22 b
+INFO  22:13:27,972 - #17 (
+INFO  22:13:27,975 - #18 )
+INFO  22:13:27,976 - #3 {
+INFO  22:13:27,980 - #4 }
+INFO  22:13:27,983 - #16 void
+INFO  22:13:27,984 - #22 a
+INFO  22:13:27,984 - #17 (
+INFO  22:13:27,984 - #22 int
+INFO  22:13:27,985 - #22 k
+INFO  22:13:27,986 - #18 )
+INFO  22:13:27,987 - #3 {
+INFO  22:13:27,987 - #45 return
+INFO  22:13:27,988 - #22 k
+INFO  22:13:27,991 - #23 ++
+ERROR 22:13:27,991 - Sintaksna greska na liniji 5
+INFO  22:13:27,992 - #7 ;
+INFO  22:13:27,992 - #4 }
+INFO  22:13:27,992 - #16 void
+INFO  22:13:27,993 - #22 main
+ERROR 22:13:27,994 - Izvrsen oporavak do ; u liniji 5
+INFO  22:13:27,996 - #17 (
+INFO  22:13:27,996 - #18 )
+INFO  22:13:27,996 - #22 int
+INFO  22:13:27,996 - #22 arr
+INFO  22:13:27,996 - #8 [
+INFO  22:13:27,997 - #9 ]
+INFO  22:13:27,997 - #7 ;
+INFO  22:13:27,999 - #3 {
+INFO  22:13:28,000 - #22 b
+INFO  22:13:28,000 - #17 (
+INFO  22:13:28,000 - #18 )
+INFO  22:13:28,001 - #7 ;
+INFO  22:13:28,002 - #22 arr
+INFO  22:13:28,002 - #8 [
+INFO  22:13:28,002 - #19 0
+INFO  22:13:28,003 - #9 ]
+INFO  22:13:28,005 - #6 =
+INFO  22:13:28,005 - #22 arr
+INFO  22:13:28,009 - #8 [
+INFO  22:13:28,010 - #19 2
+INFO  22:13:28,010 - #9 ]
+INFO  22:13:28,010 - #7 ;
+INFO  22:13:28,011 - #22 a
+INFO  22:13:28,011 - #17 (
+INFO  22:13:28,011 - #19 3
+INFO  22:13:28,011 - #18 )
+INFO  22:13:28,012 - #7 ;
+INFO  22:13:28,012 - #4 }
+INFO  22:13:28,012 - #4 }
+INFO  22:13:28,067 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  NoDeclarationLst(
+  ) [NoDeclarationLst]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      MethodDeclarationList(
+        NoMethodDeclarationList(
+        ) [NoMethodDeclarationList]
+        MethodDeclaration(
+          VoidMethodType(
+          ) [VoidMethodType]
+          MethodName(
+           b
+          ) [MethodName]
+          NoFormalParams(
+          ) [NoFormalParams]
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          StartMethodSt(
+          ) [StartMethodSt]
+          NoStmtList(
+          ) [NoStmtList]
+        ) [MethodDeclaration]
+      ) [MethodDeclarationList]
+      MethodDeclaration(
+        VoidMethodType(
+        ) [VoidMethodType]
+        MethodName(
+         a
+        ) [MethodName]
+        FormalParamsYes(
+          OneFormPars(
+            FormParDeclaration(
+              Type(
+               int
+              ) [Type]
+             k
+            ) [FormParDeclaration]
+          ) [OneFormPars]
+        ) [FormalParamsYes]
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        StartMethodSt(
+        ) [StartMethodSt]
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDeclaration]
+    ) [MethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        LVarDecl(
+          Type(
+           int
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarArray(
+             arr
+              Brackets(
+              ) [Brackets]
+            ) [LVarArray]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              DesignatorStStatement(
+                DesignatorMethodCall(
+                  DesignatorValue(
+                   b
+                  ) [DesignatorValue]
+                  NoParamList(
+                  ) [NoParamList]
+                ) [DesignatorMethodCall]
+              ) [DesignatorStStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            DesignatorStStatement(
+              DessignatorAssign(
+                DesignatorArray(
+                  DesignatorValue(
+                   arr
+                  ) [DesignatorValue]
+                  Expr(
+                    ExprTerm(
+                      ExprWithoutMinus(
+                      ) [ExprWithoutMinus]
+                      TermFactor(
+                        FactorNumber(
+                         0
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [Expr]
+                ) [DesignatorArray]
+                OpEq(
+                ) [OpEq]
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorArray(
+                          DesignatorValue(
+                           arr
+                          ) [DesignatorValue]
+                          Expr(
+                            ExprTerm(
+                              ExprWithoutMinus(
+                              ) [ExprWithoutMinus]
+                              TermFactor(
+                                FactorNumber(
+                                 2
+                                ) [FactorNumber]
+                              ) [TermFactor]
+                            ) [ExprTerm]
+                          ) [Expr]
+                        ) [DesignatorArray]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DessignatorAssign]
+            ) [DesignatorStStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          DesignatorStStatement(
+            DesignatorMethodCall(
+              DesignatorValue(
+               a
+              ) [DesignatorValue]
+              ParamList(
+                SingleParam(
+                  Expr(
+                    ExprTerm(
+                      ExprWithoutMinus(
+                      ) [ExprWithoutMinus]
+                      TermFactor(
+                        FactorNumber(
+                         3
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [Expr]
+                ) [SingleParam]
+              ) [ParamList]
+            ) [DesignatorMethodCall]
+          ) [DesignatorStStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  22:13:28,098 - Pocetak programa  Program na liniji 1
+INFO  22:13:28,098 - Obradjuje se  funkcija b na liniji 3
+INFO  22:13:28,099 - Obradjuje se  funkcija a na liniji 5
+INFO  22:13:28,099 - Deklarisan formalni parametar: k na liniji 5
+INFO  22:13:28,099 - Obradjuje se  funkcija main na liniji 7
+INFO  22:13:28,100 - Deklarisan lokalni niz arr na liniji 7
+INFO  22:13:28,100 - Pristup b na liniji 9
+INFO  22:13:28,100 - Pristup arr na liniji 10
+INFO  22:13:28,104 - Pristup elementu niza arr na liniji 10
+INFO  22:13:28,105 - Pristup arr na liniji 10
+INFO  22:13:28,105 - Pristup elementu niza arr na liniji 10

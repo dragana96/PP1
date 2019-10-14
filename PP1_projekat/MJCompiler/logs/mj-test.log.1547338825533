@@ -1,0 +1,846 @@
+INFO  01:19:35,236 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  01:19:35,344 - #2 program
+INFO  01:19:35,344 - #22 MJProgram
+INFO  01:19:35,344 - #3 {
+INFO  01:19:35,346 - #22 int
+INFO  01:19:35,347 - #22 mnozenje
+INFO  01:19:35,349 - #17 (
+INFO  01:19:35,350 - #22 int
+INFO  01:19:35,350 - #22 a
+INFO  01:19:35,350 - #10 ,
+INFO  01:19:35,351 - #22 int
+INFO  01:19:35,351 - #22 b
+INFO  01:19:35,351 - #18 )
+INFO  01:19:35,352 - #3 {
+INFO  01:19:35,353 - #45 return
+INFO  01:19:35,354 - #22 a
+INFO  01:19:35,354 - #29 *
+INFO  01:19:35,356 - #22 b
+INFO  01:19:35,357 - #7 ;
+INFO  01:19:35,358 - #4 }
+INFO  01:19:35,359 - #22 int
+INFO  01:19:35,359 - #22 sabiranje
+INFO  01:19:35,360 - #17 (
+INFO  01:19:35,360 - #22 int
+INFO  01:19:35,360 - #22 a
+INFO  01:19:35,361 - #10 ,
+INFO  01:19:35,361 - #22 int
+INFO  01:19:35,361 - #22 b
+INFO  01:19:35,361 - #18 )
+INFO  01:19:35,361 - #3 {
+INFO  01:19:35,362 - #45 return
+INFO  01:19:35,362 - #22 a
+INFO  01:19:35,362 - #33 +
+INFO  01:19:35,362 - #22 b
+INFO  01:19:35,363 - #7 ;
+INFO  01:19:35,364 - #4 }
+INFO  01:19:35,364 - #22 int
+INFO  01:19:35,364 - #22 oduzimanje
+INFO  01:19:35,364 - #17 (
+INFO  01:19:35,364 - #22 int
+INFO  01:19:35,365 - #22 a
+INFO  01:19:35,365 - #10 ,
+INFO  01:19:35,366 - #22 int
+INFO  01:19:35,367 - #22 b
+INFO  01:19:35,368 - #18 )
+INFO  01:19:35,368 - #3 {
+INFO  01:19:35,368 - #45 return
+INFO  01:19:35,368 - #22 a
+INFO  01:19:35,368 - #31 -
+INFO  01:19:35,369 - #22 b
+INFO  01:19:35,370 - #7 ;
+INFO  01:19:35,370 - #4 }
+INFO  01:19:35,370 - #22 int
+INFO  01:19:35,370 - #22 deljenje
+INFO  01:19:35,371 - #17 (
+INFO  01:19:35,372 - #22 int
+INFO  01:19:35,372 - #22 a
+INFO  01:19:35,373 - #10 ,
+INFO  01:19:35,373 - #22 int
+INFO  01:19:35,373 - #22 b
+INFO  01:19:35,373 - #18 )
+INFO  01:19:35,373 - #3 {
+INFO  01:19:35,373 - #45 return
+INFO  01:19:35,373 - #22 a
+INFO  01:19:35,374 - #30 /
+INFO  01:19:35,374 - #22 b
+INFO  01:19:35,375 - #7 ;
+INFO  01:19:35,375 - #4 }
+INFO  01:19:35,375 - #16 void
+INFO  01:19:35,375 - #22 D
+INFO  01:19:35,383 - #17 (
+INFO  01:19:35,383 - #18 )
+INFO  01:19:35,384 - #3 {
+INFO  01:19:35,384 - #47 print
+INFO  01:19:35,384 - #17 (
+INFO  01:19:35,384 - #20 d
+INFO  01:19:35,384 - #10 ,
+INFO  01:19:35,385 - #19 20
+INFO  01:19:35,385 - #18 )
+INFO  01:19:35,385 - #7 ;
+INFO  01:19:35,385 - #4 }
+INFO  01:19:35,385 - #22 char
+INFO  01:19:35,385 - #22 M
+INFO  01:19:35,385 - #17 (
+INFO  01:19:35,385 - #18 )
+INFO  01:19:35,385 - #22 char
+INFO  01:19:35,385 - #22 c
+INFO  01:19:35,385 - #7 ;
+INFO  01:19:35,386 - #3 {
+INFO  01:19:35,386 - #22 c
+INFO  01:19:35,386 - #6 =
+INFO  01:19:35,386 - #20 m
+INFO  01:19:35,388 - #7 ;
+INFO  01:19:35,388 - #45 return
+INFO  01:19:35,388 - #22 c
+INFO  01:19:35,388 - #7 ;
+INFO  01:19:35,388 - #4 }
+INFO  01:19:35,389 - #16 void
+INFO  01:19:35,389 - #22 main
+INFO  01:19:35,389 - #17 (
+INFO  01:19:35,389 - #18 )
+INFO  01:19:35,389 - #22 int
+INFO  01:19:35,389 - #22 b
+INFO  01:19:35,389 - #8 [
+INFO  01:19:35,389 - #9 ]
+INFO  01:19:35,389 - #7 ;
+INFO  01:19:35,391 - #3 {
+INFO  01:19:35,391 - #22 b
+INFO  01:19:35,391 - #6 =
+INFO  01:19:35,391 - #25 new
+INFO  01:19:35,391 - #22 int
+INFO  01:19:35,391 - #8 [
+INFO  01:19:35,391 - #19 2
+INFO  01:19:35,391 - #9 ]
+INFO  01:19:35,391 - #7 ;
+INFO  01:19:35,392 - #46 read
+INFO  01:19:35,392 - #17 (
+INFO  01:19:35,392 - #22 b
+INFO  01:19:35,392 - #8 [
+ERROR 01:19:35,392 - Sintaksna greska na liniji 31
+INFO  01:19:35,392 - #19 0
+INFO  01:19:35,392 - #9 ]
+INFO  01:19:35,392 - #18 )
+INFO  01:19:35,393 - #7 ;
+INFO  01:19:35,393 - #46 read
+INFO  01:19:35,393 - #17 (
+INFO  01:19:35,393 - #22 b
+ERROR 01:19:35,394 - Izvrsen oporavak do ; u liniji 31
+INFO  01:19:35,394 - #8 [
+ERROR 01:19:35,394 - Sintaksna greska na liniji 32
+INFO  01:19:35,395 - #19 1
+INFO  01:19:35,395 - #9 ]
+INFO  01:19:35,395 - #18 )
+INFO  01:19:35,395 - #7 ;
+INFO  01:19:35,395 - #47 print
+INFO  01:19:35,395 - #17 (
+INFO  01:19:35,395 - #19 25
+ERROR 01:19:35,395 - Izvrsen oporavak do ; u liniji 32
+INFO  01:19:35,396 - #18 )
+INFO  01:19:35,396 - #7 ;
+INFO  01:19:35,396 - #47 print
+INFO  01:19:35,396 - #17 (
+INFO  01:19:35,396 - #20 s
+INFO  01:19:35,396 - #10 ,
+INFO  01:19:35,396 - #19 20
+INFO  01:19:35,396 - #18 )
+INFO  01:19:35,396 - #7 ;
+INFO  01:19:35,397 - #47 print
+INFO  01:19:35,397 - #17 (
+INFO  01:19:35,397 - #19 25
+INFO  01:19:35,397 - #18 )
+INFO  01:19:35,397 - #7 ;
+INFO  01:19:35,397 - #47 print
+INFO  01:19:35,397 - #17 (
+INFO  01:19:35,397 - #20 o
+INFO  01:19:35,398 - #10 ,
+INFO  01:19:35,398 - #19 20
+INFO  01:19:35,398 - #18 )
+INFO  01:19:35,398 - #7 ;
+INFO  01:19:35,398 - #47 print
+INFO  01:19:35,398 - #17 (
+INFO  01:19:35,398 - #22 mnozenje
+INFO  01:19:35,399 - #17 (
+INFO  01:19:35,399 - #22 b
+ERROR 01:19:35,399 - Sintaksna greska na liniji 40
+INFO  01:19:35,399 - #8 [
+INFO  01:19:35,400 - #19 0
+INFO  01:19:35,400 - #9 ]
+INFO  01:19:35,400 - #10 ,
+INFO  01:19:35,400 - #22 b
+INFO  01:19:35,400 - #8 [
+INFO  01:19:35,401 - #19 1
+INFO  01:19:35,401 - #9 ]
+INFO  01:19:35,401 - #18 )
+INFO  01:19:35,401 - #10 ,
+INFO  01:19:35,401 - #19 25
+INFO  01:19:35,401 - #18 )
+INFO  01:19:35,401 - #7 ;
+INFO  01:19:35,401 - #47 print
+INFO  01:19:35,401 - #17 (
+INFO  01:19:35,401 - #22 M
+ERROR 01:19:35,401 - Izvrsen oporavak do ; u liniji 40
+INFO  01:19:35,402 - #17 (
+INFO  01:19:35,402 - #18 )
+ERROR 01:19:35,402 - Sintaksna greska na liniji 41
+INFO  01:19:35,402 - #10 ,
+INFO  01:19:35,402 - #19 20
+INFO  01:19:35,402 - #18 )
+INFO  01:19:35,402 - #7 ;
+INFO  01:19:35,402 - #47 print
+INFO  01:19:35,402 - #17 (
+INFO  01:19:35,403 - #22 deljenje
+ERROR 01:19:35,403 - Izvrsen oporavak do ; u liniji 41
+INFO  01:19:35,403 - #17 (
+INFO  01:19:35,403 - #22 b
+ERROR 01:19:35,403 - Sintaksna greska na liniji 43
+INFO  01:19:35,403 - #8 [
+INFO  01:19:35,404 - #19 0
+INFO  01:19:35,404 - #9 ]
+INFO  01:19:35,404 - #10 ,
+INFO  01:19:35,404 - #22 b
+INFO  01:19:35,404 - #8 [
+INFO  01:19:35,404 - #19 1
+INFO  01:19:35,405 - #9 ]
+INFO  01:19:35,405 - #18 )
+INFO  01:19:35,405 - #10 ,
+INFO  01:19:35,405 - #19 25
+INFO  01:19:35,405 - #18 )
+INFO  01:19:35,405 - #7 ;
+INFO  01:19:35,405 - #22 D
+INFO  01:19:35,405 - #17 (
+INFO  01:19:35,406 - #18 )
+ERROR 01:19:35,406 - Izvrsen oporavak do ; u liniji 43
+INFO  01:19:35,407 - #7 ;
+INFO  01:19:35,407 - #47 print
+INFO  01:19:35,408 - #17 (
+INFO  01:19:35,408 - #22 sabiranje
+INFO  01:19:35,408 - #17 (
+INFO  01:19:35,408 - #22 sabiranje
+ERROR 01:19:35,408 - Sintaksna greska na liniji 46
+INFO  01:19:35,408 - #17 (
+INFO  01:19:35,408 - #22 b
+INFO  01:19:35,408 - #8 [
+INFO  01:19:35,408 - #19 0
+INFO  01:19:35,408 - #9 ]
+INFO  01:19:35,408 - #10 ,
+INFO  01:19:35,408 - #22 b
+INFO  01:19:35,408 - #8 [
+INFO  01:19:35,408 - #19 1
+INFO  01:19:35,408 - #9 ]
+INFO  01:19:35,408 - #18 )
+INFO  01:19:35,408 - #10 ,
+INFO  01:19:35,408 - #22 oduzimanje
+INFO  01:19:35,409 - #17 (
+INFO  01:19:35,409 - #22 b
+INFO  01:19:35,409 - #8 [
+INFO  01:19:35,409 - #19 0
+INFO  01:19:35,409 - #9 ]
+INFO  01:19:35,409 - #10 ,
+INFO  01:19:35,409 - #22 b
+INFO  01:19:35,409 - #8 [
+INFO  01:19:35,409 - #19 1
+INFO  01:19:35,409 - #9 ]
+INFO  01:19:35,409 - #18 )
+INFO  01:19:35,409 - #18 )
+INFO  01:19:35,409 - #10 ,
+INFO  01:19:35,409 - #19 25
+INFO  01:19:35,409 - #18 )
+INFO  01:19:35,409 - #7 ;
+INFO  01:19:35,409 - #4 }
+INFO  01:19:35,409 - #4 }
+ERROR 01:19:35,410 - Izvrsen oporavak do ; u liniji 46
+INFO  01:19:35,420 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoDeclarationLst(
+  ) [NoDeclarationLst]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      MethodDeclarationList(
+        MethodDeclarationList(
+          MethodDeclarationList(
+            MethodDeclarationList(
+              MethodDeclarationList(
+                NoMethodDeclarationList(
+                ) [NoMethodDeclarationList]
+                MethodDeclaration(
+                  ReturnMethodType(
+                    Type(
+                     int
+                    ) [Type]
+                  ) [ReturnMethodType]
+                  MethodName(
+                   mnozenje
+                  ) [MethodName]
+                  FormalParamsYes(
+                    MoreFormPars(
+                      FormParDeclaration(
+                        Type(
+                         int
+                        ) [Type]
+                       a
+                      ) [FormParDeclaration]
+                      OneFormPars(
+                        FormParDeclaration(
+                          Type(
+                           int
+                          ) [Type]
+                         b
+                        ) [FormParDeclaration]
+                      ) [OneFormPars]
+                    ) [MoreFormPars]
+                  ) [FormalParamsYes]
+                  NoLocalVarDeclList(
+                  ) [NoLocalVarDeclList]
+                  StmtList(
+                    NoStmtList(
+                    ) [NoStmtList]
+                    MatchedStmt(
+                      ReturnStatement(
+                        YesExpr(
+                          ExpressionWithoutMinus(
+                            ExpressionTerm(
+                              TermMulopFactor(
+                                TermFactor(
+                                  FactorDesignator(
+                                    DesignatorValue(
+                                     a
+                                    ) [DesignatorValue]
+                                    NoActualParsWithParen(
+                                    ) [NoActualParsWithParen]
+                                  ) [FactorDesignator]
+                                ) [TermFactor]
+                                OpMultiply(
+                                ) [OpMultiply]
+                                FactorDesignator(
+                                  DesignatorValue(
+                                   b
+                                  ) [DesignatorValue]
+                                  NoActualParsWithParen(
+                                  ) [NoActualParsWithParen]
+                                ) [FactorDesignator]
+                              ) [TermMulopFactor]
+                            ) [ExpressionTerm]
+                          ) [ExpressionWithoutMinus]
+                        ) [YesExpr]
+                      ) [ReturnStatement]
+                    ) [MatchedStmt]
+                  ) [StmtList]
+                ) [MethodDeclaration]
+              ) [MethodDeclarationList]
+              MethodDeclaration(
+                ReturnMethodType(
+                  Type(
+                   int
+                  ) [Type]
+                ) [ReturnMethodType]
+                MethodName(
+                 sabiranje
+                ) [MethodName]
+                FormalParamsYes(
+                  MoreFormPars(
+                    FormParDeclaration(
+                      Type(
+                       int
+                      ) [Type]
+                     a
+                    ) [FormParDeclaration]
+                    OneFormPars(
+                      FormParDeclaration(
+                        Type(
+                         int
+                        ) [Type]
+                       b
+                      ) [FormParDeclaration]
+                    ) [OneFormPars]
+                  ) [MoreFormPars]
+                ) [FormalParamsYes]
+                NoLocalVarDeclList(
+                ) [NoLocalVarDeclList]
+                StmtList(
+                  NoStmtList(
+                  ) [NoStmtList]
+                  MatchedStmt(
+                    ReturnStatement(
+                      YesExpr(
+                        ExpressionWithoutMinus(
+                          ExpressionAdd(
+                            ExpressionTerm(
+                              TermFactor(
+                                FactorDesignator(
+                                  DesignatorValue(
+                                   a
+                                  ) [DesignatorValue]
+                                  NoActualParsWithParen(
+                                  ) [NoActualParsWithParen]
+                                ) [FactorDesignator]
+                              ) [TermFactor]
+                            ) [ExpressionTerm]
+                            OpPlus(
+                            ) [OpPlus]
+                            TermFactor(
+                              FactorDesignator(
+                                DesignatorValue(
+                                 b
+                                ) [DesignatorValue]
+                                NoActualParsWithParen(
+                                ) [NoActualParsWithParen]
+                              ) [FactorDesignator]
+                            ) [TermFactor]
+                          ) [ExpressionAdd]
+                        ) [ExpressionWithoutMinus]
+                      ) [YesExpr]
+                    ) [ReturnStatement]
+                  ) [MatchedStmt]
+                ) [StmtList]
+              ) [MethodDeclaration]
+            ) [MethodDeclarationList]
+            MethodDeclaration(
+              ReturnMethodType(
+                Type(
+                 int
+                ) [Type]
+              ) [ReturnMethodType]
+              MethodName(
+               oduzimanje
+              ) [MethodName]
+              FormalParamsYes(
+                MoreFormPars(
+                  FormParDeclaration(
+                    Type(
+                     int
+                    ) [Type]
+                   a
+                  ) [FormParDeclaration]
+                  OneFormPars(
+                    FormParDeclaration(
+                      Type(
+                       int
+                      ) [Type]
+                     b
+                    ) [FormParDeclaration]
+                  ) [OneFormPars]
+                ) [MoreFormPars]
+              ) [FormalParamsYes]
+              NoLocalVarDeclList(
+              ) [NoLocalVarDeclList]
+              StmtList(
+                NoStmtList(
+                ) [NoStmtList]
+                MatchedStmt(
+                  ReturnStatement(
+                    YesExpr(
+                      ExpressionWithoutMinus(
+                        ExpressionAdd(
+                          ExpressionTerm(
+                            TermFactor(
+                              FactorDesignator(
+                                DesignatorValue(
+                                 a
+                                ) [DesignatorValue]
+                                NoActualParsWithParen(
+                                ) [NoActualParsWithParen]
+                              ) [FactorDesignator]
+                            ) [TermFactor]
+                          ) [ExpressionTerm]
+                          OpMinus(
+                          ) [OpMinus]
+                          TermFactor(
+                            FactorDesignator(
+                              DesignatorValue(
+                               b
+                              ) [DesignatorValue]
+                              NoActualParsWithParen(
+                              ) [NoActualParsWithParen]
+                            ) [FactorDesignator]
+                          ) [TermFactor]
+                        ) [ExpressionAdd]
+                      ) [ExpressionWithoutMinus]
+                    ) [YesExpr]
+                  ) [ReturnStatement]
+                ) [MatchedStmt]
+              ) [StmtList]
+            ) [MethodDeclaration]
+          ) [MethodDeclarationList]
+          MethodDeclaration(
+            ReturnMethodType(
+              Type(
+               int
+              ) [Type]
+            ) [ReturnMethodType]
+            MethodName(
+             deljenje
+            ) [MethodName]
+            FormalParamsYes(
+              MoreFormPars(
+                FormParDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [FormParDeclaration]
+                OneFormPars(
+                  FormParDeclaration(
+                    Type(
+                     int
+                    ) [Type]
+                   b
+                  ) [FormParDeclaration]
+                ) [OneFormPars]
+              ) [MoreFormPars]
+            ) [FormalParamsYes]
+            NoLocalVarDeclList(
+            ) [NoLocalVarDeclList]
+            StmtList(
+              NoStmtList(
+              ) [NoStmtList]
+              MatchedStmt(
+                ReturnStatement(
+                  YesExpr(
+                    ExpressionWithoutMinus(
+                      ExpressionTerm(
+                        TermMulopFactor(
+                          TermFactor(
+                            FactorDesignator(
+                              DesignatorValue(
+                               a
+                              ) [DesignatorValue]
+                              NoActualParsWithParen(
+                              ) [NoActualParsWithParen]
+                            ) [FactorDesignator]
+                          ) [TermFactor]
+                          OpDivide(
+                          ) [OpDivide]
+                          FactorDesignator(
+                            DesignatorValue(
+                             b
+                            ) [DesignatorValue]
+                            NoActualParsWithParen(
+                            ) [NoActualParsWithParen]
+                          ) [FactorDesignator]
+                        ) [TermMulopFactor]
+                      ) [ExpressionTerm]
+                    ) [ExpressionWithoutMinus]
+                  ) [YesExpr]
+                ) [ReturnStatement]
+              ) [MatchedStmt]
+            ) [StmtList]
+          ) [MethodDeclaration]
+        ) [MethodDeclarationList]
+        MethodDeclaration(
+          VoidMethodType(
+          ) [VoidMethodType]
+          MethodName(
+           D
+          ) [MethodName]
+          NoFormalParams(
+          ) [NoFormalParams]
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              PrintStatementWithNumConst(
+                ExpressionWithoutMinus(
+                  ExpressionTerm(
+                    TermFactor(
+                      FactorConst(
+                        ConstChar(
+                         d
+                        ) [ConstChar]
+                      ) [FactorConst]
+                    ) [TermFactor]
+                  ) [ExpressionTerm]
+                ) [ExpressionWithoutMinus]
+               20
+              ) [PrintStatementWithNumConst]
+            ) [MatchedStmt]
+          ) [StmtList]
+        ) [MethodDeclaration]
+      ) [MethodDeclarationList]
+      MethodDeclaration(
+        ReturnMethodType(
+          Type(
+           char
+          ) [Type]
+        ) [ReturnMethodType]
+        MethodName(
+         M
+        ) [MethodName]
+        NoFormalParams(
+        ) [NoFormalParams]
+        LocalVarDeclList(
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          LVarDecl(
+            Type(
+             char
+            ) [Type]
+            LSingleVarDeclaration(
+              LVarDeclaration(
+               c
+              ) [LVarDeclaration]
+            ) [LSingleVarDeclaration]
+          ) [LVarDecl]
+        ) [LocalVarDeclList]
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              DesignatorStStatement(
+                DessignatorAssign(
+                  DesignatorValue(
+                   c
+                  ) [DesignatorValue]
+                  OpEq(
+                  ) [OpEq]
+                  ExpressionWithoutMinus(
+                    ExpressionTerm(
+                      TermFactor(
+                        FactorConst(
+                          ConstChar(
+                           m
+                          ) [ConstChar]
+                        ) [FactorConst]
+                      ) [TermFactor]
+                    ) [ExpressionTerm]
+                  ) [ExpressionWithoutMinus]
+                ) [DessignatorAssign]
+              ) [DesignatorStStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            ReturnStatement(
+              YesExpr(
+                ExpressionWithoutMinus(
+                  ExpressionTerm(
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorValue(
+                         c
+                        ) [DesignatorValue]
+                        NoActualParsWithParen(
+                        ) [NoActualParsWithParen]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExpressionTerm]
+                ) [ExpressionWithoutMinus]
+              ) [YesExpr]
+            ) [ReturnStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDeclaration]
+    ) [MethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        LVarDecl(
+          Type(
+           int
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarArray(
+             b
+              Brackets(
+              ) [Brackets]
+            ) [LVarArray]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    StmtList(
+                      StmtList(
+                        StmtList(
+                          StmtList(
+                            StmtList(
+                              NoStmtList(
+                              ) [NoStmtList]
+                              MatchedStmt(
+                                DesignatorStStatement(
+                                  DessignatorAssign(
+                                    DesignatorValue(
+                                     b
+                                    ) [DesignatorValue]
+                                    OpEq(
+                                    ) [OpEq]
+                                    ExpressionWithoutMinus(
+                                      ExpressionTerm(
+                                        TermFactor(
+                                          FactorNew(
+                                            Type(
+                                             int
+                                            ) [Type]
+                                            ExprOptionalWBrackets(
+                                              ExpressionWithoutMinus(
+                                                ExpressionTerm(
+                                                  TermFactor(
+                                                    FactorConst(
+                                                      ConstNumber(
+                                                       2
+                                                      ) [ConstNumber]
+                                                    ) [FactorConst]
+                                                  ) [TermFactor]
+                                                ) [ExpressionTerm]
+                                              ) [ExpressionWithoutMinus]
+                                            ) [ExprOptionalWBrackets]
+                                          ) [FactorNew]
+                                        ) [TermFactor]
+                                      ) [ExpressionTerm]
+                                    ) [ExpressionWithoutMinus]
+                                  ) [DessignatorAssign]
+                                ) [DesignatorStStatement]
+                              ) [MatchedStmt]
+                            ) [StmtList]
+                            MatchedStmt(
+                              ErrorStmt(
+                              ) [ErrorStmt]
+                            ) [MatchedStmt]
+                          ) [StmtList]
+                          MatchedStmt(
+                            ErrorStmt(
+                            ) [ErrorStmt]
+                          ) [MatchedStmt]
+                        ) [StmtList]
+                        MatchedStmt(
+                          PrintStatementWithoutNumConst(
+                            ExpressionWithoutMinus(
+                              ExpressionTerm(
+                                TermFactor(
+                                  FactorConst(
+                                    ConstNumber(
+                                     25
+                                    ) [ConstNumber]
+                                  ) [FactorConst]
+                                ) [TermFactor]
+                              ) [ExpressionTerm]
+                            ) [ExpressionWithoutMinus]
+                          ) [PrintStatementWithoutNumConst]
+                        ) [MatchedStmt]
+                      ) [StmtList]
+                      MatchedStmt(
+                        PrintStatementWithNumConst(
+                          ExpressionWithoutMinus(
+                            ExpressionTerm(
+                              TermFactor(
+                                FactorConst(
+                                  ConstChar(
+                                   s
+                                  ) [ConstChar]
+                                ) [FactorConst]
+                              ) [TermFactor]
+                            ) [ExpressionTerm]
+                          ) [ExpressionWithoutMinus]
+                         20
+                        ) [PrintStatementWithNumConst]
+                      ) [MatchedStmt]
+                    ) [StmtList]
+                    MatchedStmt(
+                      PrintStatementWithoutNumConst(
+                        ExpressionWithoutMinus(
+                          ExpressionTerm(
+                            TermFactor(
+                              FactorConst(
+                                ConstNumber(
+                                 25
+                                ) [ConstNumber]
+                              ) [FactorConst]
+                            ) [TermFactor]
+                          ) [ExpressionTerm]
+                        ) [ExpressionWithoutMinus]
+                      ) [PrintStatementWithoutNumConst]
+                    ) [MatchedStmt]
+                  ) [StmtList]
+                  MatchedStmt(
+                    PrintStatementWithNumConst(
+                      ExpressionWithoutMinus(
+                        ExpressionTerm(
+                          TermFactor(
+                            FactorConst(
+                              ConstChar(
+                               o
+                              ) [ConstChar]
+                            ) [FactorConst]
+                          ) [TermFactor]
+                        ) [ExpressionTerm]
+                      ) [ExpressionWithoutMinus]
+                     20
+                    ) [PrintStatementWithNumConst]
+                  ) [MatchedStmt]
+                ) [StmtList]
+                MatchedStmt(
+                  ErrorStmt(
+                  ) [ErrorStmt]
+                ) [MatchedStmt]
+              ) [StmtList]
+              MatchedStmt(
+                ErrorStmt(
+                ) [ErrorStmt]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              ErrorStmt(
+              ) [ErrorStmt]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            DesignatorStStatement(
+              DesignatorMethodCall(
+                DesignatorValue(
+                 D
+                ) [DesignatorValue]
+                NoParamList(
+                ) [NoParamList]
+              ) [DesignatorMethodCall]
+            ) [DesignatorStStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          ErrorStmt(
+          ) [ErrorStmt]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  01:19:35,425 - Pocetak programa  MJProgram na liniji 1
+INFO  01:19:35,426 - Obradjuje se  funkcija mnozenje na liniji 3
+INFO  01:19:35,426 - Deklarisan formalni parametar: a na liniji 3
+INFO  01:19:35,426 - Deklarisan formalni parametar: b na liniji 3
+INFO  01:19:35,426 - Obradjuje se  funkcija sabiranje na liniji 7
+INFO  01:19:35,426 - Deklarisan formalni parametar: a na liniji 7
+INFO  01:19:35,426 - Deklarisan formalni parametar: b na liniji 7
+INFO  01:19:35,427 - Obradjuje se  funkcija oduzimanje na liniji 11
+INFO  01:19:35,427 - Deklarisan formalni parametar: a na liniji 11
+INFO  01:19:35,427 - Deklarisan formalni parametar: b na liniji 11
+INFO  01:19:35,427 - Obradjuje se  funkcija deljenje na liniji 15
+INFO  01:19:35,427 - Deklarisan formalni parametar: a na liniji 15
+INFO  01:19:35,427 - Deklarisan formalni parametar: b na liniji 15
+INFO  01:19:35,427 - Obradjuje se  funkcija D na liniji 19
+INFO  01:19:35,427 - Obradjuje se  funkcija M na liniji 23
+INFO  01:19:35,427 - Deklarisana lokalna promenljiva c na liniji 23
+INFO  01:19:35,427 - Obradjuje se  funkcija main na liniji 28
+INFO  01:19:35,428 - Deklarisan lokalni niz b na liniji 28
+INFO  01:19:35,428 - ===================================
+INFO  01:19:35,428 -  Deklarisanih globalnih promenljivih ima = 0
+INFO  01:19:35,428 -  Deklarisanih lokalnih promenljivih ima = 2
+INFO  01:19:35,428 -  Konstanti ima = 0
+INFO  01:19:35,428 - ===================================
+ERROR 01:19:35,429 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,23 @@
+program MJProgram
+	
+	enum Broj { NULA, JEDAN, PET=5, DESET=10}
+	int niz[];
+	
+	
+
+{
+
+
+	void main()	
+		
+		Broj nula;
+	{
+		nula = Broj.NULA;
+		
+		niz[nula] = 5;
+		
+		
+			
+	
+	}
+}

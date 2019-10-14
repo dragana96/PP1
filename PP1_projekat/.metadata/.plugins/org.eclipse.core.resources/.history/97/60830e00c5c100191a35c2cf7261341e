@@ -1,0 +1,109 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
+import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.concepts.Obj;
+
+public class CodeGenerator extends VisitorAdaptor {
+	
+	private int mainPc;
+	
+	public int getMainPc() {
+		return mainPc;
+	}
+	
+	public void visit(PrintStatementWithoutNumConst printStmt){
+		if(printStmt.getExpr().struct == TabExtended.intType){
+			Code.loadConst(5);
+			Code.put(Code.print);
+		}else{
+			Code.loadConst(1);
+			Code.put(Code.bprint);
+		}
+	}
+	/*
+	public void visit(ReturnStatement returnStmt) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	*/
+	
+	public void visit(FactorNumber num) {
+		Obj con = TabExtended.insert(Obj.Con, "$", num.struct);
+		con.setLevel(0);
+		con.setAdr(num.getN());		
+		Code.load(con);
+	}
+	
+	/*
+	public void visit(ConstNumber num) {
+		Obj obj = new Obj(Obj.Con, "con", num.struct, num.getN(), 0);
+		Code.load(obj);
+	}
+	
+	public void visit(ConstChar ch) {
+		Obj obj = new Obj(Obj.Con, "con", ch.struct, ch.getC(), 0);
+		Code.load(obj);
+	}
+	
+	public void visit(ConstBool bool) {
+		int value = 0;
+		if( bool.getB().equals("true")) value = 1;
+		Obj con = new Obj(Obj.Con, "con", bool.struct, value, 0);
+		Code.load(con);
+	}
+	*/
+	
+	public void visit(MethodName mName) {
+		
+		if("main".equals(mName.getMethodName())) {
+			mainPc = Code.pc;
+		}
+		mName.obj.setAdr(Code.pc);
+		
+		//generisemo pocetne instrukcije
+		SyntaxNode methodNode = mName.getParent();
+		VarCounter varCnt = new VarCounter();
+		methodNode.traverseTopDown(varCnt);
+		
+		FormParamCounter fpCnt = new FormParamCounter();
+		methodNode.traverseTopDown(fpCnt);
+		
+		// generisanje pocetne instrukcije 
+		
+		Code.put(Code.enter);
+		Code.put(fpCnt.getCount());
+		Code.put(fpCnt.getCount() + varCnt.getCount());
+		
+		
+		
+		
+	}
+	
+	public void visit(MethodDeclaration methodDeclaration) {
+		
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		
+	}
+	
+	public void visit(DessignatorAssign assignment) {
+		Code.store(assignment.getDesignator().obj);
+		
+	}
+	
+/*	public void visit(DesignatorValue design) {
+		
+		SyntaxNode parent = design.getParent();
+		if (DessignatorAssign.class != parent.getClass() && DesignatorMethodCall.class != parent.getClass()
+				&& FactorDesignatorFunction.class != parent.getClass() && ReadStatement.class != parent.getClass()) {
+			Code.load(design.obj);
+		}
+	}
+	*/
+	
+	
+
+}

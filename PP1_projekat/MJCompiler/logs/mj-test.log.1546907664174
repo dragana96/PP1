@@ -1,0 +1,149 @@
+INFO  01:31:31,505 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  01:31:31,599 - #2 program
+INFO  01:31:31,599 - #5 MJProgram
+INFO  01:31:31,599 - #5 int
+INFO  01:31:31,601 - #5 x
+INFO  01:31:31,601 - #11 ,
+INFO  01:31:31,602 - #5 y
+INFO  01:31:31,603 - #11 ,
+INFO  01:31:31,603 - #5 y
+INFO  01:31:31,603 - #11 ,
+INFO  01:31:31,603 - #5 u
+INFO  01:31:31,603 - #11 ,
+INFO  01:31:31,603 - #5 i
+INFO  01:31:31,603 - #8 ;
+INFO  01:31:31,604 - #3 {
+INFO  01:31:31,605 - #17 void
+INFO  01:31:31,606 - #5 main
+INFO  01:31:31,607 - #18 (
+INFO  01:31:31,607 - #19 )
+INFO  01:31:31,608 - #3 {
+INFO  01:31:31,609 - #47 print
+INFO  01:31:31,610 - #18 (
+INFO  01:31:31,611 - #20 1
+INFO  01:31:31,612 - #11 ,
+INFO  01:31:31,614 - #20 3
+INFO  01:31:31,614 - #19 )
+INFO  01:31:31,614 - #8 ;
+INFO  01:31:31,614 - #47 print
+INFO  01:31:31,614 - #18 (
+INFO  01:31:31,614 - #20 2
+INFO  01:31:31,615 - #19 )
+INFO  01:31:31,615 - #8 ;
+INFO  01:31:31,615 - #4 }
+INFO  01:31:31,615 - #4 }
+INFO  01:31:31,617 - Program(
+  ProgNameDerived1(
+  ) [ProgNameDerived1]
+  DeclarationLst(
+    NoDeclarationLst(
+    ) [NoDeclarationLst]
+    VarDeclaration1(
+      VarDecl(
+        Type(
+        ) [Type]
+        VarDclrtion(
+          NoBrackets(
+          ) [NoBrackets]
+          VarDeclarationList(
+            VarDclrtion(
+              NoBrackets(
+              ) [NoBrackets]
+              VarDeclarationList(
+                VarDclrtion(
+                  NoBrackets(
+                  ) [NoBrackets]
+                  VarDeclarationList(
+                    VarDclrtion(
+                      NoBrackets(
+                      ) [NoBrackets]
+                      VarDeclarationList(
+                        VarDclrtion(
+                          NoBrackets(
+                          ) [NoBrackets]
+                          NoVarDeclarationList(
+                          ) [NoVarDeclarationList]
+                        ) [VarDclrtion]
+                      ) [VarDeclarationList]
+                    ) [VarDclrtion]
+                  ) [VarDeclarationList]
+                ) [VarDclrtion]
+              ) [VarDeclarationList]
+            ) [VarDclrtion]
+          ) [VarDeclarationList]
+        ) [VarDclrtion]
+      ) [VarDecl]
+    ) [VarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationsInClass(
+      ) [NoVarDeclarationsInClass]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            PrintStatement(
+              Expression(
+                NoMinus(
+                ) [NoMinus]
+                TermDeclaration(
+                  FactorConst(
+                    ConstNumber(
+                     1
+                    ) [ConstNumber]
+                  ) [FactorConst]
+                  NoMulopFactorLst(
+                  ) [NoMulopFactorLst]
+                ) [TermDeclaration]
+                NoAddopTermLst(
+                ) [NoAddopTermLst]
+              ) [Expression]
+              NumConsts1(
+               3
+              ) [NumConsts1]
+            ) [PrintStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStatement(
+            Expression(
+              NoMinus(
+              ) [NoMinus]
+              TermDeclaration(
+                FactorConst(
+                  ConstNumber(
+                   2
+                  ) [ConstNumber]
+                ) [FactorConst]
+                NoMulopFactorLst(
+                ) [NoMulopFactorLst]
+              ) [TermDeclaration]
+              NoAddopTermLst(
+              ) [NoAddopTermLst]
+            ) [Expression]
+            NoNumConsts(
+            ) [NoNumConsts]
+          ) [PrintStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  01:31:31,618 - ===================================
+INFO  01:31:31,621 - Prepoznata deklaracija promenljive!
+INFO  01:31:31,621 - Prepoznata deklaracija promenljive!
+INFO  01:31:31,621 - Prepoznata deklaracija promenljive!
+INFO  01:31:31,621 - Prepoznata deklaracija promenljive!
+INFO  01:31:31,621 - Prepoznata deklaracija promenljive!
+INFO  01:31:31,622 - Prepoznata naredba print!
+INFO  01:31:31,622 - Prepoznata naredba print!
+INFO  01:31:31,622 -  Print count calls = 2
+INFO  01:31:31,622 -  Deklarisanih promenljivih ima = 5

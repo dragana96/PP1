@@ -1,0 +1,126 @@
+INFO  00:39:44,263 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  00:39:44,366 - #2 program
+INFO  00:39:44,366 - #22 test301
+INFO  00:39:44,366 - #14 enum
+INFO  00:39:44,368 - #22 Broj
+INFO  00:39:44,368 - #3 {
+INFO  00:39:44,368 - #22 NULA
+INFO  00:39:44,368 - #10 ,
+INFO  00:39:44,368 - #22 JEDAN
+INFO  00:39:44,368 - #10 ,
+INFO  00:39:44,368 - #22 PET
+INFO  00:39:44,369 - #6 =
+INFO  00:39:44,369 - #19 5
+INFO  00:39:44,369 - #10 ,
+INFO  00:39:44,369 - #22 DESET
+INFO  00:39:44,369 - #6 =
+INFO  00:39:44,369 - #19 10
+INFO  00:39:44,369 - #4 }
+INFO  00:39:44,370 - #3 {
+INFO  00:39:44,371 - #16 void
+INFO  00:39:44,371 - #22 main
+INFO  00:39:44,372 - #17 (
+INFO  00:39:44,373 - #18 )
+INFO  00:39:44,374 - #3 {
+INFO  00:39:44,374 - #47 print
+INFO  00:39:44,376 - #17 (
+INFO  00:39:44,376 - #22 Broj
+INFO  00:39:44,377 - #26 .
+INFO  00:39:44,377 - #22 PET
+INFO  00:39:44,377 - #18 )
+INFO  00:39:44,379 - #7 ;
+INFO  00:39:44,379 - #4 }
+INFO  00:39:44,380 - #4 }
+INFO  00:39:44,402 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationLst(
+    NoDeclarationLst(
+    ) [NoDeclarationLst]
+    EnumDeclaration(
+      EnumDecl(
+       Broj
+        NumConstListComma(
+          NumConstListComma(
+            NumConstListComma(
+              NoNumConstListNoComma(
+                EnumNoValue(
+                 NULA
+                ) [EnumNoValue]
+              ) [NoNumConstListNoComma]
+              EnumNoValue(
+               JEDAN
+              ) [EnumNoValue]
+            ) [NumConstListComma]
+            EnumWithValue(
+             PET
+             5
+            ) [EnumWithValue]
+          ) [NumConstListComma]
+          EnumWithValue(
+           DESET
+           10
+          ) [EnumWithValue]
+        ) [NumConstListComma]
+      ) [EnumDecl]
+    ) [EnumDeclaration]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoLocalVarDeclList(
+      ) [NoLocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        MatchedStmt(
+          PrintStatementWithoutNumConst(
+            Expr(
+              ExprTerm(
+                ExprWithoutMinus(
+                ) [ExprWithoutMinus]
+                TermFactor(
+                  FactorDesignator(
+                    DesignatorDot(
+                      DesignatorValue(
+                       Broj
+                      ) [DesignatorValue]
+                     PET
+                    ) [DesignatorDot]
+                  ) [FactorDesignator]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStatementWithoutNumConst]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:39:44,403 - ===================================
+INFO  00:39:44,409 - Pocetak programa  test301 na liniji 1
+INFO  00:39:44,410 - Dodeljivanje vrednosti elementu enum-a: NULA, vrednost je: 0 
+INFO  00:39:44,410 - Dodeljivanje vrednosti elementu enum-a: JEDAN, vrednost je: 0 
+INFO  00:39:44,410 - Dodeljivanje vrednosti elementu enum-a: PET, vrednost je: 5
+INFO  00:39:44,410 - Dodeljivanje vrednosti elementu enum-a: DESET, vrednost je: 10
+INFO  00:39:44,410 - Obradjuje se enum Broj na liniji 3
+INFO  00:39:44,411 - Obradjuje se  funkcija main na liniji 7
+INFO  00:39:44,411 - Pristup elementu Broj na liniji 11
+INFO  00:39:44,411 - Uspesno pozvana funkcija print. :  na liniji 7
+INFO  00:39:44,411 - Zavrsena funkcija main na liniji 7
+INFO  00:39:44,411 - Kraj 
+INFO  00:39:44,411 -  Deklarisanih promenljivih ima = 0
+INFO  00:39:44,411 -  Globalnih promenljivih ima = 0
+INFO  00:39:44,411 -  Deklarisanih konstanti ima = 0
+INFO  00:39:44,420 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,130 @@
+INFO  15:40:13,722 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  15:40:13,889 - #2 program
+INFO  15:40:13,889 - #22 test301
+INFO  15:40:13,890 - #22 int
+INFO  15:40:13,892 - #22 x
+INFO  15:40:13,893 - #7 ;
+INFO  15:40:13,893 - #22 int
+INFO  15:40:13,894 - #22 y
+INFO  15:40:13,894 - #7 ;
+INFO  15:40:13,895 - #3 {
+INFO  15:40:13,895 - #16 void
+INFO  15:40:13,896 - #22 main
+INFO  15:40:13,897 - #17 (
+INFO  15:40:13,899 - #18 )
+INFO  15:40:13,901 - #3 {
+INFO  15:40:13,902 - #47 print
+INFO  15:40:13,903 - #17 (
+INFO  15:40:13,904 - #19 1
+INFO  15:40:13,905 - #18 )
+INFO  15:40:13,907 - #7 ;
+INFO  15:40:13,907 - #47 print
+INFO  15:40:13,907 - #17 (
+INFO  15:40:13,908 - #19 2
+INFO  15:40:13,908 - #18 )
+INFO  15:40:13,908 - #7 ;
+INFO  15:40:13,908 - #4 }
+INFO  15:40:13,908 - #4 }
+INFO  15:40:13,962 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           int
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             x
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         int
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           y
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoLocalVarDeclList(
+      ) [NoLocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            PrintStatementWithoutNumConst(
+              Expr(
+                ExprTerm(
+                  ExprWithoutMinus(
+                  ) [ExprWithoutMinus]
+                  TermFactor(
+                    FactorNumber(
+                     1
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [Expr]
+            ) [PrintStatementWithoutNumConst]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStatementWithoutNumConst(
+            Expr(
+              ExprTerm(
+                ExprWithoutMinus(
+                ) [ExprWithoutMinus]
+                TermFactor(
+                  FactorNumber(
+                   2
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStatementWithoutNumConst]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:40:13,968 - ===================================
+INFO  15:40:13,980 - Pocetak programa  test301 na liniji 3
+INFO  15:40:13,981 - 1glo var
+INFO  15:40:13,981 - Deklarisana globalna promenljiva x na liniji 5
+INFO  15:40:13,981 - 1glo var
+INFO  15:40:13,982 - Deklarisana globalna promenljiva y na liniji 5
+INFO  15:40:13,982 - Obradjuje se  funkcija main na liniji 8
+INFO  15:40:13,983 - Uspesno pozvana funkcija print. :  na liniji 7
+INFO  15:40:13,984 - Uspesno pozvana funkcija print. :  na liniji 7
+INFO  15:40:13,984 - Zavrsena funkcija main na liniji 8
+INFO  15:40:13,984 - Kraj 
+INFO  15:40:13,984 -  Deklarisanih promenljivih ima = 0
+INFO  15:40:13,984 -  Globalnih promenljivih ima = 2
+INFO  15:40:13,984 -  Deklarisanih konstanti ima = 0
+INFO  15:40:14,001 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,64 @@
+program MJProgram
+int b;
+char y;
+{
+	int mnozenje(int a, int b){
+		return a * b;
+	}
+	
+	int sabiranje(int a, int b){
+		return a + b;
+	}
+	
+	int oduzimanje(int a, int b){
+		return a - b;
+	}
+	
+	int deljenje(int a, int b){
+		return a/b;
+	}
+	
+	void D(int a){
+		print('d', 20);
+	}
+	
+	int k (int i, bool b) int c, niz[]; {
+		print(b,20);
+		niz = new int[3];
+		
+		niz[0] = i;
+		niz[0] = 1 + niz[0];
+		niz[0]++;
+		print(niz[0]);
+		read(niz[1]);
+		print(niz[1]);
+		c = deljenje(niz[1],niz[2]);
+		return c+3;
+	}
+	
+	char M() char c;{
+		c = 'm';
+		return c;
+	}
+	
+	void main() int b[];
+	{
+		b = new int[2];
+		read(b[0]);
+		read(b[1]);
+		
+		print(sabiranje(b[0], b[1]), 25);
+		print('s', 20);
+		
+		print(oduzimanje(b[0], b[1]), 25);
+		print('o', 20);
+		
+		print(mnozenje(b[0], b[1]), 25);
+		print(M(), 20);
+		
+		print(deljenje(b[0], b[1]), 25);
+		b[3] = D(y);
+		
+		print(sabiranje(sabiranje(b[0], b[1]), oduzimanje(b[0], b[1])), 25);
+	}
+}

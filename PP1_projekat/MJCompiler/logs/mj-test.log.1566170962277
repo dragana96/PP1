@@ -1,0 +1,125 @@
+INFO  01:25:05,906 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  01:25:06,232 - #2 program
+INFO  01:25:06,233 - #22 test301
+INFO  01:25:06,233 - #14 enum
+INFO  01:25:06,235 - #22 Broj
+INFO  01:25:06,235 - #3 {
+INFO  01:25:06,235 - #22 NULA
+INFO  01:25:06,236 - #10 ,
+INFO  01:25:06,236 - #22 JEDAN
+INFO  01:25:06,236 - #10 ,
+INFO  01:25:06,236 - #22 PET
+INFO  01:25:06,236 - #6 =
+INFO  01:25:06,237 - #19 5
+INFO  01:25:06,237 - #10 ,
+INFO  01:25:06,237 - #22 DESET
+INFO  01:25:06,238 - #6 =
+INFO  01:25:06,238 - #19 10
+INFO  01:25:06,238 - #4 }
+INFO  01:25:06,238 - #3 {
+INFO  01:25:06,240 - #16 void
+INFO  01:25:06,241 - #22 main
+INFO  01:25:06,242 - #17 (
+INFO  01:25:06,244 - #18 )
+INFO  01:25:06,245 - #3 {
+INFO  01:25:06,246 - #47 print
+INFO  01:25:06,248 - #17 (
+INFO  01:25:06,248 - #22 Broj
+INFO  01:25:06,249 - #26 .
+INFO  01:25:06,250 - #22 PET
+INFO  01:25:06,250 - #18 )
+INFO  01:25:06,252 - #7 ;
+INFO  01:25:06,252 - #4 }
+INFO  01:25:06,253 - #4 }
+INFO  01:25:06,298 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationLst(
+    NoDeclarationLst(
+    ) [NoDeclarationLst]
+    EnumDeclaration(
+      EnumDecl(
+       Broj
+        NumConstListComma(
+          NumConstListComma(
+            NumConstListComma(
+              NoNumConstListNoComma(
+                EnumNoValue(
+                 NULA
+                ) [EnumNoValue]
+              ) [NoNumConstListNoComma]
+              EnumNoValue(
+               JEDAN
+              ) [EnumNoValue]
+            ) [NumConstListComma]
+            EnumWithValue(
+             PET
+             5
+            ) [EnumWithValue]
+          ) [NumConstListComma]
+          EnumWithValue(
+           DESET
+           10
+          ) [EnumWithValue]
+        ) [NumConstListComma]
+      ) [EnumDecl]
+    ) [EnumDeclaration]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoLocalVarDeclList(
+      ) [NoLocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        MatchedStmt(
+          PrintStatementWithoutNumConst(
+            Expr(
+              ExprTerm(
+                ExprWithoutMinus(
+                ) [ExprWithoutMinus]
+                TermFactor(
+                  FactorDesignator(
+                    DesignatorDot(
+                      DesignatorValue(
+                       Broj
+                      ) [DesignatorValue]
+                     PET
+                    ) [DesignatorDot]
+                  ) [FactorDesignator]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStatementWithoutNumConst]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  01:25:06,299 - ===================================
+INFO  01:25:06,317 - Pocetak programa  test301 na liniji 1
+INFO  01:25:06,318 - Deklarisan enum identif NULA na poziciji 0 i dodeljena mu je vrednost 0 na liniji 3
+INFO  01:25:06,319 - Deklarisan enum identif JEDAN na poziciji 1 i dodeljena mu je vrednost 1 na liniji 3
+INFO  01:25:06,320 - Deklarisan enum identif PET sa dodelom na poziciji 2 i dodeljena mu je vrednost 5 na liniji 3
+INFO  01:25:06,322 - Deklarisan enum identif DESET sa dodelom na poziciji 3 i dodeljena mu je vrednost 10 na liniji 3
+INFO  01:25:06,322 - Obradjuje se enum Broj na liniji 3
+INFO  01:25:06,323 - Obradjuje se  funkcija main na liniji 7
+INFO  01:25:06,323 - Pristup elementu Broj na liniji 11
+INFO  01:26:03,892 - Uspesno pozvana funkcija print. :  na liniji 7
+INFO  01:26:07,922 - Zavrsena funkcija main na liniji 7
+INFO  01:26:10,835 - Kraj 
+INFO  01:26:12,956 -  Deklarisanih promenljivih ima = 0
+INFO  01:26:13,340 -  Globalnih promenljivih ima = 0
+INFO  01:26:13,865 -  Deklarisanih konstanti ima = 0

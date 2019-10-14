@@ -1,0 +1,595 @@
+INFO  00:42:28,729 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  00:42:28,829 - #2 program
+INFO  00:42:28,830 - #22 MJProgram
+INFO  00:42:28,830 - #3 {
+INFO  00:42:28,832 - #22 int
+INFO  00:42:28,833 - #22 mul
+INFO  00:42:28,834 - #17 (
+INFO  00:42:28,835 - #22 int
+INFO  00:42:28,835 - #22 a
+INFO  00:42:28,835 - #10 ,
+INFO  00:42:28,836 - #22 int
+INFO  00:42:28,836 - #22 b
+INFO  00:42:28,836 - #18 )
+INFO  00:42:28,836 - #3 {
+INFO  00:42:28,837 - #45 return
+INFO  00:42:28,838 - #22 a
+INFO  00:42:28,840 - #29 *
+INFO  00:42:28,843 - #22 b
+INFO  00:42:28,844 - #7 ;
+INFO  00:42:28,846 - #4 }
+INFO  00:42:28,846 - #22 int
+INFO  00:42:28,847 - #22 sum
+INFO  00:42:28,847 - #17 (
+INFO  00:42:28,847 - #22 int
+INFO  00:42:28,847 - #22 a
+INFO  00:42:28,847 - #10 ,
+INFO  00:42:28,847 - #22 int
+INFO  00:42:28,847 - #22 b
+INFO  00:42:28,847 - #18 )
+INFO  00:42:28,847 - #3 {
+INFO  00:42:28,848 - #45 return
+INFO  00:42:28,848 - #22 a
+INFO  00:42:28,848 - #33 +
+INFO  00:42:28,848 - #22 b
+INFO  00:42:28,849 - #7 ;
+INFO  00:42:28,849 - #4 }
+INFO  00:42:28,850 - #22 int
+INFO  00:42:28,850 - #22 sub
+INFO  00:42:28,850 - #17 (
+INFO  00:42:28,850 - #22 int
+INFO  00:42:28,850 - #22 a
+INFO  00:42:28,850 - #10 ,
+INFO  00:42:28,850 - #22 int
+INFO  00:42:28,851 - #22 b
+INFO  00:42:28,851 - #18 )
+INFO  00:42:28,851 - #3 {
+INFO  00:42:28,851 - #45 return
+INFO  00:42:28,851 - #22 a
+INFO  00:42:28,851 - #31 -
+INFO  00:42:28,852 - #22 b
+INFO  00:42:28,853 - #7 ;
+INFO  00:42:28,854 - #4 }
+INFO  00:42:28,854 - #22 int
+INFO  00:42:28,854 - #22 div
+INFO  00:42:28,854 - #17 (
+INFO  00:42:28,854 - #22 int
+INFO  00:42:28,854 - #22 a
+INFO  00:42:28,854 - #10 ,
+INFO  00:42:28,855 - #22 int
+INFO  00:42:28,855 - #22 b
+INFO  00:42:28,856 - #18 )
+INFO  00:42:28,856 - #3 {
+INFO  00:42:28,856 - #45 return
+INFO  00:42:28,856 - #22 a
+INFO  00:42:28,856 - #30 /
+INFO  00:42:28,856 - #22 b
+INFO  00:42:28,858 - #7 ;
+INFO  00:42:28,859 - #4 }
+INFO  00:42:28,859 - #16 void
+INFO  00:42:28,859 - #22 main
+INFO  00:42:28,868 - #17 (
+INFO  00:42:28,868 - #18 )
+INFO  00:42:28,869 - #22 int
+INFO  00:42:28,869 - #22 a
+INFO  00:42:28,869 - #10 ,
+INFO  00:42:28,869 - #22 b
+INFO  00:42:28,869 - #10 ,
+INFO  00:42:28,870 - #22 razlikaKvadrata
+INFO  00:42:28,870 - #10 ,
+INFO  00:42:28,870 - #22 proizvodProizvodaIKolicnika
+INFO  00:42:28,870 - #7 ;
+INFO  00:42:28,870 - #3 {
+INFO  00:42:28,870 - #46 read
+INFO  00:42:28,870 - #17 (
+INFO  00:42:28,871 - #22 a
+INFO  00:42:28,871 - #18 )
+INFO  00:42:28,871 - #7 ;
+INFO  00:42:28,871 - #46 read
+INFO  00:42:28,871 - #17 (
+INFO  00:42:28,871 - #22 b
+INFO  00:42:28,871 - #18 )
+INFO  00:42:28,871 - #7 ;
+INFO  00:42:28,871 - #22 razlikaKvadrata
+INFO  00:42:28,872 - #6 =
+INFO  00:42:28,872 - #22 mul
+INFO  00:42:28,874 - #17 (
+INFO  00:42:28,874 - #22 sub
+ERROR 00:42:28,874 - Sintaksna greska na liniji 23
+INFO  00:42:28,874 - #17 (
+INFO  00:42:28,874 - #22 a
+INFO  00:42:28,874 - #10 ,
+INFO  00:42:28,875 - #22 b
+INFO  00:42:28,875 - #18 )
+INFO  00:42:28,875 - #10 ,
+INFO  00:42:28,875 - #22 sum
+INFO  00:42:28,876 - #17 (
+INFO  00:42:28,876 - #22 a
+INFO  00:42:28,876 - #10 ,
+INFO  00:42:28,876 - #22 b
+INFO  00:42:28,876 - #18 )
+INFO  00:42:28,876 - #18 )
+INFO  00:42:28,876 - #7 ;
+INFO  00:42:28,876 - #22 proizvodProizvodaIKolicnika
+INFO  00:42:28,876 - #6 =
+INFO  00:42:28,876 - #22 mul
+ERROR 00:42:28,877 - Izvrsen oporavak do ; u liniji 23
+INFO  00:42:28,877 - #17 (
+INFO  00:42:28,878 - #22 mul
+ERROR 00:42:28,878 - Sintaksna greska na liniji 24
+INFO  00:42:28,878 - #17 (
+INFO  00:42:28,878 - #22 a
+INFO  00:42:28,878 - #10 ,
+INFO  00:42:28,878 - #22 b
+INFO  00:42:28,878 - #18 )
+INFO  00:42:28,878 - #10 ,
+INFO  00:42:28,878 - #22 div
+INFO  00:42:28,878 - #17 (
+INFO  00:42:28,878 - #22 a
+INFO  00:42:28,879 - #10 ,
+INFO  00:42:28,879 - #22 b
+INFO  00:42:28,879 - #18 )
+INFO  00:42:28,879 - #18 )
+INFO  00:42:28,879 - #7 ;
+INFO  00:42:28,879 - #47 print
+INFO  00:42:28,879 - #17 (
+INFO  00:42:28,879 - #22 razlikaKvadrata
+ERROR 00:42:28,879 - Izvrsen oporavak do ; u liniji 24
+INFO  00:42:28,879 - #10 ,
+INFO  00:42:28,879 - #19 39
+INFO  00:42:28,879 - #18 )
+INFO  00:42:28,880 - #7 ;
+INFO  00:42:28,880 - #47 print
+INFO  00:42:28,880 - #17 (
+INFO  00:42:28,880 - #22 proizvodProizvodaIKolicnika
+INFO  00:42:28,880 - #10 ,
+INFO  00:42:28,880 - #19 39
+INFO  00:42:28,880 - #18 )
+INFO  00:42:28,880 - #7 ;
+INFO  00:42:28,880 - #4 }
+INFO  00:42:28,880 - #4 }
+INFO  00:42:28,907 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoDeclarationLst(
+  ) [NoDeclarationLst]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      MethodDeclarationList(
+        MethodDeclarationList(
+          MethodDeclarationList(
+            NoMethodDeclarationList(
+            ) [NoMethodDeclarationList]
+            MethodDeclaration(
+              ReturnMethodType(
+                Type(
+                 int
+                ) [Type]
+              ) [ReturnMethodType]
+              MethodName(
+               mul
+              ) [MethodName]
+              FormalParamsYes(
+                MoreFormPars(
+                  FormParDeclaration(
+                    Type(
+                     int
+                    ) [Type]
+                   a
+                  ) [FormParDeclaration]
+                  OneFormPars(
+                    FormParDeclaration(
+                      Type(
+                       int
+                      ) [Type]
+                     b
+                    ) [FormParDeclaration]
+                  ) [OneFormPars]
+                ) [MoreFormPars]
+              ) [FormalParamsYes]
+              NoLocalVarDeclList(
+              ) [NoLocalVarDeclList]
+              StmtList(
+                NoStmtList(
+                ) [NoStmtList]
+                MatchedStmt(
+                  ReturnStatement(
+                    YesExpr(
+                      Expression(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermDeclaration(
+                          FactorDesignator(
+                            DesignatorValue(
+                             a
+                            ) [DesignatorValue]
+                            NoActualParsWithParen(
+                            ) [NoActualParsWithParen]
+                          ) [FactorDesignator]
+                          MulopFactorLst(
+                            NoMulopFactorLst(
+                            ) [NoMulopFactorLst]
+                            OpMultiply(
+                            ) [OpMultiply]
+                            FactorDesignator(
+                              DesignatorValue(
+                               b
+                              ) [DesignatorValue]
+                              NoActualParsWithParen(
+                              ) [NoActualParsWithParen]
+                            ) [FactorDesignator]
+                          ) [MulopFactorLst]
+                        ) [TermDeclaration]
+                        NoAddopTermLst(
+                        ) [NoAddopTermLst]
+                      ) [Expression]
+                    ) [YesExpr]
+                  ) [ReturnStatement]
+                ) [MatchedStmt]
+              ) [StmtList]
+            ) [MethodDeclaration]
+          ) [MethodDeclarationList]
+          MethodDeclaration(
+            ReturnMethodType(
+              Type(
+               int
+              ) [Type]
+            ) [ReturnMethodType]
+            MethodName(
+             sum
+            ) [MethodName]
+            FormalParamsYes(
+              MoreFormPars(
+                FormParDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [FormParDeclaration]
+                OneFormPars(
+                  FormParDeclaration(
+                    Type(
+                     int
+                    ) [Type]
+                   b
+                  ) [FormParDeclaration]
+                ) [OneFormPars]
+              ) [MoreFormPars]
+            ) [FormalParamsYes]
+            NoLocalVarDeclList(
+            ) [NoLocalVarDeclList]
+            StmtList(
+              NoStmtList(
+              ) [NoStmtList]
+              MatchedStmt(
+                ReturnStatement(
+                  YesExpr(
+                    Expression(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermDeclaration(
+                        FactorDesignator(
+                          DesignatorValue(
+                           a
+                          ) [DesignatorValue]
+                          NoActualParsWithParen(
+                          ) [NoActualParsWithParen]
+                        ) [FactorDesignator]
+                        NoMulopFactorLst(
+                        ) [NoMulopFactorLst]
+                      ) [TermDeclaration]
+                      AddopTermLst(
+                        NoAddopTermLst(
+                        ) [NoAddopTermLst]
+                        OpPlus(
+                        ) [OpPlus]
+                        TermDeclaration(
+                          FactorDesignator(
+                            DesignatorValue(
+                             b
+                            ) [DesignatorValue]
+                            NoActualParsWithParen(
+                            ) [NoActualParsWithParen]
+                          ) [FactorDesignator]
+                          NoMulopFactorLst(
+                          ) [NoMulopFactorLst]
+                        ) [TermDeclaration]
+                      ) [AddopTermLst]
+                    ) [Expression]
+                  ) [YesExpr]
+                ) [ReturnStatement]
+              ) [MatchedStmt]
+            ) [StmtList]
+          ) [MethodDeclaration]
+        ) [MethodDeclarationList]
+        MethodDeclaration(
+          ReturnMethodType(
+            Type(
+             int
+            ) [Type]
+          ) [ReturnMethodType]
+          MethodName(
+           sub
+          ) [MethodName]
+          FormalParamsYes(
+            MoreFormPars(
+              FormParDeclaration(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormParDeclaration]
+              OneFormPars(
+                FormParDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                 b
+                ) [FormParDeclaration]
+              ) [OneFormPars]
+            ) [MoreFormPars]
+          ) [FormalParamsYes]
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              ReturnStatement(
+                YesExpr(
+                  Expression(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermDeclaration(
+                      FactorDesignator(
+                        DesignatorValue(
+                         a
+                        ) [DesignatorValue]
+                        NoActualParsWithParen(
+                        ) [NoActualParsWithParen]
+                      ) [FactorDesignator]
+                      NoMulopFactorLst(
+                      ) [NoMulopFactorLst]
+                    ) [TermDeclaration]
+                    AddopTermLst(
+                      NoAddopTermLst(
+                      ) [NoAddopTermLst]
+                      OpMinus(
+                      ) [OpMinus]
+                      TermDeclaration(
+                        FactorDesignator(
+                          DesignatorValue(
+                           b
+                          ) [DesignatorValue]
+                          NoActualParsWithParen(
+                          ) [NoActualParsWithParen]
+                        ) [FactorDesignator]
+                        NoMulopFactorLst(
+                        ) [NoMulopFactorLst]
+                      ) [TermDeclaration]
+                    ) [AddopTermLst]
+                  ) [Expression]
+                ) [YesExpr]
+              ) [ReturnStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+        ) [MethodDeclaration]
+      ) [MethodDeclarationList]
+      MethodDeclaration(
+        ReturnMethodType(
+          Type(
+           int
+          ) [Type]
+        ) [ReturnMethodType]
+        MethodName(
+         div
+        ) [MethodName]
+        FormalParamsYes(
+          MoreFormPars(
+            FormParDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [FormParDeclaration]
+            OneFormPars(
+              FormParDeclaration(
+                Type(
+                 int
+                ) [Type]
+               b
+              ) [FormParDeclaration]
+            ) [OneFormPars]
+          ) [MoreFormPars]
+        ) [FormalParamsYes]
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            ReturnStatement(
+              YesExpr(
+                Expression(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermDeclaration(
+                    FactorDesignator(
+                      DesignatorValue(
+                       a
+                      ) [DesignatorValue]
+                      NoActualParsWithParen(
+                      ) [NoActualParsWithParen]
+                    ) [FactorDesignator]
+                    MulopFactorLst(
+                      NoMulopFactorLst(
+                      ) [NoMulopFactorLst]
+                      OpDivide(
+                      ) [OpDivide]
+                      FactorDesignator(
+                        DesignatorValue(
+                         b
+                        ) [DesignatorValue]
+                        NoActualParsWithParen(
+                        ) [NoActualParsWithParen]
+                      ) [FactorDesignator]
+                    ) [MulopFactorLst]
+                  ) [TermDeclaration]
+                  NoAddopTermLst(
+                  ) [NoAddopTermLst]
+                ) [Expression]
+              ) [YesExpr]
+            ) [ReturnStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDeclaration]
+    ) [MethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        LVarDecl(
+          Type(
+           int
+          ) [Type]
+          LVarDeclarationList(
+            LVarDeclaration(
+             a
+            ) [LVarDeclaration]
+            LVarDeclarationList(
+              LVarDeclaration(
+               b
+              ) [LVarDeclaration]
+              LVarDeclarationList(
+                LVarDeclaration(
+                 razlikaKvadrata
+                ) [LVarDeclaration]
+                LSingleVarDeclaration(
+                  LVarDeclaration(
+                   proizvodProizvodaIKolicnika
+                  ) [LVarDeclaration]
+                ) [LSingleVarDeclaration]
+              ) [LVarDeclarationList]
+            ) [LVarDeclarationList]
+          ) [LVarDeclarationList]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  NoStmtList(
+                  ) [NoStmtList]
+                  MatchedStmt(
+                    ReadStatement(
+                      DesignatorValue(
+                       a
+                      ) [DesignatorValue]
+                    ) [ReadStatement]
+                  ) [MatchedStmt]
+                ) [StmtList]
+                MatchedStmt(
+                  ReadStatement(
+                    DesignatorValue(
+                     b
+                    ) [DesignatorValue]
+                  ) [ReadStatement]
+                ) [MatchedStmt]
+              ) [StmtList]
+              MatchedStmt(
+                ErrorStmt(
+                ) [ErrorStmt]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              ErrorStmt(
+              ) [ErrorStmt]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            PrintStatement(
+              Expression(
+                NoMinus(
+                ) [NoMinus]
+                TermDeclaration(
+                  FactorDesignator(
+                    DesignatorValue(
+                     razlikaKvadrata
+                    ) [DesignatorValue]
+                    NoActualParsWithParen(
+                    ) [NoActualParsWithParen]
+                  ) [FactorDesignator]
+                  NoMulopFactorLst(
+                  ) [NoMulopFactorLst]
+                ) [TermDeclaration]
+                NoAddopTermLst(
+                ) [NoAddopTermLst]
+              ) [Expression]
+              NumConsts1(
+               39
+              ) [NumConsts1]
+            ) [PrintStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStatement(
+            Expression(
+              NoMinus(
+              ) [NoMinus]
+              TermDeclaration(
+                FactorDesignator(
+                  DesignatorValue(
+                   proizvodProizvodaIKolicnika
+                  ) [DesignatorValue]
+                  NoActualParsWithParen(
+                  ) [NoActualParsWithParen]
+                ) [FactorDesignator]
+                NoMulopFactorLst(
+                ) [NoMulopFactorLst]
+              ) [TermDeclaration]
+              NoAddopTermLst(
+              ) [NoAddopTermLst]
+            ) [Expression]
+            NumConsts1(
+             39
+            ) [NumConsts1]
+          ) [PrintStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:42:28,914 - Pocetak programa  MJProgram na liniji 1
+INFO  00:42:28,914 - Obradjuje se  funkcija mul na liniji 3
+INFO  00:42:28,914 - Deklarisan formalni parametar: a na liniji 3
+INFO  00:42:28,914 - Deklarisan formalni parametar: b na liniji 3
+INFO  00:42:28,915 - Obradjuje se  funkcija sum na liniji 7
+INFO  00:42:28,915 - Deklarisan formalni parametar: a na liniji 7
+INFO  00:42:28,915 - Deklarisan formalni parametar: b na liniji 7
+INFO  00:42:28,915 - Obradjuje se  funkcija sub na liniji 11
+INFO  00:42:28,915 - Deklarisan formalni parametar: a na liniji 11
+INFO  00:42:28,915 - Deklarisan formalni parametar: b na liniji 11
+INFO  00:42:28,916 - Obradjuje se  funkcija div na liniji 15
+INFO  00:42:28,916 - Deklarisan formalni parametar: a na liniji 15
+INFO  00:42:28,916 - Deklarisan formalni parametar: b na liniji 15
+INFO  00:42:28,916 - Obradjuje se  funkcija main na liniji 19
+INFO  00:42:28,916 - Deklarisana lokalna promenljiva a na liniji 19
+INFO  00:42:28,917 - Deklarisana lokalna promenljiva b na liniji 19
+INFO  00:42:28,917 - Deklarisana lokalna promenljiva razlikaKvadrata na liniji 19
+INFO  00:42:28,917 - Deklarisana lokalna promenljiva proizvodProizvodaIKolicnika na liniji 19
+INFO  00:42:28,917 - ===================================
+INFO  00:42:28,917 -  Deklarisanih globalnih promenljivih ima = 0
+INFO  00:42:28,917 -  Deklarisanih lokalnih promenljivih ima = 4
+INFO  00:42:28,917 -  Konstanti ima = 0
+INFO  00:42:28,917 - ===================================
+ERROR 00:42:28,919 - Parsiranje NIJE uspesno zavrseno!

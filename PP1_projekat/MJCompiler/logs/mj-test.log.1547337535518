@@ -1,0 +1,284 @@
+INFO  00:58:37,171 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  00:58:37,290 - #2 program
+INFO  00:58:37,291 - #22 MJProgram
+INFO  00:58:37,291 - #22 int
+INFO  00:58:37,293 - #22 a
+INFO  00:58:37,294 - #10 ,
+INFO  00:58:37,294 - #22 b
+INFO  00:58:37,294 - #10 ,
+INFO  00:58:37,297 - #22 m
+INFO  00:58:37,297 - #10 ,
+INFO  00:58:37,298 - #22 v
+INFO  00:58:37,298 - #7 ;
+INFO  00:58:37,298 - #22 bool
+INFO  00:58:37,298 - #22 c
+INFO  00:58:37,298 - #7 ;
+INFO  00:58:37,299 - #5 const
+INFO  00:58:37,299 - #22 int
+INFO  00:58:37,299 - #22 konstanta
+INFO  00:58:37,299 - #6 =
+INFO  00:58:37,299 - #19 5
+INFO  00:58:37,299 - #7 ;
+INFO  00:58:37,300 - #3 {
+INFO  00:58:37,301 - #22 int
+INFO  00:58:37,301 - #22 k
+INFO  00:58:37,302 - #17 (
+INFO  00:58:37,303 - #22 int
+INFO  00:58:37,303 - #22 a
+INFO  00:58:37,303 - #10 ,
+INFO  00:58:37,303 - #22 int
+INFO  00:58:37,303 - #22 b
+INFO  00:58:37,303 - #18 )
+INFO  00:58:37,303 - #3 {
+INFO  00:58:37,304 - #45 return
+INFO  00:58:37,305 - #22 a
+INFO  00:58:37,306 - #33 +
+INFO  00:58:37,309 - #22 b
+INFO  00:58:37,310 - #7 ;
+INFO  00:58:37,310 - #4 }
+INFO  00:58:37,311 - #22 char
+INFO  00:58:37,311 - #22 main
+INFO  00:58:37,312 - #17 (
+INFO  00:58:37,312 - #18 )
+INFO  00:58:37,315 - #22 char
+INFO  00:58:37,317 - #22 c
+INFO  00:58:37,317 - #7 ;
+INFO  00:58:37,318 - #3 {
+INFO  00:58:37,318 - #22 a
+INFO  00:58:37,318 - #6 =
+INFO  00:58:37,318 - #22 k
+INFO  00:58:37,320 - #17 (
+INFO  00:58:37,320 - #22 v
+ERROR 00:58:37,320 - Sintaksna greska na liniji 16
+INFO  00:58:37,320 - #10 ,
+INFO  00:58:37,321 - #22 m
+INFO  00:58:37,321 - #18 )
+INFO  00:58:37,322 - #7 ;
+INFO  00:58:37,322 - #45 return
+INFO  00:58:37,322 - #22 c
+INFO  00:58:37,322 - #7 ;
+ERROR 00:58:37,322 - Izvrsen oporavak do ; u liniji 16
+INFO  00:58:37,323 - #4 }
+INFO  00:58:37,323 - #4 }
+INFO  00:58:37,349 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      DeclarationLst(
+        NoDeclarationLst(
+        ) [NoDeclarationLst]
+        GlobalVarDeclaration1(
+          GVarDecl(
+            Type(
+             int
+            ) [Type]
+            GVarDeclarationList(
+              GVarDeclarationList(
+                GVarDeclarationList(
+                  GSingleVarDeclaration(
+                    GVarDeclaration(
+                     a
+                    ) [GVarDeclaration]
+                  ) [GSingleVarDeclaration]
+                  GVarDeclaration(
+                   b
+                  ) [GVarDeclaration]
+                ) [GVarDeclarationList]
+                GVarDeclaration(
+                 m
+                ) [GVarDeclaration]
+              ) [GVarDeclarationList]
+              GVarDeclaration(
+               v
+              ) [GVarDeclaration]
+            ) [GVarDeclarationList]
+          ) [GVarDecl]
+        ) [GlobalVarDeclaration1]
+      ) [DeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           bool
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             c
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    ConstDeclaration1(
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+        ConstListDerived1(
+          ConstDeclaration(
+           konstanta
+            ConstNumber(
+             5
+            ) [ConstNumber]
+          ) [ConstDeclaration]
+        ) [ConstListDerived1]
+      ) [ConstDecl]
+    ) [ConstDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      NoMethodDeclarationList(
+      ) [NoMethodDeclarationList]
+      MethodDeclaration(
+        ReturnMethodType(
+          Type(
+           int
+          ) [Type]
+        ) [ReturnMethodType]
+        MethodName(
+         k
+        ) [MethodName]
+        FormalParamsYes(
+          MoreFormPars(
+            FormParDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [FormParDeclaration]
+            OneFormPars(
+              FormParDeclaration(
+                Type(
+                 int
+                ) [Type]
+               b
+              ) [FormParDeclaration]
+            ) [OneFormPars]
+          ) [MoreFormPars]
+        ) [FormalParamsYes]
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            ReturnStatement(
+              YesExpr(
+                Expression(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermDeclaration(
+                    FactorDesignator(
+                      DesignatorValue(
+                       a
+                      ) [DesignatorValue]
+                      NoActualParsWithParen(
+                      ) [NoActualParsWithParen]
+                    ) [FactorDesignator]
+                    NoMulopFactorLst(
+                    ) [NoMulopFactorLst]
+                  ) [TermDeclaration]
+                  AddopTermLst(
+                    NoAddopTermLst(
+                    ) [NoAddopTermLst]
+                    OpPlus(
+                    ) [OpPlus]
+                    TermDeclaration(
+                      FactorDesignator(
+                        DesignatorValue(
+                         b
+                        ) [DesignatorValue]
+                        NoActualParsWithParen(
+                        ) [NoActualParsWithParen]
+                      ) [FactorDesignator]
+                      NoMulopFactorLst(
+                      ) [NoMulopFactorLst]
+                    ) [TermDeclaration]
+                  ) [AddopTermLst]
+                ) [Expression]
+              ) [YesExpr]
+            ) [ReturnStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDeclaration]
+    ) [MethodDeclarationList]
+    MethodDeclaration(
+      ReturnMethodType(
+        Type(
+         char
+        ) [Type]
+      ) [ReturnMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        LVarDecl(
+          Type(
+           char
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarDeclaration(
+             c
+            ) [LVarDeclaration]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          ReturnStatement(
+            YesExpr(
+              Expression(
+                NoMinus(
+                ) [NoMinus]
+                TermDeclaration(
+                  FactorDesignator(
+                    DesignatorValue(
+                     c
+                    ) [DesignatorValue]
+                    NoActualParsWithParen(
+                    ) [NoActualParsWithParen]
+                  ) [FactorDesignator]
+                  NoMulopFactorLst(
+                  ) [NoMulopFactorLst]
+                ) [TermDeclaration]
+                NoAddopTermLst(
+                ) [NoAddopTermLst]
+              ) [Expression]
+            ) [YesExpr]
+          ) [ReturnStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:58:37,354 - Pocetak programa  MJProgram na liniji 1
+INFO  00:58:37,355 - Deklarisana globalna promenljiva a na liniji 2
+INFO  00:58:37,355 - Deklarisana globalna promenljiva b na liniji 2
+INFO  00:58:37,355 - Deklarisana globalna promenljiva m na liniji 2
+INFO  00:58:37,355 - Deklarisana globalna promenljiva v na liniji 2
+INFO  00:58:37,355 - Deklarisana globalna promenljiva c na liniji 3
+INFO  00:58:37,362 - Deklarisana konstanta konstanta na liniji 5
+INFO  00:58:37,362 - Obradjuje se  funkcija k na liniji 8
+INFO  00:58:37,362 - Deklarisan formalni parametar: a na liniji 8
+INFO  00:58:37,362 - Deklarisan formalni parametar: b na liniji 8
+INFO  00:58:37,363 - Obradjuje se  funkcija main na liniji 14
+INFO  00:58:37,363 - Deklarisana lokalna promenljiva c na liniji 14
+INFO  00:58:37,363 - ===================================
+INFO  00:58:37,363 -  Deklarisanih globalnih promenljivih ima = 5
+INFO  00:58:37,364 -  Deklarisanih lokalnih promenljivih ima = 1
+INFO  00:58:37,364 -  Konstanti ima = 1
+INFO  00:58:37,364 - ===================================
+ERROR 00:58:37,366 - Parsiranje NIJE uspesno zavrseno!

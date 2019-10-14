@@ -1,0 +1,168 @@
+INFO  18:57:20,046 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  18:57:20,141 - #2 program
+INFO  18:57:20,141 - #22 MJProgram
+INFO  18:57:20,141 - #14 enum
+INFO  18:57:20,145 - #22 Broj
+INFO  18:57:20,145 - #3 {
+INFO  18:57:20,145 - #22 NULA
+INFO  18:57:20,145 - #10 ,
+INFO  18:57:20,147 - #22 JEDAN
+INFO  18:57:20,147 - #10 ,
+INFO  18:57:20,147 - #22 PET
+INFO  18:57:20,147 - #6 =
+INFO  18:57:20,148 - #19 5
+INFO  18:57:20,148 - #10 ,
+INFO  18:57:20,149 - #22 DESET
+INFO  18:57:20,149 - #6 =
+INFO  18:57:20,149 - #19 10
+INFO  18:57:20,149 - #4 }
+INFO  18:57:20,150 - #22 int
+INFO  18:57:20,151 - #22 niz
+INFO  18:57:20,152 - #8 [
+INFO  18:57:20,153 - #9 ]
+INFO  18:57:20,153 - #7 ;
+INFO  18:57:20,154 - #3 {
+INFO  18:57:20,154 - #16 void
+INFO  18:57:20,155 - #22 main
+INFO  18:57:20,156 - #17 (
+INFO  18:57:20,157 - #18 )
+INFO  18:57:20,158 - #3 {
+INFO  18:57:20,158 - #22 niz
+INFO  18:57:20,161 - #8 [
+INFO  18:57:20,161 - #19 1
+INFO  18:57:20,162 - #9 ]
+INFO  18:57:20,164 - #6 =
+INFO  18:57:20,164 - #22 Broj
+INFO  18:57:20,166 - #26 .
+INFO  18:57:20,166 - #22 DESET
+INFO  18:57:20,166 - #7 ;
+INFO  18:57:20,167 - #4 }
+INFO  18:57:20,167 - #4 }
+INFO  18:57:20,192 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      EnumDeclaration(
+        EnumDecl(
+         Broj
+         NULA
+          NoAssignConstEnum(
+          ) [NoAssignConstEnum]
+          NumConstListEnum(
+            NumConstListEnum(
+              NumConstListEnum(
+                NoNumConstListEnum(
+                ) [NoNumConstListEnum]
+               JEDAN
+                NoAssignConstEnum(
+                ) [NoAssignConstEnum]
+              ) [NumConstListEnum]
+             PET
+              AssignConstEnum(
+               5
+              ) [AssignConstEnum]
+            ) [NumConstListEnum]
+           DESET
+            AssignConstEnum(
+             10
+            ) [AssignConstEnum]
+          ) [NumConstListEnum]
+        ) [EnumDecl]
+      ) [EnumDeclaration]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         int
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarArray(
+           niz
+            Brackets(
+            ) [Brackets]
+          ) [GVarArray]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoLocalVarDeclList(
+      ) [NoLocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        MatchedStmt(
+          DesignatorStStatement(
+            DessignatorAssign(
+              DesignatorArray(
+                DesignatorValue(
+                 niz
+                ) [DesignatorValue]
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorNumber(
+                       1
+                      ) [FactorNumber]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DesignatorArray]
+              OpEq(
+              ) [OpEq]
+              Expr(
+                ExprTerm(
+                  ExprWithoutMinus(
+                  ) [ExprWithoutMinus]
+                  TermFactor(
+                    FactorDesignator(
+                      DesignatorDot(
+                        DesignatorValue(
+                         Broj
+                        ) [DesignatorValue]
+                       DESET
+                      ) [DesignatorDot]
+                    ) [FactorDesignator]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [Expr]
+            ) [DessignatorAssign]
+          ) [DesignatorStStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  18:57:20,194 - ===================================
+INFO  18:57:20,202 - Pocetak programa  MJProgram na liniji 1
+INFO  18:57:20,203 - Obradjuje se enum Broj na liniji 3
+INFO  18:57:20,203 - 1glo niz
+INFO  18:57:20,203 - Deklarisan globalni niz niz na liniji 4
+INFO  18:57:20,204 - Obradjuje se  funkcija main na liniji 11
+INFO  18:57:20,204 - Pristup elementu niz na liniji 17
+INFO  18:57:20,204 - Pristup elementu niza niz na liniji 17
+INFO  18:57:20,204 - Pristup elementu Broj na liniji 17
+INFO  18:57:20,204 - Uspesno dodeljena vrednost promenjivoj niz :  na liniji 17
+INFO  18:57:20,204 - Zavrsena funkcija main na liniji 11
+INFO  18:57:20,205 - Kraj 
+INFO  18:57:20,205 -  Deklarisanih promenljivih ima = 0
+INFO  18:57:20,205 -  Globalnih promenljivih ima = 1
+INFO  18:57:20,205 -  Deklarisanih konstanti ima = 0

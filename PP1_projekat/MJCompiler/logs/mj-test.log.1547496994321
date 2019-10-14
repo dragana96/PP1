@@ -1,0 +1,226 @@
+INFO  21:11:03,539 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  21:11:03,661 - #2 program
+INFO  21:11:03,661 - #22 MJProgram
+INFO  21:11:03,662 - #22 int
+INFO  21:11:03,664 - #22 b
+INFO  21:11:03,665 - #7 ;
+INFO  21:11:03,666 - #22 char
+INFO  21:11:03,667 - #22 y
+INFO  21:11:03,668 - #7 ;
+INFO  21:11:03,668 - #3 {
+INFO  21:11:03,668 - #22 int
+INFO  21:11:03,669 - #22 sabiranje
+INFO  21:11:03,670 - #17 (
+INFO  21:11:03,671 - #22 int
+INFO  21:11:03,671 - #22 a
+INFO  21:11:03,671 - #10 ,
+INFO  21:11:03,671 - #22 int
+INFO  21:11:03,672 - #22 b
+INFO  21:11:03,672 - #18 )
+INFO  21:11:03,672 - #3 {
+INFO  21:11:03,673 - #45 return
+INFO  21:11:03,676 - #22 a
+INFO  21:11:03,676 - #33 +
+INFO  21:11:03,676 - #22 b
+INFO  21:11:03,678 - #7 ;
+INFO  21:11:03,679 - #4 }
+INFO  21:11:03,680 - #16 void
+INFO  21:11:03,680 - #22 main
+INFO  21:11:03,681 - #17 (
+INFO  21:11:03,681 - #18 )
+INFO  21:11:03,683 - #22 int
+INFO  21:11:03,683 - #22 b
+INFO  21:11:03,683 - #8 [
+INFO  21:11:03,683 - #9 ]
+INFO  21:11:03,683 - #7 ;
+INFO  21:11:03,685 - #3 {
+INFO  21:11:03,685 - #47 print
+INFO  21:11:03,685 - #17 (
+INFO  21:11:03,686 - #22 b
+INFO  21:11:03,686 - #18 )
+INFO  21:11:03,686 - #7 ;
+INFO  21:11:03,686 - #46 read
+INFO  21:11:03,686 - #17 (
+INFO  21:11:03,686 - #22 a
+INFO  21:11:03,688 - #18 )
+INFO  21:11:03,688 - #7 ;
+INFO  21:11:03,689 - #4 }
+INFO  21:11:03,689 - #4 }
+INFO  21:11:03,727 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           int
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             b
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         char
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           y
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      NoMethodDeclarationList(
+      ) [NoMethodDeclarationList]
+      MethodDeclaration(
+        ReturnMethodType(
+          Type(
+           int
+          ) [Type]
+        ) [ReturnMethodType]
+        MethodName(
+         sabiranje
+        ) [MethodName]
+        FormalParamsYes(
+          MoreFormPars(
+            FormParDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [FormParDeclaration]
+            OneFormPars(
+              FormParDeclaration(
+                Type(
+                 int
+                ) [Type]
+               b
+              ) [FormParDeclaration]
+            ) [OneFormPars]
+          ) [MoreFormPars]
+        ) [FormalParamsYes]
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        StartMethodSt(
+        ) [StartMethodSt]
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            ReturnStatement(
+              YesExpr(
+                ExpressionWithoutMinus(
+                  ExpresionAdd(
+                    ExprTerm(
+                      TermFactor(
+                        FactorDesignator(
+                          DesignatorValue(
+                           a
+                          ) [DesignatorValue]
+                        ) [FactorDesignator]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                    OpPlus(
+                    ) [OpPlus]
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorValue(
+                         b
+                        ) [DesignatorValue]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExpresionAdd]
+                ) [ExpressionWithoutMinus]
+              ) [YesExpr]
+            ) [ReturnStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDeclaration]
+    ) [MethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        LVarDecl(
+          Type(
+           int
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarArray(
+             b
+              Brackets(
+              ) [Brackets]
+            ) [LVarArray]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            PrintStatementWithoutNumConst(
+              ExpressionWithoutMinus(
+                ExprTerm(
+                  TermFactor(
+                    FactorDesignator(
+                      DesignatorValue(
+                       b
+                      ) [DesignatorValue]
+                    ) [FactorDesignator]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [ExpressionWithoutMinus]
+            ) [PrintStatementWithoutNumConst]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          ReadStatement(
+            DesignatorValue(
+             a
+            ) [DesignatorValue]
+          ) [ReadStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  21:11:03,742 - Pocetak programa  MJProgram na liniji 1
+INFO  21:11:03,742 - Deklarisana globalna promenljiva b na liniji 2
+INFO  21:11:03,743 - Deklarisana globalna promenljiva y na liniji 3
+INFO  21:11:03,744 - Obradjuje se  funkcija sabiranje na liniji 7
+INFO  21:11:03,745 - Deklarisan formalni parametar: a na liniji 7
+INFO  21:11:03,745 - Deklarisan formalni parametar: b na liniji 7
+INFO  21:11:03,745 - Pristup a na liniji 8
+INFO  21:11:03,751 - Pristup b na liniji 8
+INFO  21:11:03,751 - Obradjuje se  funkcija main na liniji 14
+INFO  21:11:03,751 - Deklarisan lokalni niz b na liniji 14
+INFO  21:11:03,751 - Pristup b na liniji 17
+INFO  21:11:03,751 - Pristup a na liniji 18
+INFO  21:11:03,751 - ===================================
+INFO  21:11:03,752 -  Deklarisanih globalnih promenljivih ima = 2
+INFO  21:11:03,752 -  Deklarisanih lokalnih promenljivih ima = 1
+INFO  21:11:03,752 -  Konstanti ima = 0
+INFO  21:11:03,752 - ===================================
+INFO  21:11:03,753 - Parsiranje uspesno zavrseno!

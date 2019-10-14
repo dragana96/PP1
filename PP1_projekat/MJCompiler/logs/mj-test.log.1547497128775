@@ -1,0 +1,281 @@
+INFO  21:16:34,326 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  21:16:34,414 - #2 program
+INFO  21:16:34,415 - #22 Program
+INFO  21:16:34,415 - #5 const
+INFO  21:16:34,416 - #22 int
+INFO  21:16:34,417 - #22 pi
+INFO  21:16:34,417 - #6 =
+INFO  21:16:34,418 - #19 3
+INFO  21:16:34,418 - #10 ,
+INFO  21:16:34,418 - #22 e
+INFO  21:16:34,419 - #6 =
+INFO  21:16:34,419 - #19 2
+INFO  21:16:34,419 - #7 ;
+INFO  21:16:34,419 - #22 int
+INFO  21:16:34,420 - #22 z
+INFO  21:16:34,420 - #7 ;
+INFO  21:16:34,421 - #22 char
+INFO  21:16:34,421 - #22 k
+INFO  21:16:34,421 - #7 ;
+INFO  21:16:34,421 - #3 {
+INFO  21:16:34,422 - #16 void
+INFO  21:16:34,423 - #22 main
+INFO  21:16:34,424 - #17 (
+INFO  21:16:34,424 - #18 )
+INFO  21:16:34,425 - #22 int
+INFO  21:16:34,426 - #22 i
+INFO  21:16:34,426 - #7 ;
+INFO  21:16:34,426 - #22 int
+INFO  21:16:34,427 - #22 x
+INFO  21:16:34,427 - #8 [
+INFO  21:16:34,427 - #9 ]
+INFO  21:16:34,427 - #7 ;
+INFO  21:16:34,428 - #3 {
+INFO  21:16:34,428 - #22 x
+INFO  21:16:34,430 - #6 =
+INFO  21:16:34,431 - #25 new
+INFO  21:16:34,433 - #22 int
+INFO  21:16:34,433 - #8 [
+INFO  21:16:34,433 - #19 3
+INFO  21:16:34,433 - #9 ]
+INFO  21:16:34,434 - #7 ;
+INFO  21:16:34,434 - #22 i
+INFO  21:16:34,435 - #6 =
+INFO  21:16:34,435 - #19 0
+INFO  21:16:34,435 - #7 ;
+INFO  21:16:34,435 - #22 z
+INFO  21:16:34,435 - #6 =
+INFO  21:16:34,436 - #22 i
+INFO  21:16:34,436 - #7 ;
+INFO  21:16:34,436 - #22 k
+INFO  21:16:34,436 - #6 =
+INFO  21:16:34,436 - #20 k
+INFO  21:16:34,436 - #7 ;
+INFO  21:16:34,437 - #4 }
+INFO  21:16:34,437 - #4 }
+INFO  21:16:34,461 - Program(
+  ProgName(
+   Program
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      DeclarationLst(
+        NoDeclarationLst(
+        ) [NoDeclarationLst]
+        ConstDeclaration1(
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            ConstListDerived2(
+              ConstListDerived1(
+                ConstDeclaration(
+                 pi
+                  ConstNumber(
+                   3
+                  ) [ConstNumber]
+                ) [ConstDeclaration]
+              ) [ConstListDerived1]
+              ConstDeclaration(
+               e
+                ConstNumber(
+                 2
+                ) [ConstNumber]
+              ) [ConstDeclaration]
+            ) [ConstListDerived2]
+          ) [ConstDecl]
+        ) [ConstDeclaration1]
+      ) [DeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           int
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             z
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         char
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           k
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        LocalVarDeclList(
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          LVarDecl(
+            Type(
+             int
+            ) [Type]
+            LSingleVarDeclaration(
+              LVarDeclaration(
+               i
+              ) [LVarDeclaration]
+            ) [LSingleVarDeclaration]
+          ) [LVarDecl]
+        ) [LocalVarDeclList]
+        LVarDecl(
+          Type(
+           int
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarArray(
+             x
+              Brackets(
+              ) [Brackets]
+            ) [LVarArray]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              NoStmtList(
+              ) [NoStmtList]
+              MatchedStmt(
+                DesignatorStStatement(
+                  DessignatorAssign(
+                    DesignatorValue(
+                     x
+                    ) [DesignatorValue]
+                    OpEq(
+                    ) [OpEq]
+                    ExpressionWithoutMinus(
+                      ExprTerm(
+                        TermFactor(
+                          FactorNewArray(
+                            Type(
+                             int
+                            ) [Type]
+                            ExpressionWithoutMinus(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorNumber(
+                                   3
+                                  ) [FactorNumber]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [ExpressionWithoutMinus]
+                          ) [FactorNewArray]
+                        ) [TermFactor]
+                      ) [ExprTerm]
+                    ) [ExpressionWithoutMinus]
+                  ) [DessignatorAssign]
+                ) [DesignatorStStatement]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              DesignatorStStatement(
+                DessignatorAssign(
+                  DesignatorValue(
+                   i
+                  ) [DesignatorValue]
+                  OpEq(
+                  ) [OpEq]
+                  ExpressionWithoutMinus(
+                    ExprTerm(
+                      TermFactor(
+                        FactorNumber(
+                         0
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [ExpressionWithoutMinus]
+                ) [DessignatorAssign]
+              ) [DesignatorStStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            DesignatorStStatement(
+              DessignatorAssign(
+                DesignatorValue(
+                 z
+                ) [DesignatorValue]
+                OpEq(
+                ) [OpEq]
+                ExpressionWithoutMinus(
+                  ExprTerm(
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorValue(
+                         i
+                        ) [DesignatorValue]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [ExpressionWithoutMinus]
+              ) [DessignatorAssign]
+            ) [DesignatorStStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          DesignatorStStatement(
+            DessignatorAssign(
+              DesignatorValue(
+               k
+              ) [DesignatorValue]
+              OpEq(
+              ) [OpEq]
+              ExpressionWithoutMinus(
+                ExprTerm(
+                  TermFactor(
+                    FactorChar(
+                     k
+                    ) [FactorChar]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [ExpressionWithoutMinus]
+            ) [DessignatorAssign]
+          ) [DesignatorStStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  21:16:34,468 - Pocetak programa  Program na liniji 1
+INFO  21:16:34,468 - Deklarisana konstanta pi na liniji 2
+INFO  21:16:34,468 - Deklarisana konstanta e na liniji 2
+INFO  21:16:34,468 - Deklarisana globalna promenljiva z na liniji 3
+INFO  21:16:34,469 - Deklarisana globalna promenljiva k na liniji 4
+INFO  21:16:34,469 - Obradjuje se  funkcija main na liniji 7
+INFO  21:16:34,469 - Deklarisana lokalna promenljiva i na liniji 7
+INFO  21:16:34,469 - Deklarisan lokalni niz x na liniji 7
+INFO  21:16:34,469 - Pristup x na liniji 9
+ERROR 21:16:34,470 - Tipovi nisu kompatabilni pri dodeli!  Greska  na liniji 9
+INFO  21:16:34,470 - Pristup i na liniji 10
+INFO  21:16:34,470 - Pristup z na liniji 11
+INFO  21:16:34,470 - Pristup i na liniji 11
+INFO  21:16:34,477 - Pristup k na liniji 12
+INFO  21:16:34,477 - ===================================
+INFO  21:16:34,477 -  Deklarisanih globalnih promenljivih ima = 2
+INFO  21:16:34,477 -  Deklarisanih lokalnih promenljivih ima = 2
+INFO  21:16:34,477 -  Konstanti ima = 2
+INFO  21:16:34,477 - ===================================
+ERROR 21:16:34,479 - Parsiranje NIJE uspesno zavrseno!

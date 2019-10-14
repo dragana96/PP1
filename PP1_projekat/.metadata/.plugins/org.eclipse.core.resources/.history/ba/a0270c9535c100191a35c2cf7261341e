@@ -1,0 +1,39 @@
+program test302
+
+enum IncrementType { BY_ONE, DOUBLE_VALUE }
+
+int i;
+
+int x=true;
+bool ibool;
+
+int niz[];
+{
+	
+
+	int inkrement(int a, IncrementType type) int pom; 
+	{
+		return a;
+	}
+	
+	void main()
+	{
+		
+			
+	
+		i = 0;
+		i = inkrement(i, IncrementType.BY_ONE);
+		for(;i<10;) 
+		{
+			if(i == 3)
+			{
+				i++;
+				continue;
+			}
+	
+			i = inkrement(i, IncrementType.BY_ONE);
+		}
+		
+		print(inkrement(niz[2], IncrementType.DOUBLE_VALUE));
+	}
+}

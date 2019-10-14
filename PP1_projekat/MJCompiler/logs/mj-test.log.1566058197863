@@ -1,0 +1,219 @@
+INFO  18:09:52,828 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  18:09:52,906 - #2 program
+INFO  18:09:52,906 - #22 MJProgram
+INFO  18:09:52,906 - #14 enum
+INFO  18:09:52,908 - #22 Broj
+INFO  18:09:52,908 - #3 {
+INFO  18:09:52,908 - #22 NULA
+INFO  18:09:52,908 - #10 ,
+INFO  18:09:52,909 - #22 JEDAN
+INFO  18:09:52,909 - #10 ,
+INFO  18:09:52,910 - #22 PET
+INFO  18:09:52,910 - #6 =
+INFO  18:09:52,910 - #19 5
+INFO  18:09:52,910 - #10 ,
+INFO  18:09:52,910 - #22 DESET
+INFO  18:09:52,910 - #6 =
+INFO  18:09:52,910 - #19 10
+INFO  18:09:52,910 - #4 }
+INFO  18:09:52,911 - #22 int
+INFO  18:09:52,913 - #22 niz
+INFO  18:09:52,914 - #8 [
+INFO  18:09:52,914 - #9 ]
+INFO  18:09:52,914 - #7 ;
+INFO  18:09:52,915 - #3 {
+INFO  18:09:52,916 - #16 void
+INFO  18:09:52,917 - #22 main
+INFO  18:09:52,917 - #17 (
+INFO  18:09:52,918 - #18 )
+INFO  18:09:52,919 - #22 Broj
+INFO  18:09:52,920 - #22 nula
+INFO  18:09:52,920 - #7 ;
+INFO  18:09:52,921 - #3 {
+INFO  18:09:52,921 - #22 nula
+INFO  18:09:52,923 - #6 =
+INFO  18:09:52,923 - #22 Broj
+INFO  18:09:52,927 - #26 .
+INFO  18:09:52,927 - #22 NULA
+INFO  18:09:52,927 - #7 ;
+INFO  18:09:52,929 - #22 niz
+INFO  18:09:52,930 - #8 [
+INFO  18:09:52,930 - #22 nula
+INFO  18:09:52,930 - #9 ]
+INFO  18:09:52,930 - #6 =
+INFO  18:09:52,930 - #19 5
+INFO  18:09:52,931 - #7 ;
+INFO  18:09:52,931 - #4 }
+INFO  18:09:52,932 - #4 }
+INFO  18:09:52,960 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      EnumDeclaration(
+        EnumDecl(
+         Broj
+         NULA
+          NoAssignConstEnum(
+          ) [NoAssignConstEnum]
+          NumConstListEnum(
+            NumConstListEnum(
+              NumConstListEnum(
+                NoNumConstListEnum(
+                ) [NoNumConstListEnum]
+               JEDAN
+                NoAssignConstEnum(
+                ) [NoAssignConstEnum]
+              ) [NumConstListEnum]
+             PET
+              AssignConstEnum(
+               5
+              ) [AssignConstEnum]
+            ) [NumConstListEnum]
+           DESET
+            AssignConstEnum(
+             10
+            ) [AssignConstEnum]
+          ) [NumConstListEnum]
+        ) [EnumDecl]
+      ) [EnumDeclaration]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         int
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarArray(
+           niz
+            Brackets(
+            ) [Brackets]
+          ) [GVarArray]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        LVarDecl(
+          Type(
+           Broj
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarDeclaration(
+             nula
+            ) [LVarDeclaration]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            DesignatorStStatement(
+              DessignatorAssign(
+                DesignatorValue(
+                 nula
+                ) [DesignatorValue]
+                OpEq(
+                ) [OpEq]
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorDot(
+                          DesignatorValue(
+                           Broj
+                          ) [DesignatorValue]
+                         NULA
+                        ) [DesignatorDot]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DessignatorAssign]
+            ) [DesignatorStStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          DesignatorStStatement(
+            DessignatorAssign(
+              DesignatorArray(
+                DesignatorValue(
+                 niz
+                ) [DesignatorValue]
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorValue(
+                         nula
+                        ) [DesignatorValue]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DesignatorArray]
+              OpEq(
+              ) [OpEq]
+              Expr(
+                ExprTerm(
+                  ExprWithoutMinus(
+                  ) [ExprWithoutMinus]
+                  TermFactor(
+                    FactorNumber(
+                     5
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [Expr]
+            ) [DessignatorAssign]
+          ) [DesignatorStStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  18:09:52,962 - ===================================
+INFO  18:09:52,966 - Pocetak programa  MJProgram na liniji 1
+INFO  18:09:52,967 - Obradjuje se enum Broj na liniji 3
+INFO  18:09:52,967 - 1glo niz
+INFO  18:09:52,968 - Deklarisan globalni niz niz na liniji 4
+INFO  18:09:52,968 - Obradjuje se  funkcija main na liniji 11
+INFO  18:09:52,968 - 6lok var
+INFO  18:09:52,968 - Deklarisana lokalna promenljiva nula na liniji 13
+INFO  18:09:52,968 - Pristup elementu nula na liniji 15
+INFO  18:09:52,969 - Pristup elementu Broj na liniji 15
+INFO  18:09:52,969 - Uspesno dodeljena vrednost promenjivoj nula :  na liniji 15
+INFO  18:09:52,969 - Pristup elementu niz na liniji 17
+INFO  18:09:52,969 - Pristup elementu nula na liniji 17
+INFO  18:09:52,969 - Pristup elementu niza niz na liniji 17
+ERROR 18:09:52,970 - Greska na liniji 17 : tip izraza ne slaze se sa tipom designatora u dodeli 
+INFO  18:09:52,970 - Uspesno dodeljena vrednost promenjivoj niz :  na liniji 17
+INFO  18:09:52,970 - Zavrsena funkcija main na liniji 11
+INFO  18:09:52,970 - Kraj 
+INFO  18:09:52,970 -  Deklarisanih promenljivih ima = 1
+INFO  18:09:52,971 -  Globalnih promenljivih ima = 1
+INFO  18:09:52,971 -  Deklarisanih konstanti ima = 0

@@ -1,0 +1,214 @@
+INFO  21:24:32,228 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  21:24:32,312 - #2 program
+INFO  21:24:32,312 - #5 MJProgram
+INFO  21:24:32,312 - #5 int
+INFO  21:24:32,312 - #5 a
+INFO  21:24:32,312 - #11 ,
+INFO  21:24:32,312 - #20 5
+ERROR 21:24:32,312 - Sintaksna greska na liniji 4
+INFO  21:24:32,312 - #11 ,
+INFO  21:24:32,312 - #5 b
+INFO  21:24:32,312 - #9 [
+INFO  21:24:32,312 - #10 ]
+DEBUG 21:24:32,312 - Uspesan oporavak od greske pri deklarisanju globalne promenljive.
+INFO  21:24:32,312 - #11 ,
+INFO  21:24:32,312 - #20 3
+ERROR 21:24:32,312 - Sintaksna greska na liniji 4
+INFO  21:24:32,312 - #11 ,
+INFO  21:24:32,312 - #5 r
+INFO  21:24:32,312 - #11 ,
+INFO  21:24:32,312 - #5 o
+DEBUG 21:24:32,312 - Uspesan oporavak od greske pri deklarisanju globalne promenljive.
+INFO  21:24:32,312 - #9 [
+INFO  21:24:32,312 - #10 ]
+INFO  21:24:32,312 - #11 ,
+INFO  21:24:32,312 - #33 +
+ERROR 21:24:32,312 - Sintaksna greska na liniji 4
+INFO  21:24:32,312 - #5 t
+INFO  21:24:32,312 - #11 ,
+INFO  21:24:32,312 - #33 +
+INFO  21:24:32,312 - #11 ,
+INFO  21:24:32,312 - #5 l
+INFO  21:24:32,312 - #8 ;
+INFO  21:24:32,328 - #6 const
+DEBUG 21:24:32,328 - Uspesan oporavak od greske pri deklarisanju globalne promenljive.
+INFO  21:24:32,328 - #5 int
+INFO  21:24:32,328 - #5 b
+INFO  21:24:32,328 - #7 =
+INFO  21:24:32,328 - #20 5
+INFO  21:24:32,328 - #11 ,
+INFO  21:24:32,328 - #5 i
+INFO  21:24:32,328 - #7 =
+INFO  21:24:32,328 - #22 true
+INFO  21:24:32,328 - #8 ;
+INFO  21:24:32,328 - #3 {
+INFO  21:24:32,328 - #5 int
+INFO  21:24:32,328 - #5 main
+INFO  21:24:32,328 - #18 (
+INFO  21:24:32,328 - #19 )
+INFO  21:24:32,328 - #3 {
+INFO  21:24:32,328 - #47 print
+INFO  21:24:32,328 - #18 (
+INFO  21:24:32,328 - #20 1
+INFO  21:24:32,328 - #19 )
+INFO  21:24:32,328 - #8 ;
+INFO  21:24:32,328 - #5 x
+INFO  21:24:32,328 - #7 =
+INFO  21:24:32,328 - #5 y
+INFO  21:24:32,328 - #33 +
+INFO  21:24:32,328 - #20 5
+INFO  21:24:32,328 - #33 +
+INFO  21:24:32,328 - #8 ;
+ERROR 21:24:32,344 - Sintaksna greska na liniji 14
+INFO  21:24:32,344 - #47 print
+INFO  21:24:32,344 - #18 (
+INFO  21:24:32,344 - #20 2
+ERROR 21:24:32,344 - Izvrsen oporavak do ; u liniji 14
+INFO  21:24:32,344 - #19 )
+INFO  21:24:32,344 - #8 ;
+INFO  21:24:32,344 - #4 }
+INFO  21:24:32,344 - #4 }
+INFO  21:24:32,344 - Program(
+  ProgNameDerived1(
+  ) [ProgNameDerived1]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      VarDeclaration1(
+        VarDecl1(
+          Type(
+          ) [Type]
+          VarDeclarationList(
+            VarDeclarationList(
+              VarDeclarationList(
+                VarDeclarationList(
+                  VarDeclarationList(
+                    VarDeclarationList(
+                      VarDeclarationList(
+                        SingleVarDeclaration(
+                          VarDclrtion(
+                          ) [VarDclrtion]
+                        ) [SingleVarDeclaration]
+                        VarDeclarationDerived1(
+                        ) [VarDeclarationDerived1]
+                      ) [VarDeclarationList]
+                      VarArray(
+                        Brackets(
+                        ) [Brackets]
+                      ) [VarArray]
+                    ) [VarDeclarationList]
+                    VarDeclarationDerived1(
+                    ) [VarDeclarationDerived1]
+                  ) [VarDeclarationList]
+                  VarDclrtion(
+                  ) [VarDclrtion]
+                ) [VarDeclarationList]
+                VarArray(
+                  Brackets(
+                  ) [Brackets]
+                ) [VarArray]
+              ) [VarDeclarationList]
+              VarDeclarationDerived1(
+              ) [VarDeclarationDerived1]
+            ) [VarDeclarationList]
+            VarDclrtion(
+            ) [VarDclrtion]
+          ) [VarDeclarationList]
+        ) [VarDecl1]
+      ) [VarDeclaration1]
+    ) [DeclarationLst]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+        ) [Type]
+        ConstDeclrtion(
+          ConstNumber(
+           5
+          ) [ConstNumber]
+        ) [ConstDeclrtion]
+        ConstValuesLst(
+          NoConstValuesLst(
+          ) [NoConstValuesLst]
+          ConstDeclrtion(
+            ConstBool(
+             true
+            ) [ConstBool]
+          ) [ConstDeclrtion]
+        ) [ConstValuesLst]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      NonVoidMethodType(
+        Type(
+        ) [Type]
+      ) [NonVoidMethodType]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationsInClass(
+      ) [NoVarDeclarationsInClass]
+      StmtList(
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            MatchedStmt(
+              PrintStatement(
+                Expression(
+                  NoMinus(
+                  ) [NoMinus]
+                  TermDeclaration(
+                    FactorConst(
+                      ConstNumber(
+                       1
+                      ) [ConstNumber]
+                    ) [FactorConst]
+                    NoMulopFactorLst(
+                    ) [NoMulopFactorLst]
+                  ) [TermDeclaration]
+                  NoAddopTermLst(
+                  ) [NoAddopTermLst]
+                ) [Expression]
+                NoNumConsts(
+                ) [NoNumConsts]
+              ) [PrintStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStatement(
+            Expression(
+              NoMinus(
+              ) [NoMinus]
+              TermDeclaration(
+                FactorConst(
+                  ConstNumber(
+                   2
+                  ) [ConstNumber]
+                ) [FactorConst]
+                NoMulopFactorLst(
+                ) [NoMulopFactorLst]
+              ) [TermDeclaration]
+              NoAddopTermLst(
+              ) [NoAddopTermLst]
+            ) [Expression]
+            NoNumConsts(
+            ) [NoNumConsts]
+          ) [PrintStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  21:24:32,359 - ===================================
+INFO  21:24:32,359 -  Print count calls = 2
+INFO  21:24:32,359 -  Deklarisanih promenljivih ima = 5
+INFO  21:24:32,359 - Konstanti ima = 2

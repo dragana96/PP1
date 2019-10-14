@@ -1,0 +1,279 @@
+INFO  20:23:32,140 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  20:23:32,225 - #2 program
+INFO  20:23:32,225 - #22 MJProgram
+INFO  20:23:32,225 - #22 int
+INFO  20:23:32,227 - #22 b
+INFO  20:23:32,228 - #7 ;
+INFO  20:23:32,228 - #22 char
+INFO  20:23:32,229 - #22 y
+INFO  20:23:32,229 - #7 ;
+INFO  20:23:32,229 - #3 {
+INFO  20:23:32,229 - #22 int
+INFO  20:23:32,230 - #22 sabiranje
+INFO  20:23:32,230 - #17 (
+INFO  20:23:32,231 - #22 int
+INFO  20:23:32,231 - #22 a
+INFO  20:23:32,231 - #10 ,
+INFO  20:23:32,231 - #22 int
+INFO  20:23:32,232 - #22 b
+INFO  20:23:32,232 - #18 )
+INFO  20:23:32,232 - #3 {
+INFO  20:23:32,233 - #45 return
+INFO  20:23:32,234 - #22 a
+INFO  20:23:32,234 - #33 +
+INFO  20:23:32,235 - #22 b
+INFO  20:23:32,236 - #7 ;
+INFO  20:23:32,237 - #4 }
+INFO  20:23:32,238 - #16 void
+INFO  20:23:32,239 - #22 main
+INFO  20:23:32,239 - #17 (
+INFO  20:23:32,240 - #18 )
+INFO  20:23:32,240 - #22 int
+INFO  20:23:32,240 - #22 b
+INFO  20:23:32,240 - #8 [
+INFO  20:23:32,241 - #9 ]
+INFO  20:23:32,241 - #7 ;
+INFO  20:23:32,242 - #3 {
+INFO  20:23:32,242 - #47 print
+INFO  20:23:32,242 - #17 (
+INFO  20:23:32,242 - #22 sabiranje
+INFO  20:23:32,242 - #17 (
+INFO  20:23:32,243 - #22 b
+INFO  20:23:32,243 - #8 [
+INFO  20:23:32,243 - #19 0
+INFO  20:23:32,243 - #9 ]
+INFO  20:23:32,243 - #10 ,
+INFO  20:23:32,243 - #22 b
+INFO  20:23:32,244 - #8 [
+INFO  20:23:32,244 - #19 1
+INFO  20:23:32,244 - #9 ]
+INFO  20:23:32,244 - #18 )
+INFO  20:23:32,245 - #10 ,
+INFO  20:23:32,245 - #19 25
+INFO  20:23:32,245 - #18 )
+INFO  20:23:32,245 - #7 ;
+INFO  20:23:32,245 - #4 }
+INFO  20:23:32,245 - #4 }
+INFO  20:23:32,271 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           int
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             b
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         char
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           y
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      NoMethodDeclarationList(
+      ) [NoMethodDeclarationList]
+      MethodDeclaration(
+        ReturnMethodType(
+          Type(
+           int
+          ) [Type]
+        ) [ReturnMethodType]
+        MethodName(
+         sabiranje
+        ) [MethodName]
+        FormalParamsYes(
+          MoreFormPars(
+            FormParDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [FormParDeclaration]
+            OneFormPars(
+              FormParDeclaration(
+                Type(
+                 int
+                ) [Type]
+               b
+              ) [FormParDeclaration]
+            ) [OneFormPars]
+          ) [MoreFormPars]
+        ) [FormalParamsYes]
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        StartMethodSt(
+        ) [StartMethodSt]
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            ReturnStatement(
+              YesExpr(
+                ExpressionWithoutMinus(
+                  ExpresionAdd(
+                    ExprTerm(
+                      TermFactor(
+                        FactorDesignator(
+                          DesignatorValue(
+                           a
+                          ) [DesignatorValue]
+                        ) [FactorDesignator]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                    OpPlus(
+                    ) [OpPlus]
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorValue(
+                         b
+                        ) [DesignatorValue]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExpresionAdd]
+                ) [ExpressionWithoutMinus]
+              ) [YesExpr]
+            ) [ReturnStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDeclaration]
+    ) [MethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        LVarDecl(
+          Type(
+           int
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarArray(
+             b
+              Brackets(
+              ) [Brackets]
+            ) [LVarArray]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        MatchedStmt(
+          PrintStatementWithNumConst(
+            ExpressionWithoutMinus(
+              ExprTerm(
+                TermFactor(
+                  FactorDesignatorFunction(
+                    DesignatorValue(
+                     sabiranje
+                    ) [DesignatorValue]
+                    ParamList(
+                      MultipleParams(
+                        SingleParam(
+                          ExpressionWithoutMinus(
+                            ExprTerm(
+                              TermFactor(
+                                FactorDesignator(
+                                  DesignatorArray(
+                                    DesignatorValue(
+                                     b
+                                    ) [DesignatorValue]
+                                    ExpressionWithoutMinus(
+                                      ExprTerm(
+                                        TermFactor(
+                                          FactorNumber(
+                                           0
+                                          ) [FactorNumber]
+                                        ) [TermFactor]
+                                      ) [ExprTerm]
+                                    ) [ExpressionWithoutMinus]
+                                  ) [DesignatorArray]
+                                ) [FactorDesignator]
+                              ) [TermFactor]
+                            ) [ExprTerm]
+                          ) [ExpressionWithoutMinus]
+                        ) [SingleParam]
+                        ExpressionWithoutMinus(
+                          ExprTerm(
+                            TermFactor(
+                              FactorDesignator(
+                                DesignatorArray(
+                                  DesignatorValue(
+                                   b
+                                  ) [DesignatorValue]
+                                  ExpressionWithoutMinus(
+                                    ExprTerm(
+                                      TermFactor(
+                                        FactorNumber(
+                                         1
+                                        ) [FactorNumber]
+                                      ) [TermFactor]
+                                    ) [ExprTerm]
+                                  ) [ExpressionWithoutMinus]
+                                ) [DesignatorArray]
+                              ) [FactorDesignator]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [ExpressionWithoutMinus]
+                      ) [MultipleParams]
+                    ) [ParamList]
+                  ) [FactorDesignatorFunction]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [ExpressionWithoutMinus]
+           25
+          ) [PrintStatementWithNumConst]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  20:23:32,278 - Pocetak programa  MJProgram na liniji 1
+INFO  20:23:32,279 - Deklarisana globalna promenljiva b na liniji 2
+INFO  20:23:32,280 - Deklarisana globalna promenljiva y na liniji 3
+INFO  20:23:32,280 - Obradjuje se  funkcija sabiranje na liniji 7
+INFO  20:23:32,280 - Deklarisan formalni parametar: a na liniji 7
+INFO  20:23:32,280 - Deklarisan formalni parametar: b na liniji 7
+INFO  20:23:32,280 - Pristup a na liniji 8
+INFO  20:23:32,281 - Pristup b na liniji 8
+INFO  20:23:32,281 - Obradjuje se  funkcija main na liniji 14
+INFO  20:23:32,281 - Deklarisan lokalni niz b na liniji 14
+INFO  20:23:32,281 - Pristup sabiranje na liniji 17
+INFO  20:23:32,282 - Pristup b na liniji 17
+INFO  20:23:32,289 - Pristup elementu niza b na liniji 17
+INFO  20:23:32,289 - Pristup b na liniji 17
+INFO  20:23:32,289 - Pristup elementu niza b na liniji 17
+INFO  20:23:32,289 - ===================================
+INFO  20:23:32,289 -  Deklarisanih globalnih promenljivih ima = 2
+INFO  20:23:32,289 -  Deklarisanih lokalnih promenljivih ima = 1
+INFO  20:23:32,290 -  Konstanti ima = 0
+INFO  20:23:32,290 - ===================================
+INFO  20:23:32,291 - Parsiranje uspesno zavrseno!

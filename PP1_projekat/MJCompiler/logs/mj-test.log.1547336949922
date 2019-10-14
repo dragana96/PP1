@@ -1,0 +1,620 @@
+INFO  00:47:08,859 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  00:47:08,949 - #2 program
+INFO  00:47:08,949 - #22 Dejan
+INFO  00:47:08,949 - #11 class
+INFO  00:47:08,951 - #22 Osoba
+INFO  00:47:08,951 - #3 {
+INFO  00:47:08,952 - #22 int
+INFO  00:47:08,954 - #22 godina
+INFO  00:47:08,955 - #7 ;
+INFO  00:47:08,955 - #3 {
+INFO  00:47:08,955 - #16 void
+INFO  00:47:08,956 - #22 setGodina
+INFO  00:47:08,957 - #17 (
+INFO  00:47:08,958 - #22 int
+INFO  00:47:08,958 - #22 god
+INFO  00:47:08,958 - #18 )
+INFO  00:47:08,958 - #3 {
+INFO  00:47:08,958 - #22 godina
+INFO  00:47:08,959 - #6 =
+INFO  00:47:08,960 - #22 god
+INFO  00:47:08,963 - #7 ;
+INFO  00:47:08,967 - #4 }
+INFO  00:47:08,968 - #22 int
+INFO  00:47:08,968 - #22 getGodina
+INFO  00:47:08,969 - #17 (
+INFO  00:47:08,969 - #18 )
+INFO  00:47:08,970 - #3 {
+INFO  00:47:08,970 - #45 return
+INFO  00:47:08,970 - #22 godina
+INFO  00:47:08,970 - #7 ;
+INFO  00:47:08,970 - #4 }
+INFO  00:47:08,970 - #4 }
+INFO  00:47:08,970 - #4 }
+INFO  00:47:08,970 - #3 {
+INFO  00:47:08,972 - #22 int
+INFO  00:47:08,972 - #22 saberi
+INFO  00:47:08,972 - #17 (
+INFO  00:47:08,972 - #22 int
+INFO  00:47:08,972 - #22 a
+INFO  00:47:08,972 - #10 ,
+INFO  00:47:08,972 - #22 int
+INFO  00:47:08,972 - #22 b
+INFO  00:47:08,972 - #18 )
+INFO  00:47:08,973 - #22 int
+INFO  00:47:08,973 - #22 rez
+INFO  00:47:08,973 - #7 ;
+INFO  00:47:08,973 - #3 {
+INFO  00:47:08,973 - #22 rez
+INFO  00:47:08,973 - #6 =
+INFO  00:47:08,974 - #22 a
+INFO  00:47:08,974 - #33 +
+INFO  00:47:08,974 - #22 b
+INFO  00:47:08,975 - #7 ;
+INFO  00:47:08,976 - #45 return
+INFO  00:47:08,976 - #22 rez
+INFO  00:47:08,976 - #7 ;
+INFO  00:47:08,976 - #4 }
+INFO  00:47:08,976 - #22 int
+INFO  00:47:08,976 - #22 negiraj
+INFO  00:47:08,976 - #17 (
+INFO  00:47:08,977 - #22 int
+INFO  00:47:08,977 - #22 a
+INFO  00:47:08,977 - #18 )
+INFO  00:47:08,977 - #3 {
+INFO  00:47:08,977 - #45 return
+INFO  00:47:08,977 - #31 -
+INFO  00:47:08,978 - #22 a
+INFO  00:47:08,979 - #7 ;
+INFO  00:47:08,979 - #4 }
+INFO  00:47:08,979 - #16 void
+INFO  00:47:08,986 - #22 main
+INFO  00:47:08,986 - #17 (
+INFO  00:47:08,986 - #18 )
+INFO  00:47:08,986 - #22 Osoba
+INFO  00:47:08,987 - #22 osoba
+INFO  00:47:08,987 - #7 ;
+INFO  00:47:08,987 - #22 int
+INFO  00:47:08,987 - #22 br1
+INFO  00:47:08,987 - #10 ,
+INFO  00:47:08,987 - #22 br2
+INFO  00:47:08,987 - #10 ,
+INFO  00:47:08,987 - #22 br3
+INFO  00:47:08,987 - #10 ,
+INFO  00:47:08,987 - #22 niz
+INFO  00:47:08,987 - #8 [
+INFO  00:47:08,987 - #9 ]
+INFO  00:47:08,987 - #7 ;
+INFO  00:47:08,989 - #3 {
+INFO  00:47:08,989 - #22 niz
+INFO  00:47:08,989 - #6 =
+INFO  00:47:08,989 - #25 new
+INFO  00:47:08,989 - #22 int
+INFO  00:47:08,989 - #8 [
+INFO  00:47:08,989 - #19 9
+INFO  00:47:08,989 - #9 ]
+INFO  00:47:08,990 - #7 ;
+INFO  00:47:08,990 - #22 br1
+INFO  00:47:08,990 - #6 =
+INFO  00:47:08,990 - #19 55
+INFO  00:47:08,991 - #29 *
+INFO  00:47:08,991 - #19 2
+INFO  00:47:08,992 - #31 -
+INFO  00:47:08,992 - #22 ord
+INFO  00:47:08,993 - #17 (
+INFO  00:47:08,993 - #20 k
+ERROR 00:47:08,993 - Sintaksna greska na liniji 35
+INFO  00:47:08,994 - #18 )
+INFO  00:47:08,994 - #7 ;
+INFO  00:47:08,994 - #22 br2
+INFO  00:47:08,994 - #6 =
+INFO  00:47:08,994 - #22 negiraj
+ERROR 00:47:08,995 - Izvrsen oporavak do ; u liniji 35
+INFO  00:47:08,996 - #17 (
+INFO  00:47:08,996 - #22 niz
+ERROR 00:47:08,996 - Sintaksna greska na liniji 36
+INFO  00:47:08,996 - #8 [
+INFO  00:47:08,996 - #19 4
+INFO  00:47:08,996 - #9 ]
+INFO  00:47:08,996 - #18 )
+INFO  00:47:08,996 - #7 ;
+INFO  00:47:08,996 - #22 br3
+INFO  00:47:08,996 - #6 =
+INFO  00:47:08,996 - #22 saberi
+ERROR 00:47:08,997 - Izvrsen oporavak do ; u liniji 36
+INFO  00:47:08,997 - #17 (
+INFO  00:47:08,997 - #22 br1
+ERROR 00:47:08,997 - Sintaksna greska na liniji 38
+INFO  00:47:08,997 - #10 ,
+INFO  00:47:08,997 - #22 br2
+INFO  00:47:08,997 - #18 )
+INFO  00:47:08,997 - #7 ;
+INFO  00:47:08,998 - #22 Osoba
+INFO  00:47:08,998 - #26 .
+INFO  00:47:08,998 - #22 setGodina
+ERROR 00:47:08,998 - Izvrsen oporavak do ; u liniji 38
+INFO  00:47:08,998 - #17 (
+INFO  00:47:08,998 - #22 br3
+INFO  00:47:08,998 - #18 )
+INFO  00:47:08,999 - #7 ;
+INFO  00:47:08,999 - #4 }
+INFO  00:47:08,999 - #4 }
+INFO  00:47:09,024 - Program(
+  ProgName(
+   Dejan
+  ) [ProgName]
+  DeclarationLst(
+    NoDeclarationLst(
+    ) [NoDeclarationLst]
+    ClassDeclaration(
+      ClassDecl(
+       Osoba
+        NotExtending(
+        ) [NotExtending]
+        NotImplementing(
+        ) [NotImplementing]
+        LocalVarDeclList(
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          LVarDecl(
+            Type(
+             int
+            ) [Type]
+            LSingleVarDeclaration(
+              LVarDeclaration(
+               godina
+              ) [LVarDeclaration]
+            ) [LSingleVarDeclaration]
+          ) [LVarDecl]
+        ) [LocalVarDeclList]
+        MethodDeclarationsInClass(
+          MethodDeclarationList(
+            MethodDeclarationList(
+              NoMethodDeclarationList(
+              ) [NoMethodDeclarationList]
+              MethodDeclaration(
+                VoidMethodType(
+                ) [VoidMethodType]
+                MethodName(
+                 setGodina
+                ) [MethodName]
+                FormalParamsYes(
+                  OneFormPars(
+                    FormParDeclaration(
+                      Type(
+                       int
+                      ) [Type]
+                     god
+                    ) [FormParDeclaration]
+                  ) [OneFormPars]
+                ) [FormalParamsYes]
+                NoLocalVarDeclList(
+                ) [NoLocalVarDeclList]
+                StmtList(
+                  NoStmtList(
+                  ) [NoStmtList]
+                  MatchedStmt(
+                    DesignatorStStatement(
+                      DessignatorAssign(
+                        DesignatorValue(
+                         godina
+                        ) [DesignatorValue]
+                        OpEq(
+                        ) [OpEq]
+                        Expression(
+                          NoMinus(
+                          ) [NoMinus]
+                          TermDeclaration(
+                            FactorDesignator(
+                              DesignatorValue(
+                               god
+                              ) [DesignatorValue]
+                              NoActualParsWithParen(
+                              ) [NoActualParsWithParen]
+                            ) [FactorDesignator]
+                            NoMulopFactorLst(
+                            ) [NoMulopFactorLst]
+                          ) [TermDeclaration]
+                          NoAddopTermLst(
+                          ) [NoAddopTermLst]
+                        ) [Expression]
+                      ) [DessignatorAssign]
+                    ) [DesignatorStStatement]
+                  ) [MatchedStmt]
+                ) [StmtList]
+              ) [MethodDeclaration]
+            ) [MethodDeclarationList]
+            MethodDeclaration(
+              ReturnMethodType(
+                Type(
+                 int
+                ) [Type]
+              ) [ReturnMethodType]
+              MethodName(
+               getGodina
+              ) [MethodName]
+              NoFormalParams(
+              ) [NoFormalParams]
+              NoLocalVarDeclList(
+              ) [NoLocalVarDeclList]
+              StmtList(
+                NoStmtList(
+                ) [NoStmtList]
+                MatchedStmt(
+                  ReturnStatement(
+                    YesExpr(
+                      Expression(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermDeclaration(
+                          FactorDesignator(
+                            DesignatorValue(
+                             godina
+                            ) [DesignatorValue]
+                            NoActualParsWithParen(
+                            ) [NoActualParsWithParen]
+                          ) [FactorDesignator]
+                          NoMulopFactorLst(
+                          ) [NoMulopFactorLst]
+                        ) [TermDeclaration]
+                        NoAddopTermLst(
+                        ) [NoAddopTermLst]
+                      ) [Expression]
+                    ) [YesExpr]
+                  ) [ReturnStatement]
+                ) [MatchedStmt]
+              ) [StmtList]
+            ) [MethodDeclaration]
+          ) [MethodDeclarationList]
+        ) [MethodDeclarationsInClass]
+      ) [ClassDecl]
+    ) [ClassDeclaration]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      MethodDeclarationList(
+        NoMethodDeclarationList(
+        ) [NoMethodDeclarationList]
+        MethodDeclaration(
+          ReturnMethodType(
+            Type(
+             int
+            ) [Type]
+          ) [ReturnMethodType]
+          MethodName(
+           saberi
+          ) [MethodName]
+          FormalParamsYes(
+            MoreFormPars(
+              FormParDeclaration(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormParDeclaration]
+              OneFormPars(
+                FormParDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                 b
+                ) [FormParDeclaration]
+              ) [OneFormPars]
+            ) [MoreFormPars]
+          ) [FormalParamsYes]
+          LocalVarDeclList(
+            NoLocalVarDeclList(
+            ) [NoLocalVarDeclList]
+            LVarDecl(
+              Type(
+               int
+              ) [Type]
+              LSingleVarDeclaration(
+                LVarDeclaration(
+                 rez
+                ) [LVarDeclaration]
+              ) [LSingleVarDeclaration]
+            ) [LVarDecl]
+          ) [LocalVarDeclList]
+          StmtList(
+            StmtList(
+              NoStmtList(
+              ) [NoStmtList]
+              MatchedStmt(
+                DesignatorStStatement(
+                  DessignatorAssign(
+                    DesignatorValue(
+                     rez
+                    ) [DesignatorValue]
+                    OpEq(
+                    ) [OpEq]
+                    Expression(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermDeclaration(
+                        FactorDesignator(
+                          DesignatorValue(
+                           a
+                          ) [DesignatorValue]
+                          NoActualParsWithParen(
+                          ) [NoActualParsWithParen]
+                        ) [FactorDesignator]
+                        NoMulopFactorLst(
+                        ) [NoMulopFactorLst]
+                      ) [TermDeclaration]
+                      AddopTermLst(
+                        NoAddopTermLst(
+                        ) [NoAddopTermLst]
+                        OpPlus(
+                        ) [OpPlus]
+                        TermDeclaration(
+                          FactorDesignator(
+                            DesignatorValue(
+                             b
+                            ) [DesignatorValue]
+                            NoActualParsWithParen(
+                            ) [NoActualParsWithParen]
+                          ) [FactorDesignator]
+                          NoMulopFactorLst(
+                          ) [NoMulopFactorLst]
+                        ) [TermDeclaration]
+                      ) [AddopTermLst]
+                    ) [Expression]
+                  ) [DessignatorAssign]
+                ) [DesignatorStStatement]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              ReturnStatement(
+                YesExpr(
+                  Expression(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermDeclaration(
+                      FactorDesignator(
+                        DesignatorValue(
+                         rez
+                        ) [DesignatorValue]
+                        NoActualParsWithParen(
+                        ) [NoActualParsWithParen]
+                      ) [FactorDesignator]
+                      NoMulopFactorLst(
+                      ) [NoMulopFactorLst]
+                    ) [TermDeclaration]
+                    NoAddopTermLst(
+                    ) [NoAddopTermLst]
+                  ) [Expression]
+                ) [YesExpr]
+              ) [ReturnStatement]
+            ) [MatchedStmt]
+          ) [StmtList]
+        ) [MethodDeclaration]
+      ) [MethodDeclarationList]
+      MethodDeclaration(
+        ReturnMethodType(
+          Type(
+           int
+          ) [Type]
+        ) [ReturnMethodType]
+        MethodName(
+         negiraj
+        ) [MethodName]
+        FormalParamsYes(
+          OneFormPars(
+            FormParDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [FormParDeclaration]
+          ) [OneFormPars]
+        ) [FormalParamsYes]
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            ReturnStatement(
+              YesExpr(
+                Expression(
+                  Minus(
+                  ) [Minus]
+                  TermDeclaration(
+                    FactorDesignator(
+                      DesignatorValue(
+                       a
+                      ) [DesignatorValue]
+                      NoActualParsWithParen(
+                      ) [NoActualParsWithParen]
+                    ) [FactorDesignator]
+                    NoMulopFactorLst(
+                    ) [NoMulopFactorLst]
+                  ) [TermDeclaration]
+                  NoAddopTermLst(
+                  ) [NoAddopTermLst]
+                ) [Expression]
+              ) [YesExpr]
+            ) [ReturnStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDeclaration]
+    ) [MethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        LocalVarDeclList(
+          NoLocalVarDeclList(
+          ) [NoLocalVarDeclList]
+          LVarDecl(
+            Type(
+             Osoba
+            ) [Type]
+            LSingleVarDeclaration(
+              LVarDeclaration(
+               osoba
+              ) [LVarDeclaration]
+            ) [LSingleVarDeclaration]
+          ) [LVarDecl]
+        ) [LocalVarDeclList]
+        LVarDecl(
+          Type(
+           int
+          ) [Type]
+          LVarDeclarationList(
+            LVarDeclaration(
+             br1
+            ) [LVarDeclaration]
+            LVarDeclarationList(
+              LVarDeclaration(
+               br2
+              ) [LVarDeclaration]
+              LVarDeclarationList(
+                LVarDeclaration(
+                 br3
+                ) [LVarDeclaration]
+                LSingleVarDeclaration(
+                  LVarArray(
+                   niz
+                    Brackets(
+                    ) [Brackets]
+                  ) [LVarArray]
+                ) [LSingleVarDeclaration]
+              ) [LVarDeclarationList]
+            ) [LVarDeclarationList]
+          ) [LVarDeclarationList]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                NoStmtList(
+                ) [NoStmtList]
+                MatchedStmt(
+                  DesignatorStStatement(
+                    DessignatorAssign(
+                      DesignatorValue(
+                       niz
+                      ) [DesignatorValue]
+                      OpEq(
+                      ) [OpEq]
+                      Expression(
+                        NoMinus(
+                        ) [NoMinus]
+                        TermDeclaration(
+                          FactorNew(
+                            Type(
+                             int
+                            ) [Type]
+                            ExprOptionalWBrackets(
+                              Expression(
+                                NoMinus(
+                                ) [NoMinus]
+                                TermDeclaration(
+                                  FactorConst(
+                                    ConstNumber(
+                                     9
+                                    ) [ConstNumber]
+                                  ) [FactorConst]
+                                  NoMulopFactorLst(
+                                  ) [NoMulopFactorLst]
+                                ) [TermDeclaration]
+                                NoAddopTermLst(
+                                ) [NoAddopTermLst]
+                              ) [Expression]
+                            ) [ExprOptionalWBrackets]
+                          ) [FactorNew]
+                          NoMulopFactorLst(
+                          ) [NoMulopFactorLst]
+                        ) [TermDeclaration]
+                        NoAddopTermLst(
+                        ) [NoAddopTermLst]
+                      ) [Expression]
+                    ) [DessignatorAssign]
+                  ) [DesignatorStStatement]
+                ) [MatchedStmt]
+              ) [StmtList]
+              MatchedStmt(
+                ErrorStmt(
+                ) [ErrorStmt]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              ErrorStmt(
+              ) [ErrorStmt]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            ErrorStmt(
+            ) [ErrorStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          DesignatorStStatement(
+            DesignatorMethodCall(
+              DesignatorDot(
+                DesignatorValue(
+                 Osoba
+                ) [DesignatorValue]
+               setGodina
+              ) [DesignatorDot]
+              ParamList(
+                SingleParam(
+                  Expression(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermDeclaration(
+                      FactorDesignator(
+                        DesignatorValue(
+                         br3
+                        ) [DesignatorValue]
+                        NoActualParsWithParen(
+                        ) [NoActualParsWithParen]
+                      ) [FactorDesignator]
+                      NoMulopFactorLst(
+                      ) [NoMulopFactorLst]
+                    ) [TermDeclaration]
+                    NoAddopTermLst(
+                    ) [NoAddopTermLst]
+                  ) [Expression]
+                ) [SingleParam]
+              ) [ParamList]
+            ) [DesignatorMethodCall]
+          ) [DesignatorStStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:47:09,031 - Pocetak programa  Dejan na liniji 1
+INFO  00:47:09,032 - Deklarisana lokalna promenljiva godina na liniji 5
+INFO  00:47:09,032 - Obradjuje se  funkcija setGodina na liniji 7
+INFO  00:47:09,032 - Deklarisan formalni parametar: god na liniji 7
+INFO  00:47:09,032 - Obradjuje se  funkcija getGodina na liniji 11
+INFO  00:47:09,033 - Obradjuje se  funkcija saberi na liniji 19
+INFO  00:47:09,033 - Deklarisan formalni parametar: a na liniji 19
+INFO  00:47:09,033 - Deklarisan formalni parametar: b na liniji 19
+INFO  00:47:09,033 - Deklarisana lokalna promenljiva rez na liniji 20
+INFO  00:47:09,033 - Obradjuje se  funkcija negiraj na liniji 26
+INFO  00:47:09,033 - Deklarisan formalni parametar: a na liniji 26
+INFO  00:47:09,033 - Obradjuje se  funkcija main na liniji 30
+ERROR 00:47:09,033 - Greska: Nije pronadjen tip Osoba u tabeli simbola na liniji 31
+INFO  00:47:09,033 - Deklarisana lokalna promenljiva osoba na liniji 31
+INFO  00:47:09,033 - Deklarisana lokalna promenljiva br1 na liniji 32
+INFO  00:47:09,034 - Deklarisana lokalna promenljiva br2 na liniji 32
+INFO  00:47:09,034 - Deklarisana lokalna promenljiva br3 na liniji 32
+INFO  00:47:09,034 - Deklarisan lokalni niz niz na liniji 32
+INFO  00:47:09,034 - ===================================
+INFO  00:47:09,034 -  Deklarisanih globalnih promenljivih ima = 0
+INFO  00:47:09,034 -  Deklarisanih lokalnih promenljivih ima = 7
+INFO  00:47:09,034 -  Konstanti ima = 0
+INFO  00:47:09,034 - ===================================
+ERROR 00:47:09,036 - Parsiranje NIJE uspesno zavrseno!

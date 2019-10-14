@@ -1,0 +1,134 @@
+INFO  15:16:48,930 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  15:16:49,086 - #2 program
+INFO  15:16:49,086 - #22 test301
+INFO  15:16:49,086 - #22 int
+INFO  15:16:49,088 - #22 x
+INFO  15:16:49,089 - #7 ;
+INFO  15:16:49,090 - #22 int
+INFO  15:16:49,091 - #22 y
+INFO  15:16:49,091 - #7 ;
+INFO  15:16:49,092 - #3 {
+INFO  15:16:49,092 - #22 int
+INFO  15:16:49,094 - #22 main
+INFO  15:16:49,094 - #17 (
+INFO  15:16:49,095 - #18 )
+INFO  15:16:49,096 - #3 {
+INFO  15:16:49,097 - #47 print
+INFO  15:16:49,099 - #17 (
+INFO  15:16:49,100 - #19 1
+INFO  15:16:49,101 - #18 )
+INFO  15:16:49,104 - #7 ;
+INFO  15:16:49,104 - #47 print
+INFO  15:16:49,105 - #17 (
+INFO  15:16:49,105 - #19 2
+INFO  15:16:49,105 - #18 )
+INFO  15:16:49,106 - #7 ;
+INFO  15:16:49,106 - #4 }
+INFO  15:16:49,106 - #4 }
+INFO  15:16:49,157 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      NoDeclarationLst(
+      ) [NoDeclarationLst]
+      GlobalVarDeclaration1(
+        GVarDecl(
+          Type(
+           int
+          ) [Type]
+          GSingleVarDeclaration(
+            GVarDeclaration(
+             x
+            ) [GVarDeclaration]
+          ) [GSingleVarDeclaration]
+        ) [GVarDecl]
+      ) [GlobalVarDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         int
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarDeclaration(
+           y
+          ) [GVarDeclaration]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      ReturnMethodType(
+        Type(
+         int
+        ) [Type]
+      ) [ReturnMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoLocalVarDeclList(
+      ) [NoLocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            PrintStatementWithoutNumConst(
+              Expr(
+                ExprTerm(
+                  ExprWithoutMinus(
+                  ) [ExprWithoutMinus]
+                  TermFactor(
+                    FactorNumber(
+                     1
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [Expr]
+            ) [PrintStatementWithoutNumConst]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStatementWithoutNumConst(
+            Expr(
+              ExprTerm(
+                ExprWithoutMinus(
+                ) [ExprWithoutMinus]
+                TermFactor(
+                  FactorNumber(
+                   2
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStatementWithoutNumConst]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:16:49,158 - ===================================
+INFO  15:16:49,176 - Pocetak programa  test301 na liniji 3
+INFO  15:16:49,177 - 1glo var
+INFO  15:16:49,178 - Deklarisana globalna promenljiva x na liniji 5
+INFO  15:16:49,178 - 1glo var
+INFO  15:16:49,178 - Deklarisana globalna promenljiva y na liniji 5
+INFO  15:16:49,178 - Obradjuje se  funkcija main na liniji 8
+INFO  15:16:49,179 - Uspesno pozvana funkcija print. :  na liniji 7
+INFO  15:16:49,179 - Uspesno pozvana funkcija print. :  na liniji 7
+ERROR 15:16:49,179 - Greska na liniji 8, funkcija main nema RETURN iskaz!
+INFO  15:16:49,179 - Zavrsena funkcija main na liniji 8
+INFO  15:16:49,179 - Kraj 
+INFO  15:16:49,180 -  Deklarisanih promenljivih ima = 0
+INFO  15:16:49,180 -  Globalnih promenljivih ima = 2
+INFO  15:16:49,180 -  Deklarisanih konstanti ima = 0
+ERROR 15:16:49,181 - Parsiranje NIJE uspesno zavrseno!

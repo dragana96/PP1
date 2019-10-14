@@ -1,0 +1,238 @@
+INFO  18:23:29,315 - Compiling source file: C:\Users\Lenovo\Desktop\Fakultet\Programski prevodioci 1\Projekat\MJCompiler\test\program.mj
+INFO  18:23:29,656 - #2 program
+INFO  18:23:29,656 - #22 MJProgram
+INFO  18:23:29,656 - #14 enum
+INFO  18:23:29,660 - #22 Broj
+INFO  18:23:29,660 - #3 {
+INFO  18:23:29,660 - #22 NULA
+INFO  18:23:29,660 - #10 ,
+INFO  18:23:29,663 - #22 JEDAN
+INFO  18:23:29,663 - #10 ,
+INFO  18:23:29,663 - #22 PET
+INFO  18:23:29,664 - #6 =
+INFO  18:23:29,664 - #19 5
+INFO  18:23:29,664 - #10 ,
+INFO  18:23:29,665 - #22 DESET
+INFO  18:23:29,665 - #6 =
+INFO  18:23:29,666 - #19 10
+INFO  18:23:29,666 - #4 }
+INFO  18:23:29,666 - #5 const
+INFO  18:23:29,668 - #22 int
+INFO  18:23:29,668 - #22 pet
+INFO  18:23:29,670 - #6 =
+INFO  18:23:29,670 - #19 5
+INFO  18:23:29,670 - #7 ;
+INFO  18:23:29,672 - #22 int
+INFO  18:23:29,674 - #22 niz
+INFO  18:23:29,674 - #8 [
+INFO  18:23:29,674 - #9 ]
+INFO  18:23:29,674 - #7 ;
+INFO  18:23:29,676 - #3 {
+INFO  18:23:29,677 - #16 void
+INFO  18:23:29,678 - #22 main
+INFO  18:23:29,689 - #17 (
+INFO  18:23:29,691 - #18 )
+INFO  18:23:29,692 - #22 Broj
+INFO  18:23:29,694 - #22 nula
+INFO  18:23:29,696 - #7 ;
+INFO  18:23:29,697 - #3 {
+INFO  18:23:29,697 - #22 nula
+INFO  18:23:29,747 - #6 =
+INFO  18:23:29,748 - #22 Broj
+INFO  18:23:29,754 - #26 .
+INFO  18:23:29,755 - #22 NULA
+INFO  18:23:29,758 - #7 ;
+INFO  18:23:29,764 - #22 niz
+INFO  18:23:29,765 - #8 [
+INFO  18:23:29,766 - #22 nula
+INFO  18:23:29,766 - #9 ]
+INFO  18:23:29,767 - #6 =
+INFO  18:23:29,767 - #22 pet
+INFO  18:23:29,768 - #7 ;
+INFO  18:23:29,768 - #4 }
+INFO  18:23:29,768 - #4 }
+INFO  18:23:29,792 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationLst(
+    DeclarationLst(
+      DeclarationLst(
+        NoDeclarationLst(
+        ) [NoDeclarationLst]
+        EnumDeclaration(
+          EnumDecl(
+           Broj
+           NULA
+            NoAssignConstEnum(
+            ) [NoAssignConstEnum]
+            NumConstListEnum(
+              NumConstListEnum(
+                NumConstListEnum(
+                  NoNumConstListEnum(
+                  ) [NoNumConstListEnum]
+                 JEDAN
+                  NoAssignConstEnum(
+                  ) [NoAssignConstEnum]
+                ) [NumConstListEnum]
+               PET
+                AssignConstEnum(
+                 5
+                ) [AssignConstEnum]
+              ) [NumConstListEnum]
+             DESET
+              AssignConstEnum(
+               10
+              ) [AssignConstEnum]
+            ) [NumConstListEnum]
+          ) [EnumDecl]
+        ) [EnumDeclaration]
+      ) [DeclarationLst]
+      ConstDeclaration1(
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+          ConstListDerived1(
+            ConstDeclaration(
+             pet
+              ConstNumber(
+               5
+              ) [ConstNumber]
+            ) [ConstDeclaration]
+          ) [ConstListDerived1]
+        ) [ConstDecl]
+      ) [ConstDeclaration1]
+    ) [DeclarationLst]
+    GlobalVarDeclaration1(
+      GVarDecl(
+        Type(
+         int
+        ) [Type]
+        GSingleVarDeclaration(
+          GVarArray(
+           niz
+            Brackets(
+            ) [Brackets]
+          ) [GVarArray]
+        ) [GSingleVarDeclaration]
+      ) [GVarDecl]
+    ) [GlobalVarDeclaration1]
+  ) [DeclarationLst]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDeclaration(
+      VoidMethodType(
+      ) [VoidMethodType]
+      MethodName(
+       main
+      ) [MethodName]
+      NoFormalParams(
+      ) [NoFormalParams]
+      LocalVarDeclList(
+        NoLocalVarDeclList(
+        ) [NoLocalVarDeclList]
+        LVarDecl(
+          Type(
+           Broj
+          ) [Type]
+          LSingleVarDeclaration(
+            LVarDeclaration(
+             nula
+            ) [LVarDeclaration]
+          ) [LSingleVarDeclaration]
+        ) [LVarDecl]
+      ) [LocalVarDeclList]
+      StartMethodSt(
+      ) [StartMethodSt]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            DesignatorStStatement(
+              DessignatorAssign(
+                DesignatorValue(
+                 nula
+                ) [DesignatorValue]
+                OpEq(
+                ) [OpEq]
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorDot(
+                          DesignatorValue(
+                           Broj
+                          ) [DesignatorValue]
+                         NULA
+                        ) [DesignatorDot]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DessignatorAssign]
+            ) [DesignatorStStatement]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          DesignatorStStatement(
+            DessignatorAssign(
+              DesignatorArray(
+                DesignatorValue(
+                 niz
+                ) [DesignatorValue]
+                Expr(
+                  ExprTerm(
+                    ExprWithoutMinus(
+                    ) [ExprWithoutMinus]
+                    TermFactor(
+                      FactorDesignator(
+                        DesignatorValue(
+                         nula
+                        ) [DesignatorValue]
+                      ) [FactorDesignator]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DesignatorArray]
+              OpEq(
+              ) [OpEq]
+              Expr(
+                ExprTerm(
+                  ExprWithoutMinus(
+                  ) [ExprWithoutMinus]
+                  TermFactor(
+                    FactorDesignator(
+                      DesignatorValue(
+                       pet
+                      ) [DesignatorValue]
+                    ) [FactorDesignator]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [Expr]
+            ) [DessignatorAssign]
+          ) [DesignatorStStatement]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  18:23:29,792 - ===================================
+INFO  18:23:29,863 - Pocetak programa  MJProgram na liniji 1
+INFO  18:23:29,865 - Obradjuje se enum Broj na liniji 3
+INFO  18:23:29,865 - 1konstanta
+INFO  18:23:29,866 - Deklarisana konstanta pet na liniji 4
+INFO  18:23:29,866 - 1glo niz
+INFO  18:23:29,866 - Deklarisan globalni niz niz na liniji 5
+INFO  18:23:29,866 - Obradjuje se  funkcija main na liniji 12
+INFO  18:23:29,866 - 6lok var
+INFO  18:23:29,866 - Deklarisana lokalna promenljiva nula na liniji 14
+INFO  18:23:33,839 - Pristup elementu nula na liniji 16
+INFO  18:23:36,259 - Pristup elementu Broj na liniji 16
+INFO  18:23:54,403 - Uspesno dodeljena vrednost promenjivoj nula :  na liniji 16
+INFO  18:24:05,711 - Pristup elementu niz na liniji 18
+INFO  18:24:11,409 - Pristup elementu nula na liniji 18
